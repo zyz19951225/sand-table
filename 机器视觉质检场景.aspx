@@ -22,7 +22,7 @@
         }
 
         .background {
-            background: url(image/背景图.jpg);
+            background: url(image/newimg/背景.png);
             background-size: cover;
             height: 1080px;
             width: 1920px;
@@ -40,13 +40,15 @@
         }
 
         .title {
-            background: url(image/机器视觉质检场景标题.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 118px;
-            width: 444px;
-            position: absolute;
-            margin-top: 2%;
-            margin-left: 38.5%;
+                        background: url(image/newimg/机器视觉质检场景.png) no-repeat center center;
+                        background-size: 100% 100%;
+                        height: 77px;
+                        width: 721px;
+                        position: absolute;
+                        top: 2%;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
         }
 
         .border {
@@ -1084,7 +1086,7 @@
             font-weight: 600;
             color: white;
         }
-        
+
         .full{
             margin-top: 1.5%;
             margin-left: 97%;
@@ -1270,11 +1272,11 @@
 
             $(".image").hide(); $(".return2").hide();
             $(".label3_a").click(function (e) {
-                
+
                 var src = 'http://localhost:8088/picture/抓拍.jpg';
                 $(".image").attr('src', src);
                 $(".image").show(); $(".return").hide(); $(".return2").show();
-               
+
             });
             $(".gongyibu_a").click(function (e) {
                 $(".image").show(); $(".return").hide(); $(".return2").show();
@@ -1298,7 +1300,7 @@
             });
             $(".return2").click(function (e) {
                 $(".image").hide(); $(".return").show(); $(".return2").hide();
-               
+
             });
             $(".div1").show();
             $(".div2").hide();

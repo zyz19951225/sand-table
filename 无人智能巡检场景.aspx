@@ -23,7 +23,7 @@
         }
 
         .background {
-            background: url(image/背景图.jpg);
+            background: url(image/newimg/背景.png);
             background-size: cover;
             height: 1080px;
             width: 1920px;
@@ -41,13 +41,16 @@
         }
 
         .title {
-            background: url(image/无人智能巡检场景标题.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 118px;
-            width: 444px;
-            position: absolute;
-            margin-top: 2%;
-            margin-left: 37.5%;
+                       background: url(image/newimg/无人智能巡检场景.png) no-repeat center center;
+                       background-size: 100% 100%;
+                       height: 77px;
+                       width: 721px;
+                       position: absolute;
+                       top: 2%;
+                       left: 0;
+                       right: 0;
+                       margin: auto;
+
         }
 
         .border {
@@ -302,7 +305,7 @@
             color: white;
         }
 
-        
+
         .full{
             margin-top: 1.5%;
             margin-left: 97%;
@@ -423,7 +426,7 @@
             $(".loadLabel3").hide();
             $(".loadLabel4").hide();
             $(".switch").hide();
-            
+
             $(".inspection").click(function (e) {
                 start = true;
                 $(".load1").show();
@@ -471,7 +474,7 @@
                 })
                 $(location).attr("href", "Main.aspx")
             });
-            
+
             var bofang = true;
             var bofang2 = true;
             $(".lable2").click(function (e) {

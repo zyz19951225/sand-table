@@ -21,7 +21,7 @@
             padding: 0;
         }
         .background {
-            background: url(image/背景图.jpg);
+            /*background: url(image/背景图.jpg);*/
             background-size: cover;
             height: 1080px;
             width: 1920px;
@@ -39,13 +39,15 @@
         }
 
         .title {
-            background: url(image/标题.png) no-repeat center center;
+            background: url(image/newimg/多模态网络智慧工厂解决方案.png) no-repeat center center;
             background-size: 100% 100%;
-            height: 66px;
-            width: 998px;
+            height: 77px;
+            width: 712px;
             position: absolute;
-            margin-top: 2%;
-            margin-left: 24%;
+            top: 2%;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
 
         .border {
@@ -250,12 +252,18 @@
         .bdy{
             overflow:hidden;
         }
+        .video{
+            position: absolute;
+        }
     </style>
 </head>
 <body class="bdy">
     <!--<canvas id="mycavas" class="bj" width="1920" height="1080" style="border: solid 0px #000000"></canvas>
     <script type="text/javascript" color="255,0,0" pointcolor="255,0,0" opacity="1" zindex="-2" count="500" src="/dist/canvas-nest.js"></script>-->
     <div id="app">
+     <video id="v1" autoplay muted loop v-bind:class="{ 'video': isActive }">
+                <source  src="mypic/sysp.mp4">
+            </video>
         <div v-bind:class="{ 'background': isActive }"></div>
         <div v-bind:class="{ 'occlusion': isActive }"></div>
 
@@ -301,7 +309,7 @@
             }
         })
         $(document).ready(function () {
-            
+
             this.fullscreen = !this.fullscreen;
             $(".option1,.option_words1").click(function (e) {
                 $(location).attr("href", "协同研发设计场景.aspx")
@@ -374,7 +382,7 @@
                 })
             });
             $(".full").click(function (e) {
-                
+
                 let element = document.documentElement;
                 if (this.fullscreen) {
                     if (document.exitFullscreen) {
@@ -402,8 +410,8 @@
 
 
             });
-            
-            
+
+
         });
     </script>
 </body>

@@ -22,7 +22,7 @@
         }
 
         .background {
-            background: url(image/背景图.jpg);
+            background: url(image/newimg/背景.png);
             background-size: cover;
             height: 1080px;
             width: 1920px;
@@ -40,13 +40,15 @@
         }
 
         .title {
-            background: url(image/设备故障诊断场景标题.png) no-repeat center center;
+            background: url(image/newimg/设备故障诊断场景.png) no-repeat center center;
             background-size: 100% 100%;
-            height: 118px;
-            width: 444px;
+            height: 77px;
+            width: 712px;
             position: absolute;
-            margin-top: 2%;
-            margin-left: 38.5%;
+            top: 2%;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
 
         .border {
@@ -644,7 +646,7 @@
 
         </div>
         <div v-bind:class="{'information2':isActive}">
-            
+
         <label v-bind:class="{'mm_label1':isActive}">mm</label>
         <label v-bind:class="{'mm_label2':isActive}">mm</label>
             <button v-bind:class="{'clearCanvas':isActive}">清空画布</button>

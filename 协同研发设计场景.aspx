@@ -22,7 +22,7 @@
         }
 
         .background {
-            background: url(image/背景图.jpg);
+            background: url(image/newimg/背景.png);
             background-size: cover;
             height: 1080px;
             width: 1920px;
@@ -49,13 +49,15 @@
         }
 
         .title {
-            background: url(image/协同研发设计场景标题.png) no-repeat center center;
+            background: url(image/newimg/协同研发设计场景.png) no-repeat center center;
             background-size: 100% 100%;
-            height: 118px;
-            width: 444px;
+            height: 77px;
+            width: 661px;
             position: absolute;
-            margin-top: 2%;
-            margin-left: 38%;
+            top: 2%;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
 
         .border {
@@ -373,7 +375,7 @@
         .bdy{
             overflow:hidden;
         }
-        
+
         .full{
             margin-top: 1.5%;
             margin-left: 97%;
@@ -524,7 +526,7 @@
             });
 
             $(".return").click(function (e) {
-                
+
                 $(location).attr("href", "Main.aspx")
             });
             $(".return2").click(function (e) {

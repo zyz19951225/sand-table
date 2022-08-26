@@ -22,7 +22,7 @@
         }
 
         .background {
-            background: url(image/背景图.jpg);
+            background: url(image/newimg/背景.png);
             background-size: cover;
             height: 1080px;
             width: 1920px;
@@ -40,13 +40,15 @@
         }
 
         .title {
-            background: url(image/生产制造场景标题.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 118px;
-            width: 444px;
-            position: absolute;
-            margin-top: 2%;
-            margin-left: 38.5%;
+            background: url(image/newimg/生产制造场景.png) no-repeat center center;
+                        background-size: 100% 100%;
+                        height: 77px;
+                        width: 721px;
+                        position: absolute;
+                        top: 2%;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
         }
 
         .border {
@@ -270,8 +272,8 @@
             font-weight: 400;
             text-align: center;
         }
-        
-        
+
+
         .full{
             margin-top: 1.5%;
             margin-left: 97%;
