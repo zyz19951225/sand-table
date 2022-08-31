@@ -50,42 +50,52 @@
                         right: 0;
                         margin: auto;
         }
+            .label1 {
+                      color: white;
+                      font-size: 24px;
+                      position: absolute;
+                      margin-top: 15.2%;
+                      margin-left: 40.5%;
+                      border-radius: 40px;
+                      font-weight: 600;
+                }
 
-        .border {
-            background-color: #808080;
-            height: 66px;
-            width: 1300px;
-            position: absolute;
-            opacity: 0.9;
-            margin-top: 8%;
-            margin-left: 16%;
-            border-radius: 40px;
-        }
-
+.border {
+    background-color: #ffffff;
+    height: 2px;
+    width: 1920px;
+    position: absolute;
+    /* opacity: 0.9; */
+    margin-top: 12%;
+    /* margin-left: 16%; */
+    border-radius: 40px;
+    }
         .border2 {
-            background-color: white;
+            /*background-color: white;*/
             height: 45px;
             width: 160px;
             position: absolute;
             opacity: 0.9;
-            margin-top: 8.6%;
-            margin-left: 42%;
+                margin-top: 164px;
+                margin-left: 819px;
             border-radius: 10px;
-        }
+                                    border: 1px solid white;
 
+        }
         .border4 {
-            background-color: white;
+            /*background-color: white;*/
             height: 45px;
             width: 140px;
             position: absolute;
             opacity: 0.9;
-            margin-top: 8.6%;
-            margin-left: 52%;
+               margin-top: 163px;
+               margin-left: 1014px;
             border-radius: 10px;
-        }
+                                    border: 1px solid white;
 
+        }
         .border3 {
-            background-color: white;
+            /*background-color: white;*/
             height: 45px;
             width: 170px;
             position: absolute;
@@ -93,23 +103,23 @@
             margin-top: 8.6%;
             margin-left: 61%;
             border-radius: 10px;
-        }
+                                    border: 1px solid white;
 
+        }
         .play {
-            background: url(image/播放.png) no-repeat center center;
+            background: url(image/newimg/xxxxx.png) no-repeat center center;
             background-size: 100% 100%;
             height: 20px;
-            width: 20px;
+                        width: 45px;
             position: absolute;
             margin-top: 9.3%;
             margin-left: 48%;
         }
-
         .play2 {
-            background: url(image/播放.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-            width: 20px;
+          background: url(image/newimg/xxxxx.png) no-repeat center center;
+                      background-size: 100% 100%;
+                      height: 20px;
+                                  width: 45px;
             position: absolute;
             margin-top: 9.3%;
             margin-left: 57.5%;
@@ -135,67 +145,55 @@
             margin-left: 57.5%;
         }
 
-        .lable1 {
-            color: white;
-            font-size: 24px;
-            position: absolute;
-            margin-top: 8.9%;
-            margin-left: 32%;
-            border-radius: 40px;
-        }
+    .lable1 {
+               color: white;
+               font-size: 24px;
+               position: absolute;
+               margin-top: 8.9%;
+               margin-left: 32%;
+               border-radius: 40px;
+           }
+           .lable2 {
+               /*color: black;*/
+               color: white;
+               font-size: 18px;
+               position: absolute;
+               margin-top: 9.1%;
+               margin-left: 43.5%;
+               border-radius: 40px;
+               font-weight: 600;
+           }
+           .lable4 {
+                /*color: black;*/
+                           color: white;
+               font-size: 18px;
+               position: absolute;
+               margin-top: 9.1%;
+               margin-left: 53%;
+               border-radius: 40px;
+               font-weight: 600;
+           }
+           .lable3 {
+                /*color: black;*/
+                           color: white;
+               font-size: 18px;
+               position: absolute;
+               margin-top: 9.1%;
+               margin-left: 62.2%;
+               border-radius: 40px;
+               font-weight: 600;
+           }
 
-
-        .lable2 {
-            color: black;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 9.1%;
-            margin-left: 43.5%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-
-        .lable4 {
-            color: black;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 9.1%;
-            margin-left: 53%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-
-        .lable3 {
-            color: black;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 9.1%;
-            margin-left: 62.2%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-
-        .label1 {
-            color: white;
-            font-size: 24px;
-            position: absolute;
-            margin-top: 14.9%;
-            margin-left: 42%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-
-        .input {
-            color: black;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 15%;
-            height: 27.2px;
-            width: 200px;
-            margin-left: 48%;
-            font-weight: 400;
-            text-align: center;
-        }
+       .input {
+                    color: black;
+                    font-size: 20px;
+                    position: absolute;
+                    margin-top: 15.2%;
+                    height: 27.2px;
+                    width: 200px;
+                    margin-left: 48.5%;
+                    font-weight: 400;
+              }
 
         .button1 {
             position: absolute;
@@ -222,51 +220,51 @@
         }
 
         .button2 {
-            position: absolute;
-            margin-top: 28%;
-            height: 50px;
-            width: 250px;
-            margin-left: 13.5%;
-            text-align: center;
-            border-radius: 10px;
-            border: 0;
-            padding-top: -1px;
+            /*position: absolute;*/
+            /*margin-top: 28%;*/
+            /*height: 50px;*/
+            /*width: 250px;*/
+            /*margin-left: 13.5%;*/
+            /*text-align: center;*/
+            /*border-radius: 10px;*/
+            /*border: 0;*/
+            /*padding-top: -1px;*/
         }
 
         .button3 {
-            position: absolute;
-            margin-top: 28%;
-            height: 50px;
-            width: 250px;
-            margin-left: 33.5%;
-            text-align: center;
-            border-radius: 10px;
-            border: 0;
-            padding-top: -1px;
+            /*position: absolute;*/
+            /*margin-top: 28%;*/
+            /*height: 50px;*/
+            /*width: 250px;*/
+            /*margin-left: 33.5%;*/
+            /*text-align: center;*/
+            /*border-radius: 10px;*/
+            /*border: 0;*/
+            /*padding-top: -1px;*/
         }
 
         .button4 {
-            position: absolute;
-            margin-top: 28%;
-            height: 50px;
-            width: 250px;
-            margin-left: 53.5%;
-            text-align: center;
-            border-radius: 10px;
-            border: 0;
-            padding-top: -1px;
+            /*position: absolute;*/
+            /*margin-top: 28%;*/
+            /*height: 50px;*/
+            /*width: 250px;*/
+            /*margin-left: 53.5%;*/
+            /*text-align: center;*/
+            /*border-radius: 10px;*/
+            /*border: 0;*/
+            /*padding-top: -1px;*/
         }
 
         .button5 {
-            position: absolute;
-            margin-top: 28%;
-            height: 50px;
-            width: 250px;
-            margin-left: 73.5%;
-            text-align: center;
-            border-radius: 10px;
-            border: 0;
-            padding-top: -1px;
+            /*position: absolute;*/
+            /*margin-top: 28%;*/
+            /*height: 50px;*/
+            /*width: 250px;*/
+            /*margin-left: 73.5%;*/
+            /*text-align: center;*/
+            /*border-radius: 10px;*/
+            /*border: 0;*/
+            /*padding-top: -1px;*/
         }
 
         .button_p0 {
@@ -291,22 +289,32 @@
             margin-top: -9px;
         }
 
+        .xndb{
+        background: url(image/newimg/性能对比.png) no-repeat center center;
+        background-size: 100% 100%;
+        height: 111px;
+        width: 342px;
+        position: absolute;
+        margin-top: 728px;
+        margin-left: 785px;
+        }
+
         .button6 {
-            position: absolute;
-            margin-top: 35%;
-            height: 50px;
-            width: 250px;
-            margin-left: 43.8%;
-            text-align: center;
-            border-radius: 10px;
-            border: 0;
-            color: black;
-            font-size: 18px;
-            position: absolute;
-            width: 250px;
-            font-weight: 600;
-            font-family: 宋体;
-            text-align: center;
+            /*position: absolute;*/
+            /*margin-top: 35%;*/
+            /*height: 50px;*/
+            /*width: 250px;*/
+            /*margin-left: 43.8%;*/
+            /*text-align: center;*/
+            /*border-radius: 10px;*/
+            /*border: 0;*/
+            /*color: black;*/
+            /*font-size: 18px;*/
+            /*position: absolute;*/
+            /*width: 250px;*/
+            /*font-weight: 600;*/
+            /*font-family: 宋体;*/
+            /*text-align: center;*/
         }
 
         .button_p1 {
@@ -329,75 +337,121 @@
             border-radius: 40px;
             font-weight: 600;
         }
+        .completeicon{
+                 background: url(image/newimg/接受数据图标.png) no-repeat center center;
+            background-size: 100% 100%;
+                height: 113px;
+                width: 112px;
+            position: absolute;
+               margin-top: 428px;
+               margin-left: 780px;
+        }
+
+        .department2{
+             background: url(image/newimg/工艺部门.png) no-repeat center center;
+                                 background-size: 100% 100%;
+                                     height: 75px;
+                                     width: 317px;
+                                 position: absolute;
+                               margin-top: 565px;
+                               margin-left: 233px;
+        }
+         .department3{
+             background: url(image/newimg/工艺部门.png) no-repeat center center;
+                                 background-size: 100% 100%;
+                                     height: 75px;
+                                     width: 317px;
+                                 position: absolute;
+                               margin-top: 565px;
+                               margin-left: 633px;
+        }
+         .department4{
+             background: url(image/newimg/工艺部门.png) no-repeat center center;
+                                 background-size: 100% 100%;
+                                     height: 75px;
+                                     width: 317px;
+                                 position: absolute;
+                               margin-top: 565px;
+                               margin-left: 1033px;
+        }
+           .department5{
+             background: url(image/newimg/工艺部门.png) no-repeat center center;
+                                 background-size: 100% 100%;
+                                     height: 75px;
+                                     width: 317px;
+                                 position: absolute;
+                               margin-top: 565px;
+                               margin-left: 1425px;
+        }
 
         .label3 {
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 25%;
-            margin-left: 45.2%;
-            border-radius: 40px;
-            font-weight: 600;
+    color: white;
+        font-size: 23px;
+        position: absolute;
+        margin-top: 468px;
+        margin-left: 892px;
+        border-radius: 40px;
+        font-weight: 600;
         }
 
         .label3_a {
-            color: blue;
+            color: #13FFEF;
         }
 
         .gongyibu {
             color: white;
             font-size: 18px;
             position: absolute;
-            margin-top: 31%;
+            margin-top: 34%;
             margin-left: 15%;
             border-radius: 40px;
             font-weight: 600;
         }
 
         .gongyibu_a {
-            color: blue;
+            color: #13FFEF;
         }
 
         .shebeibu {
             color: white;
             font-size: 18px;
             position: absolute;
-            margin-top: 31%;
+            margin-top: 34%;
             margin-left: 35%;
             border-radius: 40px;
             font-weight: 600;
         }
 
         .shebeibu_a {
-            color: blue;
+            color: #13FFEF;
         }
 
         .shengchanbu {
             color: white;
             font-size: 18px;
             position: absolute;
-            margin-top: 31%;
+            margin-top: 34%;
             margin-left: 55%;
             border-radius: 40px;
             font-weight: 600;
         }
 
         .shengchanbu_a {
-            color: blue;
+            color: #13FFEF;
         }
 
         .chanpinkaifabu {
             color: white;
             font-size: 18px;
             position: absolute;
-            margin-top: 31%;
+            margin-top: 34%;
             margin-left: 74%;
             border-radius: 40px;
             font-weight: 600;
         }
 
         .chanpinkaifabu_a {
-            color: blue;
+            color: #13FFEF;
         }
 
         .label4 {
@@ -1054,22 +1108,53 @@
             border-radius: 2px;
         }
 
-        .return {
-            margin-top: 2%;
-            margin-left: 15%;
-            height: 90px;
-            width: 90px;
-            position: absolute;
-            font-size: 12px;
-            background: url(image/返回首页.png) no-repeat center center;
-            background-size: 100% 100%;
-            border: 0;
-            line-height: 15px;
-            padding-left: 38px;
-            padding-top: 10px;
-            font-weight: 600;
-            color: white;
-        }
+         .return {
+                margin-top: 157px;
+                margin-left: 90px;
+                height: 38px;
+                width: 36px;
+                position: absolute;
+                font-size: 12px;
+                background: url(image/newimg/首页图标.png) no-repeat center center;
+                background-size: 100% 100%;
+                border: 0;
+                line-height: 15px;
+                padding-left: 38px;
+                padding-top: 10px;
+                font-weight: 600;
+                color: white;
+            }
+
+                      .home {
+                   margin-top: 157px;
+                   margin-left: 144px;
+                   height: 40px;
+                   width: 61px;
+                   position: absolute;
+                   font-size: 12px;
+                   background: url(image/newimg/首页.png) no-repeat center center;
+                   background-size: 100% 100%;
+                   border: 0;
+                   line-height: 15px;
+                   padding-left: 38px;
+                   padding-top: 10px;
+                   font-weight: 600;
+                   color: white;
+               }
+               .go {
+                     background: url(image/newimg/首次获取数据.png) no-repeat center center;
+                     background-size: 100% 100%;
+                     position: absolute;
+                     margin-top: 353px;
+                     margin-left: 733px;
+                     height: 98px;
+                     width: 454px;
+                     color: white;
+                     font-size: 18px;
+                     border: 0;
+                     font-weight: 600;
+               }
+
         .return2 {
             margin-top: 13%;
             margin-left: 82%;
@@ -1131,49 +1216,55 @@
         <div v-bind:class="{ 'border4': isActive }"></div>
         <div v-bind:class="{ 'play': isActive }"></div>
         <div v-bind:class="{ 'play2': isActive }"></div>
+           <button v-bind:class="{'home':isActive}"></button>
         <label v-bind:class="{'lable1':isActive}">二号投影大屏:</label>
         <label v-bind:class="{'lable2':isActive}">场景介绍</label>
         <label v-bind:class="{'lable4':isActive}">沙盘演示</label>
         <label v-bind:class="{'lable3':isActive}">沙盘位置示意图</label>
         <div v-bind:class="{'div1':isActive}">
-            <label v-bind:class="{'label1':isActive}">文件名:</label>
-            <input type="text" value="之江实验室" v-bind:class="{'input':isActive}" disabled="disabled" maxlength="8" />
-            <input type="text" value="之江实验室" v-bind:class="{'input':isActive}" disabled="disabled" maxlength="8" />
-            <input type="text" value="之江实验室" v-bind:class="{'input':isActive}" disabled="disabled" maxlength="8" />
-            <input type="text" value="之江实验室" v-bind:class="{'input':isActive}" disabled="disabled" maxlength="8" />
-            <button v-bind:class="{'button1':isActive}">
-                <p v-bind:class="{'button_p0':isActive}">质检部获取数据</p>
-                <p v-bind:class="{'button_p1':isActive}">（首次）</p>
-            </button>
+     <label v-bind:class="{'label1':isActive}">纪念币文字:</label>
+        <input type="text" value="之江实验室" v-bind:class="{'input':isActive}" maxlength="8" />
+<!--            <button v-bind:class="{'button1':isActive}">-->
+<!--                <p v-bind:class="{'button_p0':isActive}">质检部获取数据</p>-->
+<!--                <p v-bind:class="{'button_p1':isActive}">（首次）</p>-->
+<!--            </button>-->
+ <button v-bind:class="{'go':isActive,'button1':isActive}"></button>
+             <div v-bind:class="{'completeicon':isActive}"></div>
             <label v-bind:class="{'label2':isActive}">数据传输中……</label>
             <label v-bind:class="{'label3':isActive}">质检部已接收，<a href="#" v-bind:class="{'label3_a':isActive}">显示数据</a></label>
             <div v-bind:class="{'jieduan2':isActive}">
-                <button v-bind:class="{'button2':isActive}">
-                    <p v-bind:class="{'button_p0':isActive}">市场部获取数据</p>
-                    <p v-bind:class="{'button_p1':isActive}">（再次）</p>
-                </button>
+            <div v-bind:class="{'department2':isActive,'button2':isActive}"></div>
+<!--                <button v-bind:class="{'button2':isActive}">-->
+<!--                    <p v-bind:class="{'button_p0':isActive}">市场部获取数据</p>-->
+<!--                    <p v-bind:class="{'button_p1':isActive}">（再次）</p>-->
+<!--                </button>-->
+            <div v-bind:class="{'department3':isActive,'button3':isActive}"></div>
 
-                <button v-bind:class="{'button3':isActive}">
-                    <p v-bind:class="{'button_p0':isActive}">运营部获取数据</p>
-                    <p v-bind:class="{'button_p1':isActive}">（再次）</p>
-                </button>
+<!--                <button v-bind:class="{'button3':isActive}">-->
+<!--                    <p v-bind:class="{'button_p0':isActive}">运营部获取数据</p>-->
+<!--                    <p v-bind:class="{'button_p1':isActive}">（再次）</p>-->
+<!--                </button>-->
 
+            <div v-bind:class="{'department4':isActive,'button4':isActive}"></div>
 
-                <button v-bind:class="{'button4':isActive}">
-                    <p v-bind:class="{'button_p0':isActive}">产品部获取数据</p>
-                    <p v-bind:class="{'button_p1':isActive}">（再次）</p>
-                </button>
+<!--                <button v-bind:class="{'button4':isActive}">-->
+<!--                    <p v-bind:class="{'button_p0':isActive}">产品部获取数据</p>-->
+<!--                    <p v-bind:class="{'button_p1':isActive}">（再次）</p>-->
+<!--                </button>-->
 
+            <div v-bind:class="{'department5':isActive,'button5':isActive}"></div>
 
-                <button v-bind:class="{'button5':isActive}">
-                    <p v-bind:class="{'button_p0':isActive}">监控部获取数据</p>
-                    <p v-bind:class="{'button_p1':isActive}">（再次）</p>
-                </button>
+<!--                <button v-bind:class="{'button5':isActive}">-->
+<!--                    <p v-bind:class="{'button_p0':isActive}">监控部获取数据</p>-->
+<!--                    <p v-bind:class="{'button_p1':isActive}">（再次）</p>-->
+<!--                </button>-->
                 <label v-bind:class="{'gongyibu':isActive}">市场部已接收，<a href="#" v-bind:class="{'gongyibu_a':isActive}">显示数据</a></label>
                 <label v-bind:class="{'shebeibu':isActive}">运营部已接收，<a href="#" v-bind:class="{'shebeibu_a':isActive}">显示数据</a></label>
                 <label v-bind:class="{'shengchanbu':isActive}">产品部已接收，<a href="#" v-bind:class="{'shengchanbu_a':isActive}">显示数据</a></label>
                 <label v-bind:class="{'chanpinkaifabu':isActive}">监控部已接收，<a href="#" v-bind:class="{'chanpinkaifabu_a':isActive}">显示数据</a></label>
-                <button v-bind:class="{'button6':isActive}">性能对比</button>
+<!--                <button v-bind:class="{'button6':isActive}">性能对比</button>-->
+                <div v-bind:class="{'xndb':isActive,'button6':isActive}"></div>
+
             </div>
         </div>
         <div v-bind:class="{'div2':isActive}">
@@ -1305,6 +1396,7 @@
             $(".div1").show();
             $(".div2").hide();
             $(".label2").hide();
+            $(".completeicon").hide();
             $(".label3").hide();
             $(".jieduan2").hide();
             $(".gongyibu").hide();
@@ -1455,10 +1547,13 @@
                 $(".button1 .button_p1").css("color", "gray");
                 $(".label2").show();
                 setTimeout(function () {
-                    $(".label2").text("数据传输完成。");
+                    $(".label2").hide()
+                    $(".go").hide()
+
+                    $(".completeicon").show();
                     $(".label3").show();
                     $(".jieduan2").show();
-                }, 4000);//20000
+                }, 400);//20000
             });
             $(".button2").click(function (e) {
                 state2 = true;
