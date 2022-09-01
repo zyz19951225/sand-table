@@ -733,7 +733,7 @@
                 ctx2.lineTo(915 + (200 * 0.5), 286 + (150 * 0.5));
                 ctx2.lineTo(915 - (200 * 0.5), 286 + (150 * 0.5));
                 ctx2.lineTo(915, 286 - (150 * 0.5)); // 只用三个点的坐标就可以了，不用闭环 //如果要涉及到边框则需要闭环
-                ctx2.fillStyle = "red";
+                ctx2.fillStyle = "rgba(83,169,255,0.5)";
                 ctx2.fill(); //开始填充，空心/实心取决于这个
                 ctx2.closePath();
             });
@@ -754,7 +754,7 @@
                 var ctx3 = c3.getContext("2d");
                 ctx3.beginPath();
                 ctx3.ellipse(914, 306, (220 * 0.5), (220 * 0.5), 0, 0, 2 * Math.PI);
-                ctx3.fillStyle = "red";
+                ctx3.fillStyle = "rgba(83,169,255,0.5)";
                 ctx3.fill(); //开始填充，空心/实心取决于这个
                 ctx3.closePath();
 
@@ -775,7 +775,7 @@
                 var ctx4 = c4.getContext("2d");
                 ctx4.beginPath();
                 ctx4.beginPath();
-                ctx4.fillStyle = "red";
+                ctx4.fillStyle = "rgba(83,169,255,0.5)";
                 ctx4.fillRect(600 - (130 * 0.5), 286 - (220 * 0.5), 130, 220);
 
                 ctx4.closePath();
@@ -855,7 +855,7 @@
                     if (b1) {
 
                         ctx.beginPath();
-                        ctx.fillStyle = "red";
+                        ctx.fillStyle = "rgba(83,169,255,0.5)";
                         ctx.fillRect(mouseX - (kuan * 0.5), mouseY - (gao * 0.5), kuan, gao);
                         ctx.closePath();
                     } else if (b2) {
@@ -864,7 +864,7 @@
                         ctx.lineTo(mouseX + (kuan * 0.5), mouseY + (gao * 0.5));
                         ctx.lineTo(mouseX - (kuan * 0.5), mouseY + (gao * 0.5));
                         ctx.lineTo(mouseX, mouseY - (gao * 0.5)); // 只用三个点的坐标就可以了，不用闭环 //如果要涉及到边框则需要闭环
-                        ctx.fillStyle = "red";
+                        ctx.fillStyle = "rgba(83,169,255,0.5)";
                         ctx.fill(); //开始填充，空心/实心取决于这个
                         ctx.closePath();
 
@@ -872,7 +872,7 @@
 
                         ctx.beginPath();
                         ctx.ellipse(mouseX, mouseY, (kuan * 0.5), (gao * 0.5), 0, 0, 2 * Math.PI);
-                        ctx.fillStyle = "red";
+                        ctx.fillStyle = "rgba(83,169,255,0.5)";
                         ctx.fill();
                         ctx.closePath();
 
