@@ -52,68 +52,69 @@
         }
 
         .border {
-            background-color: #808080;
-            height: 66px;
-            width: 1300px;
+            background-color: #ffffff;
+            height: 2px;
+            width: 1920px;
             position: absolute;
-            opacity: 0.9;
-            margin-top: 8%;
-            margin-left: 16%;
+            /* opacity: 0.9; */
+            margin-top: 12%;
+            /* margin-left: 16%; */
             border-radius: 40px;
-        }
+            }
+                .border2 {
+                    /*background-color: white;*/
+                    height: 45px;
+                    width: 160px;
+                    position: absolute;
+                    opacity: 0.9;
+                        margin-top: 164px;
+                        margin-left: 819px;
+                    border-radius: 10px;
+                                            border: 1px solid white;
 
-        .border2 {
-            background-color: white;
-            height: 45px;
-            width: 160px;
-            position: absolute;
-            opacity: 0.9;
-            margin-top: 8.6%;
-            margin-left: 42%;
-            border-radius: 10px;
-        }
+                }
+                .border4 {
+                    /*background-color: white;*/
+                    height: 45px;
+                    width: 140px;
+                    position: absolute;
+                    opacity: 0.9;
+                       margin-top: 163px;
+                       margin-left: 1014px;
+                    border-radius: 10px;
+                                            border: 1px solid white;
 
-        .border4 {
-            background-color: white;
-            height: 45px;
-            width: 140px;
-            position: absolute;
-            opacity: 0.9;
-            margin-top: 8.6%;
-            margin-left: 52%;
-            border-radius: 10px;
-        }
+                }
+                .border3 {
+                    /*background-color: white;*/
+                    height: 45px;
+                    width: 170px;
+                    position: absolute;
+                    opacity: 0.9;
+                    margin-top: 8.6%;
+                    margin-left: 61%;
+                    border-radius: 10px;
+                                            border: 1px solid white;
 
-        .border3 {
-            background-color: white;
-            height: 45px;
-            width: 170px;
-            position: absolute;
-            opacity: 0.9;
-            margin-top: 8.6%;
-            margin-left: 61%;
-            border-radius: 10px;
-        }
-
-        .play {
-            background: url(image/播放.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-            width: 20px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 48%;
-        }
-
-        .play2 {
-            background: url(image/播放.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-            width: 20px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 57.5%;
-        }
+                }
+                .play {
+                    background: url(image/newimg/xxxxx.png) no-repeat center center;
+                    background-size: 100% 100%;
+                    height: 20px;
+                                width: 45px;
+                    position: absolute;
+                    margin-top: 9.3%;
+                    margin-left: 48%;
+                }
+                .play2 {
+                  background: url(image/newimg/xxxxx.png) no-repeat center center;
+                              background-size: 100% 100%;
+                              height: 20px;
+                                          width: 45px;
+                    position: absolute;
+                    margin-top: 9.3%;
+                    margin-left: 57.5%;
+                }
 
         .stop {
             background: url(image/暂停.png) no-repeat center center;
@@ -134,8 +135,7 @@
             margin-top: 9.3%;
             margin-left: 57.5%;
         }
-
-        .lable1 {
+.lable1 {
             color: white;
             font-size: 24px;
             position: absolute;
@@ -143,10 +143,9 @@
             margin-left: 32%;
             border-radius: 40px;
         }
-
-
         .lable2 {
-            color: black;
+            /*color: black;*/
+            color: white;
             font-size: 18px;
             position: absolute;
             margin-top: 9.1%;
@@ -154,9 +153,9 @@
             border-radius: 40px;
             font-weight: 600;
         }
-
         .lable4 {
-            color: black;
+             /*color: black;*/
+                        color: white;
             font-size: 18px;
             position: absolute;
             margin-top: 9.1%;
@@ -164,9 +163,9 @@
             border-radius: 40px;
             font-weight: 600;
         }
-
         .lable3 {
-            color: black;
+             /*color: black;*/
+                        color: white;
             font-size: 18px;
             position: absolute;
             margin-top: 9.1%;
@@ -175,13 +174,14 @@
             font-weight: 600;
         }
 
+
         .myCanvas {
-            position: absolute;
-            background-color: white;
-            margin-top: 19%;
-            margin-left: 10%;
-            background: url(image/地图.png) no-repeat center center;
-            background-size: 100% 100%;
+  position: absolute;
+      background-color: white;
+      margin-top: 271px;
+      margin-left: 581px;
+      background: url(image/newimg/地图.png) no-repeat center center;
+      background-size: 79% 78%;
         }
 
         .menu {
@@ -301,21 +301,39 @@
         }
 
         .warning {
-            margin-top: 17%;
-            margin-left: 70%;
-            height: 30px;
-            width: 120px;
-            position: absolute;
+             background: url(image/newimg/发出警告.png) no-repeat center center;
+             margin-top: 952px;
+             margin-left: 863px;
+             height: 51px;
+             width: 195px;
+             position: absolute;
         }
 
-        .return {
-            margin-top: 2%;
-            margin-left: 15%;
-            height: 90px;
-            width: 90px;
+ .return {
+            margin-top: 157px;
+            margin-left: 90px;
+            height: 38px;
+            width: 36px;
             position: absolute;
             font-size: 12px;
-            background: url(image/返回首页.png) no-repeat center center;
+            background: url(image/newimg/首页图标.png) no-repeat center center;
+            background-size: 100% 100%;
+            border: 0;
+            line-height: 15px;
+            padding-left: 38px;
+            padding-top: 10px;
+            font-weight: 600;
+            color: white;
+        }
+
+               .home {
+            margin-top: 157px;
+            margin-left: 144px;
+            height: 40px;
+            width: 61px;
+            position: absolute;
+            font-size: 12px;
+            background: url(image/newimg/首页.png) no-repeat center center;
             background-size: 100% 100%;
             border: 0;
             line-height: 15px;
@@ -340,6 +358,16 @@
             color: white;
         }
 
+.image1 {
+     background: url(image/newimg/矩形大.png) no-repeat center center;
+     background-size: 100% 100%;
+     position: absolute;
+     margin-top: 292px;
+     margin-left: 81px;
+     width: 1759px;
+     height: 583px;
+     opacity: 0.2;
+    }
 
         .bdy {
             overflow: hidden;
@@ -356,38 +384,41 @@
         }
 
         .option1 {
-            margin-top: 13.7%;
-            margin-left: 12%;
-            height: 40px;
-            width: 100px;
-            position: absolute;
+                margin-top: 339px;
+                margin-left: 169px;
+                height: 44px;
+                width: 120px;
+                position: absolute;
+                background-color: #2097FF;
+                border-radius: 26px;
         }
 
         .option2 {
-            margin-top: 13.7%;
-            margin-left: 19%;
-            height: 40px;
-            width: 100px;
-            position: absolute;
-            color: red;
-        }
+       margin-top: 339px;
+       margin-left: 307px;
+       height: 44px;
+       width: 120px;
+       position: absolute;
+       background-color: #2097FF;
+       border-radius: 26px;
+      }
 
         .radio1 {
-            color: white;
-            font-size: 24px;
-            position: absolute;
-            margin-top: 18%;
-            margin-left: 80%;
-            width: 20px;
-            height: 20px;
+                 color: white;
+                 font-size: 24px;
+                 position: absolute;
+                 margin-top: 432px;
+                 margin-left: 173px;
+                 width: 20px;
+                 height: 20px;
         }
 
         .coordinate1 {
             color: white;
             font-size: 24px;
             position: absolute;
-            margin-top: 15%;
-            margin-left: 82%;
+            margin-top: 427px;
+            margin-left: 205px;
             border-radius: 40px;
         }
 
@@ -401,12 +432,12 @@
         }
 
         .coordinate2 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 17%;
-            margin-left: 82%;
-            border-radius: 40px;
+              color: white;
+              font-size: 20px;
+              position: absolute;
+              margin-top: 464px;
+              margin-left: 200px;
+              border-radius: 40px;
         }
 
         .coordinate15 {
@@ -419,12 +450,12 @@
         }
 
         .coordinate3 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 19%;
-            margin-left: 82%;
-            border-radius: 40px;
+              color: white;
+                     font-size: 20px;
+                     position: absolute;
+                     margin-top: 484px;
+                     margin-left: 200px;
+                     border-radius: 40px;
         }
 
         .coordinate16 {
@@ -437,12 +468,12 @@
         }
 
         .coordinate4 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 21%;
-            margin-left: 82%;
-            border-radius: 40px;
+        color: white;
+                           font-size: 20px;
+                           position: absolute;
+                           margin-top: 504px;
+                           margin-left: 200px;
+                           border-radius: 40px;
         }
 
         .coordinate17 {
@@ -482,112 +513,114 @@
         }
 
         .radio2 {
-            color: white;
-            font-size: 24px;
-            position: absolute;
-            margin-top: 30%;
-            margin-left: 80%;
-            width: 20px;
-            height: 20px;
+               color: white;
+               font-size: 24px;
+               position: absolute;
+               margin-top: 560px;
+               margin-left: 174px;
+               width: 20px;
+               height: 20px;
         }
 
         .coordinate5 {
-            color: white;
-            font-size: 24px;
-            position: absolute;
-            margin-top: 27%;
-            margin-left: 82%;
-            border-radius: 40px;
+          color: white;
+               font-size: 24px;
+                                     position: absolute;
+                                     margin-top: 554px;
+                                     margin-left: 200px;
+                                     border-radius: 40px;
         }
 
         .coordinate6 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 29%;
-            margin-left: 82%;
-            border-radius: 40px;
+              color: white;
+              font-size: 20px;
+              position: absolute;
+              margin-top: 593px;
+              margin-left: 200px;
+              border-radius: 40px;
         }
 
         .coordinate7 {
             color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 31%;
-            margin-left: 82%;
-            border-radius: 40px;
+                font-size: 20px;
+                position: absolute;
+                margin-top: 620px;
+                margin-left: 200px;
+                border-radius: 40px;
         }
 
         .coordinate8 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 33%;
-            margin-left: 82%;
-            border-radius: 40px;
+      color: white;
+          font-size: 20px;
+          position: absolute;
+          margin-top: 644px;
+          margin-left: 200px;
+          border-radius: 40px;
         }
 
         .radio3 {
-            color: white;
-            font-size: 24px;
-            position: absolute;
-            margin-top: 42%;
-            margin-left: 80%;
-            width: 20px;
-            height: 20px;
+           color: white;
+               font-size: 24px;
+               position: absolute;
+               margin-top: 689px;
+               margin-left: 172px;
+               width: 20px;
+               height: 20px;
         }
 
         .coordinate9 {
-            color: white;
-            font-size: 24px;
-            position: absolute;
-            margin-top: 39%;
-            margin-left: 82%;
-            border-radius: 40px;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    margin-top: 682px;
+    margin-left: 200px;
+    border-radius: 40px;
         }
 
         .coordinate10 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 41%;
-            margin-left: 82%;
-            border-radius: 40px;
+         color: white;
+         font-size: 20px;
+         position: absolute;
+         margin-top: 717px;
+         margin-left: 200px;
+         border-radius: 40px;
         }
 
         .coordinate11 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 43%;
-            margin-left: 82%;
-            border-radius: 40px;
+         color: white;
+         font-size: 20px;
+         position: absolute;
+         margin-top: 741px;
+         margin-left: 200px;
+         border-radius: 40px;
         }
 
         .coordinate12 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 45%;
-            margin-left: 82%;
-            border-radius: 40px;
+              color: white;
+              font-size: 20px;
+              position: absolute;
+              margin-top: 767px;
+              margin-left: 200px;
+              border-radius: 40px;
         }
 
         .coordinate13 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 47%;
-            margin-left: 82%;
-            border-radius: 40px;
+              color: white;
+              font-size: 20px;
+              position: absolute;
+              margin-top: 790px;
+              margin-left: 200px;
+              border-radius: 40px;
         }
+
+
     </style>
 </head>
 <body class="bdy">
     <div id="app">
         <div v-bind:class="{ 'background': isActive}"></div>
         <div v-bind:class="{ 'occlusion': isActive}"></div>
-
+<div class="image1"></div>
         <div v-bind:class="{ 'title': isActive }"></div>
         <div v-bind:class="{ 'title': isActive }"></div>
 
@@ -603,10 +636,10 @@
         <label v-bind:class="{'lable3':isActive}">沙盘位置示意图</label>
         <button v-bind:class="{'full':isActive}"></button>
         <button v-bind:class="{'return':isActive}"></button>
-
+         <button v-bind:class="{'home':isActive}"></button>
 
         <canvas v-bind:class="{'myCanvas':isActive}" width="1295" height="622" id="myCanvas"></canvas>
-        <canvas v-bind:class="{ 'menu': isActive }"></canvas>
+<!--        <canvas v-bind:class="{ 'menu': isActive }"></canvas>-->
         <div v-bind:class="{ 'square': isActive }"></div>
         <div v-bind:class="{ 'circular': isActive }"></div>
         <div v-bind:class="{ 'triangle': isActive }"></div>
@@ -614,12 +647,13 @@
         <input type="number" value="1000" v-bind:class="{'height':isActive}" maxlength="3" />
         <label v-bind:class="{'width_label':isActive}">宽:</label>
         <label v-bind:class="{'height_label':isActive}">高:</label>
-        <button v-bind:class="{'warning':isActive}">
-            <div v-bind:class="{'d':isActive}">发出警告</div>
-        </button>
+<!--        <button v-bind:class="{'warning':isActive}">-->
+<!--            <div v-bind:class="{'d':isActive}">发出警告</div>-->
+<!--        </button>-->
+        <div v-bind:class="{ 'warning': isActive,'d':isActive }"></div>
 
 
-        <canvas v-bind:class="{ 'menu2': isActive }"></canvas>
+<!--        <canvas v-bind:class="{ 'menu2': isActive }"></canvas>-->
         <button v-bind:class="{'option1':isActive}">选择目标区域</button>
         <button v-bind:class="{'option2':isActive}">自定义绘制</button>
         <div v-bind:class="{'information1':isActive}">
@@ -851,7 +885,9 @@
                     $(".radio1").show();
                     $(".radio2").show();
                     $(".radio3").show();
-                    $(".warning").text("发出警告");
+                    // $(".warning").text("发出警告");、
+                                    $(".warning").css({"background": "url(image/newimg/发出警告.png) no-repeat center center"});
+
                     $(".warning").css("background-color", "");
                     $.ajax({
                         type: "post",
@@ -869,7 +905,8 @@
                     $(".radio1").hide();
                     $(".radio2").hide();
                     $(".radio3").hide();
-                    $(".warning").text("异常处理完毕");
+                    // $(".warning").text("异常处理完毕");
+                     $(".warning").css({"background": "url(image/newimg/异常处理完毕.png) no-repeat center center"});
                     $(".warning").css("background-color", "lightskyblue");
                     var c = document.getElementById("myCanvas");
 
