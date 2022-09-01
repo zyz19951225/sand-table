@@ -195,109 +195,112 @@
         }
 
         .square {
-            background: url(image/矩形.png) no-repeat center center;
-            background-size: 100% 100%;
-            width: 40px;
-            height: 40px;
-            position: absolute;
-            margin-top: 16.6%;
-            margin-left: 12%;
+            background: url(image/newimg/矩形区域.png) no-repeat center center;
+                background-size: 100% 100%;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                margin-top: 421px;
+                margin-left: 189px;
         }
 
         .circular {
-            background: url(image/三角形.png) no-repeat center center;
-            background-size: 100% 100%;
-            width: 40px;
-            height: 40px;
-            position: absolute;
-            margin-top: 16.8%;
-            margin-left: 16%;
+            background: url(image/newimg/三角形.png) no-repeat center center;
+               background-size: 100% 100%;
+               width: 40px;
+               height: 40px;
+               position: absolute;
+               margin-top: 421px;
+               margin-left: 260px;
         }
 
         .triangle {
-            background: url(image/圆.png) no-repeat center center;
-            background-size: 100% 100%;
-            width: 38px;
-            height: 38px;
-            position: absolute;
-            margin-top: 16.7%;
-            margin-left: 20%;
+            background: url(image/newimg/椭圆.png) no-repeat center center;
+                background-size: 100% 100%;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                margin-top: 421px;
+                margin-left: 320px;
         }
 
         .width {
-            color: black;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 17%;
+
+           margin-top: 17%;
             height: 27.2px;
-            width: 100px;
-            margin-left: 26%;
-            font-weight: 400;
-            text-align: center;
+            color: black;
+                font-size: 20px;
+                position: absolute;
+                margin-top: 492PX;
+                width: 100px;
+                margin-left: 217px;
+                font-weight: 400;
+                text-align: center;
         }
 
         .height {
             color: black;
             font-size: 20px;
             position: absolute;
-            margin-top: 17%;
+             margin-top: 492PX;
             height: 27.2px;
             width: 100px;
-            margin-left: 37%;
+           margin-left: 422px;
             font-weight: 400;
             text-align: center;
         }
 
         .mm_label1 {
-            color: black;
-            font-size: 19px;
-            font-family: 'Source Han Sans CN';
-            position: absolute;
-            margin-top: 17%;
-            margin-left: 32%;
-            border-radius: 40px;
-            font-weight: 600;
+          color: #ffffff;
+              font-size: 19px;
+              font-family: 'Source Han Sans CN';
+              position: absolute;
+              margin-top: 492PX;
+              margin-left: 330PX;
+              border-radius: 40px;
+              font-weight: 600;
         }
 
         .mm_label2 {
-            color: black;
-            font-size: 19px;
-            font-family: 'Source Han Sans CN';
-            position: absolute;
-            margin-top: 17%;
-            margin-left: 43%;
-            border-radius: 40px;
-            font-weight: 600;
+         color: #ffffff;
+             font-size: 19px;
+             font-family: 'Source Han Sans CN';
+             position: absolute;
+             margin-top: 492PX;
+             margin-left: 530px;
+             border-radius: 40px;
+             font-weight: 600;
         }
 
         .width_label {
-            color: black;
-            font-size: 19px;
-            font-family: 'Source Han Sans CN';
-            position: absolute;
-            margin-top: 17%;
-            margin-left: 24%;
-            border-radius: 40px;
-            font-weight: 600;
+              color: #ffffff;
+              font-size: 19px;
+              font-family: 'Source Han Sans CN';
+              position: absolute;
+              margin-top: 490px;
+              margin-left: 186px;
+              border-radius: 40px;
+              font-weight: 600;
         }
 
         .height_label {
-            color: black;
+            color: #ffffff;
             font-size: 19px;
             font-family: 'Source Han Sans CN';
             position: absolute;
-            margin-top: 17%;
-            margin-left: 35%;
+           margin-top: 490px;
+                         margin-left: 386px;
             border-radius: 40px;
             font-weight: 600;
         }
 
         .clearCanvas {
-            margin-top: 17%;
-            margin-left: 62%;
-            height: 30px;
-            width: 120px;
-            position: absolute;
+                      background: url(image/newimg/清空画布.png) no-repeat center center;
+                      margin-top: 429px;
+                      margin-left: 393px;
+                      height: 30px;
+                      width: 120px;
+                      position: absolute;
         }
 
         .warning {
@@ -423,12 +426,12 @@
         }
 
         .coordinate14 {
-            color: white;
-            font-size: 24px;
-            position: absolute;
-            margin-top: 22%;
-            margin-left: 82%;
-            border-radius: 40px;
+         color: white;
+             font-size: 24px;
+             position: absolute;
+             margin-top: 544px;
+             margin-left: 177px;
+             border-radius: 40px;
         }
 
         .coordinate2 {
@@ -441,12 +444,12 @@
         }
 
         .coordinate15 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 24%;
-            margin-left: 82%;
-            border-radius: 40px;
+           color: white;
+                     font-size: 20px;
+                     position: absolute;
+                     margin-top: 584px;
+                     margin-left: 177px;
+                     border-radius: 40px;
         }
 
         .coordinate3 {
@@ -459,12 +462,12 @@
         }
 
         .coordinate16 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 26%;
-            margin-left: 82%;
-            border-radius: 40px;
+             color: white;
+                         font-size: 20px;
+                         position: absolute;
+                         margin-top: 614px;
+                         margin-left: 177px;
+                         border-radius: 40px;
         }
 
         .coordinate4 {
@@ -477,39 +480,39 @@
         }
 
         .coordinate17 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 28%;
-            margin-left: 82%;
-            border-radius: 40px;
+             color: white;
+                                 font-size: 20px;
+                                 position: absolute;
+                                 margin-top: 644px;
+                                 margin-left: 177px;
+                                 border-radius: 40px;
         }
 
         .coordinate18 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 30%;
-            margin-left: 82%;
-            border-radius: 40px;
+               color: white;
+                                   font-size: 20px;
+                                   position: absolute;
+                                   margin-top: 674px;
+                                   margin-left: 177px;
+                                   border-radius: 40px;
         }
 
         .coordinate19 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 32%;
-            margin-left: 82%;
-            border-radius: 40px;
+               color: white;
+                                   font-size: 20px;
+                                   position: absolute;
+                                   margin-top: 704px;
+                                   margin-left: 177px;
+                                   border-radius: 40px;
         }
 
         .coordinate20 {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 34%;
-            margin-left: 82%;
-            border-radius: 40px;
+                color: white;
+                                    font-size: 20px;
+                                    position: absolute;
+                                    margin-top: 734px;
+                                    margin-left: 177px;
+                                    border-radius: 40px;
         }
 
         .radio2 {
@@ -683,8 +686,8 @@
 
         <label v-bind:class="{'mm_label1':isActive}">mm</label>
         <label v-bind:class="{'mm_label2':isActive}">mm</label>
-            <button v-bind:class="{'clearCanvas':isActive}">清空画布</button>
-
+<!--            <button v-bind:class="{'clearCanvas':isActive}">清空画布</button>-->
+ <div v-bind:class="{'clearCanvas':isActive}"></div>
             <label v-bind:class="{'coordinate14':isActive}">自定义寻址区域</label>
             <label v-bind:class="{'coordinate15':isActive}">中心经度：0</label>
             <label v-bind:class="{'coordinate16':isActive}">中心纬度：0</label>
@@ -936,24 +939,24 @@
                 b2 = false;
                 b3 = false;
                 if (b1) {
-                    var src = 'image/矩形2.png';
+                    var src = 'image/newimg/矩形蓝.png';
                     $(".square").css('background-image', 'url(' + src + ')');
                 } else {
-                    var src = 'image/矩形.png';
+                    var src = 'image/newimg/矩形区域.png';
                     $(".square").css('background-image', 'url(' + src + ')');
                 }
                 if (b2) {
-                    var src = 'image/三角形2.png';
+                    var src = 'image/newimg/三角形蓝.png';
                     $(".circular").css('background-image', 'url(' + src + ')');
                 } else {
-                    var src = 'image/三角形.png';
+                    var src = 'image/newimg/三角形.png';
                     $(".circular").css('background-image', 'url(' + src + ')');
                 }
                 if (b3) {
-                    var src = 'image/圆2.png';
+                    var src = 'image/newimg/椭圆蓝.png';
                     $(".triangle").css('background-image', 'url(' + src + ')');
                 } else {
-                    var src = 'image/圆.png';
+                    var src = 'image/newimg/椭圆.png';
                     $(".triangle").css('background-image', 'url(' + src + ')');
                 }
 
@@ -964,28 +967,27 @@
                 b1 = false;
                 b2 = true;
                 b3 = false;
-                if (b1) {
-                    var src = 'image/矩形2.png';
-                    $(".square").css('background-image', 'url(' + src + ')');
-                } else {
-                    var src = 'image/矩形.png';
-                    $(".square").css('background-image', 'url(' + src + ')');
-                }
-                if (b2) {
-                    var src = 'image/三角形2.png';
-                    $(".circular").css('background-image', 'url(' + src + ')');
-                } else {
-                    var src = 'image/三角形.png';
-                    $(".circular").css('background-image', 'url(' + src + ')');
-                }
-                if (b3) {
-                    var src = 'image/圆2.png';
-                    $(".triangle").css('background-image', 'url(' + src + ')');
-                } else {
-                    var src = 'image/圆.png';
-                    $(".triangle").css('background-image', 'url(' + src + ')');
-                }
-
+              if (b1) {
+                               var src = 'image/newimg/矩形蓝.png';
+                               $(".square").css('background-image', 'url(' + src + ')');
+                           } else {
+                               var src = 'image/newimg/矩形区域.png';
+                               $(".square").css('background-image', 'url(' + src + ')');
+                           }
+                           if (b2) {
+                               var src = 'image/newimg/三角形蓝.png';
+                               $(".circular").css('background-image', 'url(' + src + ')');
+                           } else {
+                               var src = 'image/newimg/三角形.png';
+                               $(".circular").css('background-image', 'url(' + src + ')');
+                           }
+                           if (b3) {
+                               var src = 'image/newimg/椭圆蓝.png';
+                               $(".triangle").css('background-image', 'url(' + src + ')');
+                           } else {
+                               var src = 'image/newimg/椭圆.png';
+                               $(".triangle").css('background-image', 'url(' + src + ')');
+                           }
 
             });
 
@@ -993,27 +995,27 @@
                 b1 = false;
                 b2 = false;
                 b3 = true;
-                if (b1) {
-                    var src = 'image/矩形2.png';
-                    $(".square").css('background-image', 'url(' + src + ')');
-                } else {
-                    var src = 'image/矩形.png';
-                    $(".square").css('background-image', 'url(' + src + ')');
-                }
-                if (b2) {
-                    var src = 'image/三角形2.png';
-                    $(".circular").css('background-image', 'url(' + src + ')');
-                } else {
-                    var src = 'image/三角形.png';
-                    $(".circular").css('background-image', 'url(' + src + ')');
-                }
-                if (b3) {
-                    var src = 'image/圆2.png';
-                    $(".triangle").css('background-image', 'url(' + src + ')');
-                } else {
-                    var src = 'image/圆.png';
-                    $(".triangle").css('background-image', 'url(' + src + ')');
-                }
+                 if (b1) {
+                                  var src = 'image/newimg/矩形蓝.png';
+                                  $(".square").css('background-image', 'url(' + src + ')');
+                              } else {
+                                  var src = 'image/newimg/矩形区域.png';
+                                  $(".square").css('background-image', 'url(' + src + ')');
+                              }
+                              if (b2) {
+                                  var src = 'image/newimg/三角形蓝.png';
+                                  $(".circular").css('background-image', 'url(' + src + ')');
+                              } else {
+                                  var src = 'image/newimg/三角形.png';
+                                  $(".circular").css('background-image', 'url(' + src + ')');
+                              }
+                              if (b3) {
+                                  var src = 'image/newimg/椭圆蓝.png';
+                                  $(".triangle").css('background-image', 'url(' + src + ')');
+                              } else {
+                                  var src = 'image/newimg/椭圆.png';
+                                  $(".triangle").css('background-image', 'url(' + src + ')');
+                              }
 
 
             });
