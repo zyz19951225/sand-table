@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="无人智能巡检场景.aspx.cs" Inherits="之江.无人智能巡检场景" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="之江.Main" %>
 
 
 <!DOCTYPE html>
@@ -40,6 +40,17 @@
             position: absolute;
         }
 
+                        .image1 {
+              background: url(image/newimg/矩形.png) no-repeat center center;
+                  background-size: 100% 100%;
+                  position: absolute;
+                  margin-top: 216px;
+                  margin-left: 375px;
+                  width: 1171px;
+                  height: 810px;
+                  opacity: 0.2;
+                        }
+
         .title {
                        background: url(image/newimg/无人智能巡检场景.png) no-repeat center center;
                        background-size: 100% 100%;
@@ -53,69 +64,71 @@
 
         }
 
-        .border {
-            background-color: #808080;
-            height: 66px;
-            width: 1300px;
-            position: absolute;
-            opacity: 0.9;
-            margin-top: 8%;
-            margin-left: 16%;
-            border-radius: 40px;
-        }
+      .border {
+          background-color: #ffffff;
+          height: 2px;
+          width: 1920px;
+          position: absolute;
+          /* opacity: 0.9; */
+          margin-top: 12%;
+          /* margin-left: 16%; */
+          border-radius: 40px;
+          }
+              .border2 {
+                  /*background-color: white;*/
+                  height: 45px;
+                  width: 160px;
+                  position: absolute;
+                  opacity: 0.9;
+                      margin-top: 164px;
+                      margin-left: 819px;
+                  border-radius: 10px;
+                                          border: 1px solid white;
 
-        .border2 {
-            background-color: white;
-            height: 45px;
-            width: 160px;
-            position: absolute;
-            opacity: 0.9;
-            margin-top: 8.6%;
-            margin-left: 42%;
-            border-radius: 10px;
-        }
+              }
+              .border4 {
+                  /*background-color: white;*/
+                  height: 45px;
+                  width: 140px;
+                  position: absolute;
+                  opacity: 0.9;
+                     margin-top: 163px;
+                     margin-left: 1014px;
+                  border-radius: 10px;
+                                          border: 1px solid white;
 
-        .border4 {
-            background-color: white;
-            height: 45px;
-            width: 140px;
-            position: absolute;
-            opacity: 0.9;
-            margin-top: 8.6%;
-            margin-left: 52%;
-            border-radius: 10px;
-        }
+              }
+              .border3 {
+                  /*background-color: white;*/
+                  height: 45px;
+                  width: 170px;
+                  position: absolute;
+                  opacity: 0.9;
+                  margin-top: 8.6%;
+                  margin-left: 61%;
+                  border-radius: 10px;
+                                          border: 1px solid white;
 
-        .border3 {
-            background-color: white;
-            height: 45px;
-            width: 170px;
-            position: absolute;
-            opacity: 0.9;
-            margin-top: 8.6%;
-            margin-left: 61%;
-            border-radius: 10px;
-        }
+              }
+              .play {
+                  background: url(image/newimg/xxxxx.png) no-repeat center center;
+                  background-size: 100% 100%;
+                  height: 20px;
+                              width: 45px;
+                  position: absolute;
+                  margin-top: 9.3%;
+                  margin-left: 48%;
+              }
+              .play2 {
+                background: url(image/newimg/xxxxx.png) no-repeat center center;
+                            background-size: 100% 100%;
+                            height: 20px;
+                                        width: 45px;
+                  position: absolute;
+                  margin-top: 9.3%;
+                  margin-left: 57.5%;
+              }
 
-        .play {
-            background: url(image/播放.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-            width: 20px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 48%;
-        }
-
-        .play2 {
-            background: url(image/播放.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-            width: 20px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 57.5%;
-        }
 
         .stop {
             background: url(image/暂停.png) no-repeat center center;
@@ -137,74 +150,73 @@
             margin-left: 57.5%;
         }
 
-        .lable1 {
-            color: white;
-            font-size: 24px;
-            position: absolute;
-            margin-top: 8.9%;
-            margin-left: 32%;
-            border-radius: 40px;
-        }
+       .lable1 {
+                   color: white;
+                   font-size: 24px;
+                   position: absolute;
+                   margin-top: 8.9%;
+                   margin-left: 32%;
+                   border-radius: 40px;
+               }
+               .lable2 {
+                   /*color: black;*/
+                   color: white;
+                   font-size: 18px;
+                   position: absolute;
+                   margin-top: 9.1%;
+                   margin-left: 43.5%;
+                   border-radius: 40px;
+                   font-weight: 600;
+               }
+               .lable4 {
+                    /*color: black;*/
+                               color: white;
+                   font-size: 18px;
+                   position: absolute;
+                   margin-top: 9.1%;
+                   margin-left: 53%;
+                   border-radius: 40px;
+                   font-weight: 600;
+               }
+               .lable3 {
+                    /*color: black;*/
+                               color: white;
+                   font-size: 18px;
+                   position: absolute;
+                   margin-top: 9.1%;
+                   margin-left: 62.2%;
+                   border-radius: 40px;
+                   font-weight: 600;
+               }
 
-
-        .lable2 {
-            color: black;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 9.1%;
-            margin-left: 43.5%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-
-        .lable4 {
-            color: black;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 9.1%;
-            margin-left: 53%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-
-        .lable3 {
-            color: black;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 9.1%;
-            margin-left: 62.2%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
 
         .inspection {
-            color: black;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 21%;
-            height: 50px;
-            width: 250px;
-            margin-left: 42.8%;
-            font-weight: 600;
-            font-family: 宋体;
-            text-align: center;
-            border-radius: 10px;
-            border: 0;
+             background: url(image/newimg/智能巡检.png) no-repeat center center;
+             position: absolute;
+             margin-top: 525px;
+             height: 98px;
+             width: 454px;
+             margin-left: 733px;
+             font-weight: 600;
+             font-family: 宋体;
+             text-align: center;
+             border-radius: 10px;
+             border: 0;
         }
 
         .switch {
-            color: black;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 28%;
-            height: 50px;
-            width: 250px;
-            margin-left: 42.8%;
-            font-weight: 600;
-            font-family: 宋体;
-            text-align: center;
-            border-radius: 10px;
-            border: 0;
+                color: black;
+                font-size: 18px;
+                position: absolute;
+                margin-top: 774px;
+                height: 50px;
+                width: 250px;
+                margin-left: 842px;
+                font-weight: 600;
+                font-family: 宋体;
+                text-align: center;
+                border-radius: 10px;
+                border: 0;
         }
 
         .load {
@@ -235,8 +247,12 @@
         }
 
         .load1 {
-            margin-top: 16.4%;
-            margin-left: 46%;
+       margin-top: 392px;
+           margin-left: 849px;
+        }
+           .load12 {
+              margin-top: 447px;
+                       margin-left: 849px;
         }
 
         .load2 {
@@ -245,14 +261,24 @@
         }
 
         .loadLabel1 {
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 16.3%;
-            margin-left: 43%;
-            font-weight: 600;
-            width: 250px;
-            text-align: center;
+      color: white;
+      font-size: 30px;
+      position: absolute;
+      margin-top: 378px;
+      margin-left: 831px;
+      font-weight: 600;
+      width: 250px;
+      text-align: center;
+        }
+            .loadLabel12 {
+       color: white;
+       font-size: 30px;
+       position: absolute;
+       margin-top: 434px;
+       margin-left: 875px;
+       font-weight: 600;
+       width: 250px;
+       text-align: center;
         }
 
         .loadLabel2 {
@@ -267,43 +293,60 @@
         }
 
         .loadLabel3 {
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 25.3%;
-            margin-left: 41.5%;
-            font-weight: 600;
-            width: 300px;
-            text-align: center;
+             color: white;
+             font-size: 30px;
+             position: absolute;
+             margin-top: 650px;
+             margin-left: 732PX;
+             /* font-weight: 600; */
+             /* width: 300px; */
+             text-align: center;
         }
 
         .loadLabel4 {
-            color: #ada5a5;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 31.3%;
-            margin-left: 41.5%;
-            font-weight: 600;
-            width: 300px;
-            text-align: center;
+                color: #ada5a5;
+                font-size: 18px;
+                position: absolute;
+                margin-top: 837px;
+                margin-left: 813px;
+                font-weight: 600;
+                width: 300px;
+                text-align: center;
         }
 
         .return {
-            margin-top: 2%;
-            margin-left: 15%;
-            height: 90px;
-            width: 90px;
-            position: absolute;
-            font-size: 12px;
-            background: url(image/返回首页.png) no-repeat center center;
-            background-size: 100% 100%;
-            border: 0;
-            line-height: 15px;
-            padding-left: 38px;
-            padding-top: 10px;
-            font-weight: 600;
-            color: white;
-        }
+                   margin-top: 157px;
+                   margin-left: 90px;
+                   height: 38px;
+                   width: 36px;
+                   position: absolute;
+                   font-size: 12px;
+                   background: url(image/newimg/首页图标.png) no-repeat center center;
+                   background-size: 100% 100%;
+                   border: 0;
+                   line-height: 15px;
+                   padding-left: 38px;
+                   padding-top: 10px;
+                   font-weight: 600;
+                   color: white;
+               }
+
+                      .home {
+                   margin-top: 157px;
+                   margin-left: 144px;
+                   height: 40px;
+                   width: 61px;
+                   position: absolute;
+                   font-size: 12px;
+                   background: url(image/newimg/首页.png) no-repeat center center;
+                   background-size: 100% 100%;
+                   border: 0;
+                   line-height: 15px;
+                   padding-left: 38px;
+                   padding-top: 10px;
+                   font-weight: 600;
+                   color: white;
+               }
 
 
         .full{
@@ -319,6 +362,8 @@
             border: 0;
             color: white;
         }
+
+
 
         .bdy {
             overflow: hidden;
@@ -339,20 +384,24 @@
         <div v-bind:class="{ 'border4': isActive }"></div>
         <div v-bind:class="{ 'play': isActive }"></div>
         <div v-bind:class="{ 'play2': isActive }"></div>
+        <div v-bind:class="{ 'image1': isActive }"></div>
         <label v-bind:class="{'lable1':isActive}">二号投影大屏:</label>
         <label v-bind:class="{'lable2':isActive}">场景介绍</label>
         <label v-bind:class="{'lable4':isActive}">沙盘演示</label>
         <label v-bind:class="{'lable3':isActive}">沙盘位置示意图</label>
-        <button v-bind:class="{'inspection':isActive}">智能巡检</button>
+<!--        <button v-bind:class="{'inspection':isActive}">智能巡检</button>-->
+        <div v-bind:class="{'inspection':isActive}"></div>
         <div v-bind:class="{ 'load': isActive,'load1':isActive }"></div>
         <div v-bind:class="{ 'load': isActive,'load2':isActive }"></div>
-        <label v-bind:class="{'loadLabel1':isActive}">巡检中</label>
+        <div v-bind:class="{ 'load': isActive,'load12':isActive }"></div>
+        <label v-bind:class="{'loadLabel1':isActive}">巡检中......</label>
+        <label v-bind:class="{'loadLabel12':isActive}">正在数据采集......</label>
         <label v-bind:class="{'loadLabel2':isActive}"></label>
         <label v-bind:class="{'loadLabel3':isActive}">当前巡检数据上传模式为身份模态</label>
         <button v-bind:class="{'switch':isActive}">切换至ip模式</button>
         <label v-bind:class="{'loadLabel4':isActive}">请在数据采集状态下切换</label>
-        <button v-bind:class="{'return':isActive}">返回<br />
-            首页</button>
+        <button v-bind:class="{'return':isActive}"></button>
+        <button v-bind:class="{'home':isActive}"></button>
         <button v-bind:class="{'full':isActive}"></button>
 
     </div>
@@ -422,6 +471,8 @@
             $(".load1").hide();
             $(".load2").hide();
             $(".loadLabel1").hide();
+            $(".load12").hide();
+            $(".loadLabel12").hide();
             $(".loadLabel2").hide();
             $(".loadLabel3").hide();
             $(".loadLabel4").hide();
@@ -431,6 +482,8 @@
                 start = true;
                 $(".load1").show();
                 $(".loadLabel1").show();
+                $(".load12").show();
+                $(".loadLabel12").show();
                 $(".loadLabel3").show();
                 $(".loadLabel4").show();
                 $(".switch").show();
