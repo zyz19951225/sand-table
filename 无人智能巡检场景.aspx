@@ -481,6 +481,7 @@
             $(".inspection").click(function (e) {
                 start = true;
                 $(".load1").show();
+                  $(".inspection").css({"background":"url(image/newimg/停止巡检.png) no-repeat center center"});
                 $(".loadLabel1").show();
                 $(".load12").show();
                 $(".loadLabel12").show();
