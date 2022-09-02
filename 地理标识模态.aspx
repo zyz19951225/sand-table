@@ -238,25 +238,25 @@
                 text-align: center;
         }
 		.bianchang {
-            color: black;
-            font-size: 20px;
-            position: absolute;
-            margin-top: 17%;
-            height: 27.2px;
-            width: 100px;
-            margin-left: 27%;
-            font-weight: 400;
-            text-align: center;
+             color: black;
+             font-size: 20px;
+             position: absolute;
+             margin-top: 489px;
+             height: 27.2px;
+             width: 100px;
+             margin-left: 242px;
+             font-weight: 400;
+             text-align: center;
         }
 
         .banjing {
             color: black;
             font-size: 20px;
             position: absolute;
-            margin-top: 17%;
-            height: 27.2px;
+ margin-top: 489px;
+  height: 27.2px;
             width: 100px;
-            margin-left: 27%;
+          margin-left: 242px;
             font-weight: 400;
             text-align: center;
         }
@@ -669,10 +669,10 @@
         <div v-bind:class="{ 'square': isActive }"></div>
         <div v-bind:class="{ 'circular': isActive }"></div>
         <div v-bind:class="{ 'triangle': isActive }"></div>
-        <input type="number" value="1000" v-bind:class="{'width':isActive}" maxlength="3" />
-        <input type="number" value="1000" v-bind:class="{'height':isActive}" maxlength="3" />
-        <label v-bind:class="{'width_label':isActive}">宽:</label>
-        <label v-bind:class="{'height_label':isActive}">高:</label>
+<!--         <input type="number" value="1000" v-bind:class="{'width':isActive}" maxlength="3" /> -->
+<!--         <input type="number" value="1000" v-bind:class="{'height':isActive}" maxlength="3" /> -->
+<!--         <label v-bind:class="{'width_label':isActive}">宽:</label> -->
+<!--         <label v-bind:class="{'height_label':isActive}">高:</label> -->
 <!--        <button v-bind:class="{'warning':isActive}">-->
 <!--            <div v-bind:class="{'d':isActive}">发出警告</div>-->
 <!--        </button>-->
@@ -723,7 +723,7 @@
             <label v-bind:class="{'mm_label1':isActive}">mm</label>
             <label v-bind:class="{'mm_label2':isActive}">mm</label>
             <label v-bind:class="{'mm_label3':isActive}">mm</label>
-            <button v-bind:class="{'clearCanvas':isActive}">清空画布</button>
+            <button v-bind:class="{'clearCanvas':isActive}"></button>
             <label v-bind:class="{'coordinate14':isActive}">自定义寻址区域</label>
             <label v-bind:class="{'coordinate15':isActive}">中心经度：0</label>
             <label v-bind:class="{'coordinate16':isActive}">中心纬度：0</label>
@@ -903,8 +903,8 @@
                     $(".coordinate16").text("中心纬度：" + (30.2609691 + (Math.abs(mouseY - 622) * 0.00000005948)));
                     $(".coordinate17").text("水平边长：" + (kuan * 6.2) + "  mm");
                     $(".coordinate18").text("垂直边长：" + (gao * 6.2) + "  mm");
-                    $(".coordinate19").text("水平半径：" + ((kuan * 6.2) / 2) + "  mm");
-                    $(".coordinate20").text("垂直半径：" + ((gao * 6.2) / 2) + "  mm");
+//                     $(".coordinate19").text("水平半径：" + ((kuan * 6.2) / 2) + "  mm");
+//                     $(".coordinate20").text("垂直半径：" + ((gao * 6.2) / 2) + "  mm");
 
 
                     //alert(mouseX + "-" + mouseY);
