@@ -380,6 +380,82 @@
                         }
                     })
                 }
+
+                 });
+                            $(".border2").click(function (e) {
+                                $(".play").removeClass("play").addClass("stop");
+                                if (bofang) {
+                                    bofang = false;
+                                    $.ajax({
+                                        type: "post",
+                                        contentType: "application/json; charset=utf-8",//传值的方式
+                                        dataType: "json",
+                                        url: "Main.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                        data: "{window1:6,window2:0,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                                        success: function (result) {
+                                            //alert(result.d);//result.d为后台返回的参数
+
+                                        }
+                                    })
+                                } else {
+                                    $(".stop").removeClass("stop").addClass("play");
+                                    bofang = true;
+                                    $.ajax({
+                                        type: "post",
+                                        contentType: "application/json; charset=utf-8",//传值的方式
+                                        dataType: "json",
+                                        url: "Main.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                        data: "{window1:6,window2:0,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                                        success: function (result) {
+                                            //alert(result.d);//result.d为后台返回的参数
+                                        }
+                                    })
+                                }
+
+                            });
+                            $(".play").click(function (e) {
+                                $(".play").removeClass("play").addClass("stop");
+                                if (bofang) {
+                                    bofang = false;
+                                    $.ajax({
+                                        type: "post",
+                                        contentType: "application/json; charset=utf-8",//传值的方式
+                                        dataType: "json",
+                                        url: "Main.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                        data: "{window1:6,window2:0,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                                        success: function (result) {
+                                            //alert(result.d);//result.d为后台返回的参数
+
+                                        }
+                                    })
+                                } else {
+                                    $(".stop").removeClass("stop").addClass("play");
+                                    bofang = true;
+                                    $.ajax({
+                                        type: "post",
+                                        contentType: "application/json; charset=utf-8",//传值的方式
+                                        dataType: "json",
+                                        url: "Main.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                        data: "{window1:6,window2:0,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                                        success: function (result) {
+                                            //alert(result.d);//result.d为后台返回的参数
+                                        }
+                                    })
+                                }
+
+                            });
+                            $(".border3").click(function (e) {
+                                bofang = true;
+                                $.ajax({
+                                    type: "post",
+                                    contentType: "application/json; charset=utf-8",//传值的方式
+                                    dataType: "json",
+                                    url: "Main.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                    data: "{window1:0,window2:0,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
+                                    success: function (result) {
+                                        //alert(result.d);//result.d为后台返回的参数
+                                    }
+                                })
             });
             $.ajax({
                 type: "post",
