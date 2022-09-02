@@ -484,87 +484,221 @@ background: url(image/newimg/启动纪念币制作.png) no-repeat center center;
                 }
 
             });
-            $(".lable4").click(function (e) {
-                if (bofang2) {
-                    $(".play2").removeClass("play2").addClass("stop2");
-                    bofang2 = false;
-                    $.ajax({
-                        type: "post",
-                        contentType: "application/json; charset=utf-8",//传值的方式
-                        dataType: "json",
-                        url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                        data: "{window1:13,window2:2,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                        success: function (result) {
-                            //alert(result.d);//result.d为后台返回的参数
-                        }
-                    })
-                } else {
-                    $(".stop2").removeClass("stop2").addClass("play2");
-                    bofang2 = true;
-                    $.ajax({
-                        type: "post",
-                        contentType: "application/json; charset=utf-8",//传值的方式
-                        dataType: "json",
-                        url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                        data: "{window1:13,window2:2,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                        success: function (result) {
-                            //alert(result.d);//result.d为后台返回的参数
-                        }
-                    })
-                }
+          $(".border2").click(function (e) {
+                          if (bofang) {
+                              $(".play").removeClass("play").addClass("stop");
+                              bofang = false;
+                              $.ajax({
+                                  type: "post",
+                                  contentType: "application/json; charset=utf-8",//传值的方式
+                                  dataType: "json",
+                                  url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                  data: "{window1:8,window2:2,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                                  success: function (result) {
+                                      //alert(result.d);//result.d为后台返回的参数
+                                  }
+                              })
+                          } else {
+                              $(".stop").removeClass("stop").addClass("play");
+                              bofang = true;
+                              $.ajax({
+                                  type: "post",
+                                  contentType: "application/json; charset=utf-8",//传值的方式
+                                  dataType: "json",
+                                  url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                  data: "{window1:8,window2:2,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                                  success: function (result) {
+                                      //alert(result.d);//result.d为后台返回的参数
+                                  }
+                              })
+                          }
 
-            });
-            $.ajax({
-                type: "post",
-                contentType: "application/json; charset=utf-8",//传值的方式
-                dataType: "json",
-                url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                data: "{window1:2,window2:2,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
-                success: function (result) {
-                    //alert(result.d);//result.d为后台返回的参数
-                }
-            })
-            $(".lable3").click(function (e) {
-                bofang = true;
-                $.ajax({
-                    type: "post",
-                    contentType: "application/json; charset=utf-8",//传值的方式
-                    dataType: "json",
-                    url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                    data: "{window1:2,window2:2,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
-                    success: function (result) {
-                        //alert(result.d);//result.d为后台返回的参数
-                    }
-                })
-            });
-            $(".full").click(function (e) {
+                      });
+                      $(".play").click(function (e) {
+                          if (bofang) {
+                              $(".play").removeClass("play").addClass("stop");
+                              bofang = false;
+                              $.ajax({
+                                  type: "post",
+                                  contentType: "application/json; charset=utf-8",//传值的方式
+                                  dataType: "json",
+                                  url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                  data: "{window1:8,window2:2,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                                  success: function (result) {
+                                      //alert(result.d);//result.d为后台返回的参数
+                                  }
+                              })
+                          } else {
+                              $(".stop").removeClass("stop").addClass("play");
+                              bofang = true;
+                              $.ajax({
+                                  type: "post",
+                                  contentType: "application/json; charset=utf-8",//传值的方式
+                                  dataType: "json",
+                                  url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                  data: "{window1:8,window2:2,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                                  success: function (result) {
+                                      //alert(result.d);//result.d为后台返回的参数
+                                  }
+                              })
+                          }
 
-                let element = document.documentElement;
-                if (this.fullscreen) {
-                    if (document.exitFullscreen) {
-                        document.exitFullscreen();
-                    } else if (document.webkitCancelFullScreen) {
-                        document.webkitCancelFullScreen();
-                    } else if (document.mozCancelFullScreen) {
-                        document.mozCancelFullScreen();
-                    } else if (document.msExitFullscreen) {
-                        document.msExitFullscreen();
-                    }
-                } else {
-                    if (element.requestFullscreen) {
-                        element.requestFullscreen();
-                    } else if (element.webkitRequestFullScreen) {
-                        element.webkitRequestFullScreen();
-                    } else if (element.mozRequestFullScreen) {
-                        element.mozRequestFullScreen();
-                    } else if (element.msRequestFullscreen) {
-                        // IE11
-                        element.msRequestFullscreen();
-                    }
-                }
-                this.fullscreen = !this.fullscreen;
-            });
-        });
-    </script>
-</body>
-</html>
+                      });
+                      $(".lable4").click(function (e) {
+                          if (bofang2) {
+                              $(".play2").removeClass("play2").addClass("stop2");
+                              bofang2 = false;
+                              $.ajax({
+                                  type: "post",
+                                  contentType: "application/json; charset=utf-8",//传值的方式
+                                  dataType: "json",
+                                  url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                  data: "{window1:13,window2:2,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                                  success: function (result) {
+                                      //alert(result.d);//result.d为后台返回的参数
+                                  }
+                              })
+                          } else {
+                              $(".stop2").removeClass("stop2").addClass("play2");
+                              bofang2 = true;
+                              $.ajax({
+                                  type: "post",
+                                  contentType: "application/json; charset=utf-8",//传值的方式
+                                  dataType: "json",
+                                  url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                  data: "{window1:13,window2:2,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                                  success: function (result) {
+                                      //alert(result.d);//result.d为后台返回的参数
+                                  }
+                              })
+                          }
+                      });
+
+
+                      $(".play2").click(function (e) {
+                          if (bofang2) {
+                              $(".play2").removeClass("play2").addClass("stop2");
+                              bofang2 = false;
+                              $.ajax({
+                                  type: "post",
+                                  contentType: "application/json; charset=utf-8",//传值的方式
+                                  dataType: "json",
+                                  url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                  data: "{window1:13,window2:2,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                                  success: function (result) {
+                                      //alert(result.d);//result.d为后台返回的参数
+                                  }
+                              })
+                          } else {
+                              $(".stop2").removeClass("stop2").addClass("play2");
+                              bofang2 = true;
+                              $.ajax({
+                                  type: "post",
+                                  contentType: "application/json; charset=utf-8",//传值的方式
+                                  dataType: "json",
+                                  url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                  data: "{window1:13,window2:2,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                                  success: function (result) {
+                                      //alert(result.d);//result.d为后台返回的参数
+                                  }
+                              })
+                          }
+
+                      });
+                      $(".border4").click(function (e) {
+                          if (bofang2) {
+                              $(".play2").removeClass("play2").addClass("stop2");
+                              bofang2 = false;
+                              $.ajax({
+                                  type: "post",
+                                  contentType: "application/json; charset=utf-8",//传值的方式
+                                  dataType: "json",
+                                  url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                  data: "{window1:13,window2:2,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                                  success: function (result) {
+                                      //alert(result.d);//result.d为后台返回的参数
+                                  }
+                              })
+                          } else {
+                              $(".stop2").removeClass("stop2").addClass("play2");
+                              bofang2 = true;
+                              $.ajax({
+                                  type: "post",
+                                  contentType: "application/json; charset=utf-8",//传值的方式
+                                  dataType: "json",
+                                  url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                                  data: "{window1:13,window2:2,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                                  success: function (result) {
+                                      //alert(result.d);//result.d为后台返回的参数
+                                  }
+                              })
+                          }
+
+                      });
+                      $.ajax({
+                          type: "post",
+                          contentType: "application/json; charset=utf-8",//传值的方式
+                          dataType: "json",
+                          url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                          data: "{window1:2,window2:2,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
+                          success: function (result) {
+                              //alert(result.d);//result.d为后台返回的参数
+                          }
+                      })
+                      $(".lable3").click(function (e) {
+                          bofang = true;
+                          $.ajax({
+                              type: "post",
+                              contentType: "application/json; charset=utf-8",//传值的方式
+                              dataType: "json",
+                              url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                              data: "{window1:2,window2:2,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
+                              success: function (result) {
+                                  //alert(result.d);//result.d为后台返回的参数
+                              }
+                          })
+                      });
+                      $(".border3").click(function (e) {
+                          bofang = true;
+                          $.ajax({
+                              type: "post",
+                              contentType: "application/json; charset=utf-8",//传值的方式
+                              dataType: "json",
+                              url: "生产制造场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                              data: "{window1:2,window2:2,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
+                              success: function (result) {
+                                  //alert(result.d);//result.d为后台返回的参数
+                              }
+                          })
+                      });
+                      $(".full").click(function (e) {
+
+                          let element = document.documentElement;
+                          if (this.fullscreen) {
+                              if (document.exitFullscreen) {
+                                  document.exitFullscreen();
+                              } else if (document.webkitCancelFullScreen) {
+                                  document.webkitCancelFullScreen();
+                              } else if (document.mozCancelFullScreen) {
+                                  document.mozCancelFullScreen();
+                              } else if (document.msExitFullscreen) {
+                                  document.msExitFullscreen();
+                              }
+                          } else {
+                              if (element.requestFullscreen) {
+                                  element.requestFullscreen();
+                              } else if (element.webkitRequestFullScreen) {
+                                  element.webkitRequestFullScreen();
+                              } else if (element.mozRequestFullScreen) {
+                                  element.mozRequestFullScreen();
+                              } else if (element.msRequestFullscreen) {
+                                  // IE11
+                                  element.msRequestFullscreen();
+                              }
+                          }
+                          this.fullscreen = !this.fullscreen;
+                      });
+                  });
+              </script>
+          </body>
+          </html>
