@@ -237,6 +237,29 @@
                 font-weight: 400;
                 text-align: center;
         }
+		.bianchang {
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            margin-top: 17%;
+            height: 27.2px;
+            width: 100px;
+            margin-left: 27%;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .banjing {
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            margin-top: 17%;
+            height: 27.2px;
+            width: 100px;
+            margin-left: 27%;
+            font-weight: 400;
+            text-align: center;
+        }
 
         .height {
             color: black;
@@ -683,18 +706,31 @@
 
         </div>
         <div v-bind:class="{'information2':isActive}">
-
-        <label v-bind:class="{'mm_label1':isActive}">mm</label>
-        <label v-bind:class="{'mm_label2':isActive}">mm</label>
-<!--            <button v-bind:class="{'clearCanvas':isActive}">清空画布</button>-->
- <div v-bind:class="{'clearCanvas':isActive}"></div>
+            <div v-bind:class="{ 'd1': isActive }">
+                <input type="number" value="1000" v-bind:class="{'width':isActive}" maxlength="3" />
+                <input type="number" value="1000" v-bind:class="{'height':isActive}" maxlength="3" />
+                <label v-bind:class="{'width_label':isActive}">宽:</label>
+                <label v-bind:class="{'height_label':isActive}">高:</label>
+            </div>
+            <div v-bind:class="{ 'd2': isActive }">
+                <input type="number" value="1000" v-bind:class="{'bianchang':isActive}" maxlength="3" />
+                <label v-bind:class="{'width_label':isActive}">边长:</label>
+            </div>
+            <div v-bind:class="{ 'd3': isActive }">
+                <input type="number" value="500" v-bind:class="{'banjing':isActive}" maxlength="3" />
+                <label v-bind:class="{'width_label':isActive}">半径:</label>
+            </div>
+            <label v-bind:class="{'mm_label1':isActive}">mm</label>
+            <label v-bind:class="{'mm_label2':isActive}">mm</label>
+            <label v-bind:class="{'mm_label3':isActive}">mm</label>
+            <button v-bind:class="{'clearCanvas':isActive}">清空画布</button>
             <label v-bind:class="{'coordinate14':isActive}">自定义寻址区域</label>
             <label v-bind:class="{'coordinate15':isActive}">中心经度：0</label>
             <label v-bind:class="{'coordinate16':isActive}">中心纬度：0</label>
             <label v-bind:class="{'coordinate17':isActive}">水平边长：0</label>
-            <label v-bind:class="{'coordinate18':isActive}">垂直边长：0</label>
-            <label v-bind:class="{'coordinate19':isActive}">水平半径：0</label>
-            <label v-bind:class="{'coordinate20':isActive}">垂直半径：0</label>
+            <label v-bind:class="{'coordinate18':isActive}"></label>
+            <label v-bind:class="{'coordinate19':isActive}"></label>
+            <label v-bind:class="{'coordinate20':isActive}"></label>
         </div>
     </div>
     <script>
@@ -705,6 +741,14 @@
             }
         });
         $(document).ready(function () {
+            $(".d2").hide();
+            $(".d3").hide();
+            $(".mm_label3").hide();
+            vare = jQuery.Event("keydown", { keyCode: 64 });
+
+            // trigger an artificial keydown event with keyCode 64
+
+            jQuery("body").trigger(vare);
 
 
             $(".coordinate2").text("中心经度：" + (119.8929680 + (915 * 0.00000006501)));
@@ -715,8 +759,8 @@
             $(".coordinate8").text("半径：" + (110 * 6.2) + "  mm");
             $(".coordinate10").text("中心经度：" + (119.8929680 + (600 * 0.00000006501)));
             $(".coordinate11").text("中心纬度：" + (30.2609691 + (286 * 0.00000005948)));
-            $(".coordinate12").text("水平半径：" + (65 * 6.2) + "  mm");
-            $(".coordinate13").text("垂直半径：" + (110 * 6.2) + "  mm");
+            //$(".coordinate12").text("水平半径：" + (65 * 6.2) + "  mm");
+            //$(".coordinate13").text("垂直半径：" + (110 * 6.2) + "  mm");
             $(".radio1").click(function (e) {
                 if (biaoshi) {
                     return;
@@ -798,6 +842,12 @@
                 zidingyi = false;
                 $(".square,.circular,.triangle,.width,.height,.width_label,.height_label").hide();
                 $(".information1").show(); $(".information2").hide();
+                $(".radio1").attr("checked", false);
+                $(".radio2").attr("checked", false);
+                $(".radio3").attr("checked", false);
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.clearRect(0, 0, $("#myCanvas").width(), $("#myCanvas").height());
             });
             $(".option2").click(function (e) {
                 $(".option2").css("color", "red");
@@ -805,6 +855,12 @@
                 zidingyi = true;
                 $(".square,.circular,.triangle,.width,.height,.width_label,.height_label").show();
                 $(".information1").hide(); $(".information2").show();
+                $(".radio1").attr("checked", false);
+                $(".radio2").attr("checked", false);
+                $(".radio3").attr("checked", false);
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.clearRect(0, 0, $("#myCanvas").width(), $("#myCanvas").height());
             });
             $(".clearCanvas").click(function (e) {
                 $(".radio1").attr("checked", false);
@@ -853,12 +909,17 @@
 
                     //alert(mouseX + "-" + mouseY);
                     if (b1) {
-
+                        var kuan = $(".width").val() / 6.2;
+                        var gao = $(".height").val() / 6.2;
                         ctx.beginPath();
                         ctx.fillStyle = "rgba(83,169,255,0.5)";
                         ctx.fillRect(mouseX - (kuan * 0.5), mouseY - (gao * 0.5), kuan, gao);
                         ctx.closePath();
+                        $(".coordinate17").text("宽：" + (kuan * 6.2) + "  mm");
+                        $(".coordinate18").text("长：" + (gao * 6.2) + "  mm");
                     } else if (b2) {
+                        var kuan = $(".bianchang").val() / 6.2;
+                        var gao = ($(".bianchang").val() * Math.sqrt(2 / 3)) / 6.2;
                         ctx.beginPath();
                         ctx.moveTo(mouseX, mouseY - (gao * 0.5));
                         ctx.lineTo(mouseX + (kuan * 0.5), mouseY + (gao * 0.5));
@@ -867,15 +928,18 @@
                         ctx.fillStyle = "rgba(83,169,255,0.5)";
                         ctx.fill(); //开始填充，空心/实心取决于这个
                         ctx.closePath();
-
+                        $(".coordinate17").text("边长：" + (kuan * 6.2) + "  mm");
+                        $(".coordinate18").text("");
                     } else if (b3) {
-
+                        var kuan = ($(".banjing").val()*2) / 6.2;
+                        var gao = ($(".banjing").val() * 2) / 6.2;
                         ctx.beginPath();
                         ctx.ellipse(mouseX, mouseY, (kuan * 0.5), (gao * 0.5), 0, 0, 2 * Math.PI);
                         ctx.fillStyle = "rgba(83,169,255,0.5)";
                         ctx.fill();
                         ctx.closePath();
-
+                        $(".coordinate17").text("半径：" + ((kuan * 6.2) / 2) + "  mm");
+                        $(".coordinate18").text("");
                     }
                 }
 
@@ -935,6 +999,12 @@
 
             });
             $(".square").click(function (e) {
+                $(".d1").show();
+                $(".mm_label1").show();
+                $(".mm_label2").show();
+                $(".d2").hide();
+                $(".d3").hide();
+                $(".mm_label3").hide();
                 b1 = true;
                 b2 = false;
                 b3 = false;
@@ -964,6 +1034,12 @@
             });
 
             $(".circular").click(function (e) {
+                $(".d2").show();
+                $(".mm_label1").hide();
+                $(".mm_label2").hide();
+                $(".d1").hide();
+                $(".d3").hide();
+                $(".mm_label3").show();
                 b1 = false;
                 b2 = true;
                 b3 = false;
@@ -992,6 +1068,12 @@
             });
 
             $(".triangle").click(function (e) {
+                $(".d3").show();
+                $(".mm_label1").hide();
+                $(".mm_label2").hide();
+                $(".d1").hide();
+                $(".d2").hide();
+                $(".mm_label3").show();
                 b1 = false;
                 b2 = false;
                 b3 = true;
@@ -1066,7 +1148,127 @@
                 }
 
             });
+            $(".border2").click(function (e) {
+                if (bofang) {
+                    $(".play").removeClass("play").addClass("stop");
+                    bofang = false;
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{window1:11,window2:5,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                } else {
+                    $(".stop").removeClass("stop").addClass("play");
+                    bofang = true;
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{window1:11,window2:5,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                }
+
+            });
+            $(".play").click(function (e) {
+                if (bofang) {
+                    $(".play").removeClass("play").addClass("stop");
+                    bofang = false;
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{window1:11,window2:5,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                } else {
+                    $(".stop").removeClass("stop").addClass("play");
+                    bofang = true;
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{window1:11,window2:5,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                }
+
+            });
             $(".lable4").click(function (e) {
+                if (bofang2) {
+                    $(".play2").removeClass("play2").addClass("stop2");
+                    bofang2 = false;
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{window1:16,window2:5,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                } else {
+                    $(".stop2").removeClass("stop2").addClass("play2");
+                    bofang2 = true;
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{window1:16,window2:5,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                }
+
+            });
+            $(".border4").click(function (e) {
+                if (bofang2) {
+                    $(".play2").removeClass("play2").addClass("stop2");
+                    bofang2 = false;
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{window1:16,window2:5,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                } else {
+                    $(".stop2").removeClass("stop2").addClass("play2");
+                    bofang2 = true;
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{window1:16,window2:5,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                }
+
+            });
+            $(".play2").click(function (e) {
                 if (bofang2) {
                     $(".play2").removeClass("play2").addClass("stop2");
                     bofang2 = false;
@@ -1107,6 +1309,19 @@
                 }
             })
             $(".lable3").click(function (e) {
+                bofang = true;
+                $.ajax({
+                    type: "post",
+                    contentType: "application/json; charset=utf-8",//传值的方式
+                    dataType: "json",
+                    url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                    data: "{window1:5,window2:5,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
+                    success: function (result) {
+                        //alert(result.d);//result.d为后台返回的参数
+                    }
+                })
+            });
+            $(".border3").click(function (e) {
                 bofang = true;
                 $.ajax({
                     type: "post",
