@@ -278,7 +278,7 @@
     <!--<canvas id="mycavas" class="bj" width="1920" height="1080" style="border: solid 0px #000000"></canvas>
     <script type="text/javascript" color="255,0,0" pointcolor="255,0,0" opacity="1" zindex="-2" count="500" src="/dist/canvas-nest.js"></script>-->
     <div id="app">
-     <video id="v1" autoplay muted loop v-bind:class="{ 'video': isActive }">
+     <video id="v1" autoplay muted loop v-bind:class="{ 'video': isActive }" poster='./image/newimg/第一帧.jpg'>
                 <source  src="./image/newimg/spsp.mp4">
             </video>
         <div v-bind:class="{ 'background': isActive }"></div>
