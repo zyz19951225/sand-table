@@ -1113,7 +1113,9 @@
                         //alert(result.d);//result.d为后台返回的参数
                     }
                 })
-                $(location).attr("href", "Main.aspx")
+//                 $(location).attr("href", "Main.aspx")
+                  $(".bdy").innerHTML=''
+                                $(".bdy").load("Main.aspx")
             });
 
             var bofang = true;

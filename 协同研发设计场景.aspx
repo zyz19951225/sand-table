@@ -520,7 +520,9 @@ opacity: 0.2;
 
                           $(".return").click(function (e) {
 
-                              $(location).attr("href", "Main.aspx")
+//                               $(location).attr("href", "Main.aspx")
+                 $(".bdy").innerHTML=''
+                $(".bdy").load("Main.aspx")
                           });
                           $(".return2").click(function (e) {
                               $.ajax({

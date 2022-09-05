@@ -440,7 +440,9 @@ background: url(image/newimg/启动纪念币制作.png) no-repeat center center;
                         //alert(result.d);//result.d为后台返回的参数
                     }
                 })
-                $(location).attr("href", "Main.aspx")
+                //                 $(location).attr("href", "Main.aspx")
+                                  $(".bdy").innerHTML=''
+                                                $(".bdy").load("Main.aspx")
             });
             $.ajax({
                 type: "post",

@@ -324,6 +324,7 @@
         <div v-bind:class="{ 'arrow': isActive,'arrow3':isActive }"></div>
         <div v-bind:class="{ 'arrow': isActive,'arrow4':isActive }"></div>
         <button v-bind:class="{'full':isActive}"></button>
+        <div class="loaddiv" style="width:500px;height:520px"></div>
     </div>
 
 
@@ -337,19 +338,33 @@
         $(document).ready(function () {
             this.fullscreen = !this.fullscreen;
             $(".option1,.option_words1").click(function (e) {
-                $(location).attr("href", "协同研发设计场景.aspx")
+              //  $(location).attr("href", "协同研发设计场景.aspx")
+                $(".bdy").innerHTML=''
+                $(".bdy").load("协同研发设计场景.aspx")
             });
             $(".option2,.option_words2").click(function (e) {
-                $(location).attr("href", "生产制造场景.aspx")
+//                 $(location).attr("href", "生产制造场景.aspx")
+
+                 $(".bdy").innerHTML=''
+                                $(".bdy").load("生产制造场景.aspx")
             });
             $(".option3,.option_words3").click(function (e) {
-                $(location).attr("href", "机器视觉质检场景.aspx")
+//                 $(location).attr("href", "机器视觉质检场景.aspx")
+
+                 $(".bdy").innerHTML=''
+                                $(".bdy").load("机器视觉质检场景.aspx")
             });
             $(".option4,.option_words4").click(function (e) {
-                $(location).attr("href", "无人智能巡检场景.aspx")
+//                 $(location).attr("href", "无人智能巡检场景.aspx")
+
+                 $(".bdy").innerHTML=''
+                                $(".bdy").load("无人智能巡检场景.aspx")
             });
             $(".option5,.option_words5").click(function (e) {
-                $(location).attr("href", "地理标识模态.aspx")
+//                 $(location).attr("href", "地理标识模态.aspx")
+
+                 $(".bdy").innerHTML=''
+                                $(".bdy").load("地理标识模态.aspx")
             });
             var bofang = true;
             $(".lable2").click(function (e) {
