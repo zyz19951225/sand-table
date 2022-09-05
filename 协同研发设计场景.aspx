@@ -518,7 +518,7 @@ opacity: 0.2;
                               })
                           });
 
-                          $(".return").click(function (e) {
+                          $(".return,.home").click(function (e) {
 
 //                               $(location).attr("href", "Main.aspx")
                  $(".bdy").innerHTML=''

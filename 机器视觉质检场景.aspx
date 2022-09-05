@@ -1636,7 +1636,7 @@
                     }
                 })
             });
-            $(".return").click(function (e) {
+            $(".return,.home").click(function (e) {
                 if (btype) {
                     $(".div1").show();
                     $(".div2").hide();

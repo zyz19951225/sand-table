@@ -425,7 +425,8 @@
                     //alert(result.d);//result.d为后台返回的参数
                 }
             })
-            $(".return").click(function (e) {
+                                     $(".return,.home").click(function (e) {
+
                 $.ajax({
                     type: "post",
                     contentType: "application/json; charset=utf-8",//传值的方式
@@ -517,7 +518,7 @@
                                }
                            });
 
-                           $(".return").click(function (e) {
+                           $(".return,.home").click(function (e) {
                                $.ajax({
                                    type: "post",
                                    contentType: "application/json; charset=utf-8",//传值的方式

@@ -429,7 +429,7 @@ background: url(image/newimg/启动纪念币制作.png) no-repeat center center;
                     })
                 }
             });
-            $(".return").click(function (e) {
+            $(".return,.home").click(function (e) {
                 $.ajax({
                     type: "post",
                     contentType: "application/json; charset=utf-8",//传值的方式
