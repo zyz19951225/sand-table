@@ -324,7 +324,6 @@
         <div v-bind:class="{ 'arrow': isActive,'arrow3':isActive }"></div>
         <div v-bind:class="{ 'arrow': isActive,'arrow4':isActive }"></div>
         <button v-bind:class="{'full':isActive}"></button>
-        <div class="loaddiv" style="width:500px;height:520px"></div>
     </div>
 
 
