@@ -912,6 +912,7 @@
 
             });
 
+
             $(".home").click(function (e) {
                 $.ajax({
                     type: "post",

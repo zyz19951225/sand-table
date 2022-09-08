@@ -267,7 +267,7 @@
                               })
                           });
 
-                          $(".return, .home").click(function (e) {
+                          $(".home").click(function (e) {
 
 //                               $(location).attr("href", "Main.aspx")
                             $(".bdy").innerHTML=''

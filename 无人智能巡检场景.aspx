@@ -231,6 +231,7 @@
                 }
             })
             $(".home").click(function (e) {
+
                 $.ajax({
                     type: "post",
                     contentType: "application/json; charset=utf-8",//传值的方式
@@ -321,8 +322,6 @@
                     })
                 }
             });
-
-            
 
             var bofang = true;
             var bofang2 = true;

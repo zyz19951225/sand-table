@@ -218,6 +218,7 @@
                     })
                 }
             });
+
             $(".home").click(function (e) {
                 clearInterval(ineterval)
                 $.ajax({
