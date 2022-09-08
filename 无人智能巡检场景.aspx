@@ -7,7 +7,6 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <script type="text/javascript" src="/jquery-1.8.0.min.js"></script>
     <style>
 
         .background {
@@ -20,15 +19,7 @@
             position: absolute;
         }
 
-        .occlusion {
-            background-color: black;
-            opacity: 0.4;
-            height: 1080px;
-            width: 1920px;
-            position: absolute;
-        }
-
-                        .image1 {
+        .image1 {
               background: url(image/newimg/矩形.png) no-repeat center center;
                   background-size: 100% 100%;
                   position: absolute;
@@ -179,7 +170,6 @@
     </style>
 </head>
 <body class="bdy">
-    <div id="app">
         <div class="background"></div>
         <div class="occlusion"></div>
 
@@ -216,7 +206,7 @@
         <button class="home">首页</button>
         <button class="full"></button>
 
-    </div>
+    
     <script>
         $(document).ready(function () {
             var start = false;

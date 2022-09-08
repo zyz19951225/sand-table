@@ -6,7 +6,6 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <script type="text/javascript" src="/jquery-1.8.0.min.js"></script>
     <style>
         .background {
             background: url(image/newimg/背景.jpg);
@@ -17,15 +16,6 @@
             background-position: center;
             position: absolute;
         }
-
-        .occlusion {
-            background-color: black;
-            opacity: 0.4;
-            height: 1080px;
-            width: 1920px;
-            position: absolute;
-        }
-
         .title {
             background-image: url(image/newimg/生产制造场景.png);
         }
@@ -115,11 +105,11 @@
             text-align: center;
         }
         .but2 {
-            left: 1074px;
+            left: 920px;
         }
 
         .but1 {
-            left: 920px;
+            left: 1074px;
         }
 
         .go {
@@ -146,6 +136,7 @@
     </style>
 </head>
 <body class="bdy">
+    <script src="/vue.min.js"></script>
     <div id="app">
         <div class="background"></div>
         <div class="occlusion"></div>
@@ -172,8 +163,10 @@
         <label class="label1">纪念币文字:</label>
         <label class="label2">纪念币数量:</label>
         <input type="text" value="之江实验室" class="input" maxlength="8" />
-        <input type="number" v-model="counter" class="input2" max="5" oninput="if(value>5)value=5;if(value<0)value=0;" />
-        <button class="but1" v-on:click="counter++;if(counter>99)counter=99">+</button>
+        <input type="number" v-model="counter" class="input2" max="5" 
+            oninput="console.log(1111);if(counter>5){counter=5};if(counter<0)counter=0;" 
+            />
+        <button class="but1" v-on:click="counter++;if(counter>5)counter=5">+</button>
         <button class="but2" v-on:click="counter--;if(counter<0)counter=0">-</button>
         <button class="go"></button>
 
@@ -181,8 +174,13 @@
         <button class="full"></button>
     </div>
     <script>
-
-
+        
+        new Vue({
+            el: '#app',
+            data: {
+                counter: 0,
+            }
+        })
         $(document).ready(function () {
             var ineterval = setInterval(function () {
                 $.ajax({

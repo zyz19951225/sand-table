@@ -5,7 +5,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <script type="text/javascript" src="/jquery-1.8.0.min.js"></script>
+
     <style>
         .background {
             background: url(image/newimg/背景.jpg);
@@ -26,13 +26,6 @@
             bottom: 26px;
             right: 26px;
             border-radius: 12px;
-        }
-        .occlusion {
-            background-color: black;
-            opacity: 0.4;
-            height: 1080px;
-            width: 1920px;
-            position: absolute;
         }
         .title {
             background-image: url(image/newimg/协同研发设计场景.png);
@@ -134,7 +127,6 @@
     </style>
 </head>
 <body class="bdy">
-    <div id="app">
 
         <div class="background"></div>
         <div class="occlusion"></div>
@@ -187,7 +179,7 @@
         <button class="full"></button>
 
 
-    </div>
+    
     <script>
         $(document).ready(function () {
             $(".image").hide(); $(".return2").hide();

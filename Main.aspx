@@ -5,8 +5,6 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8;width=device-width, initial-scale=1.0, user-scalable=no" />
     <title></title>
-    <script type="text/javascript" src="/jquery-1.8.0.min.js"></script>
-
     <style>
         * {
             margin: 0;
@@ -29,7 +27,7 @@
         }
         .occlusion {
             background-color: black;
-            opacity: 0.5;
+            opacity: 0.25;
             height: 1080px;
             width: 1920px;
             position: absolute;
@@ -225,13 +223,14 @@
             color: white;
         }
         .box {
-            background: rgba(255,255,255, .15);
+            background: rgba(255,255,255, .12);
             box-shadow: 0px 0px 20px 1px rgb(33, 151, 255, .3);
             border-radius: 20px;
             border: 2px solid rgb(83, 214, 255, .5);
             backdrop-filter: blur(8px);
         }
     </style>
+    <script type="text/javascript" src="/jquery-1.8.0.min.js"></script>
 </head>
     <body class="bdy">
         <!--<canvas id="mycavas" class="bj" width="1920" height="1080" style="border: solid 0px #000000"></canvas>

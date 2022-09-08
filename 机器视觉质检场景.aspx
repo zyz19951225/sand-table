@@ -6,23 +6,10 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <script type="text/javascript" src="/jquery-1.8.0.min.js"></script>
-    <script src="/vue.min.js"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
 
         .background {
-            background: url(image/newimg/背景.png);
+            background: url(image/newimg/背景.jpg);
             background-size: cover;
             height: 1080px;
             width: 1920px;
@@ -31,192 +18,56 @@
             position: absolute;
         }
 
-        .occlusion {
-            background-color: black;
-            opacity: 0.6;
-            height: 1080px;
-            width: 1920px;
-            position: absolute;
-        }
-
         .title {
-                        background: url(image/newimg/机器视觉质检场景.png) no-repeat center center;
-                        background-size: 100% 100%;
-                        height: 77px;
-                        width: 721px;
-                        position: absolute;
-                        top: 2%;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
+            background-image: url(image/newimg/机器视觉质检场景.png);
         }
-            .label1 {
-                      color: white;
-                      font-size: 24px;
-                      position: absolute;
-                      margin-top: 15.2%;
-                      margin-left: 40.5%;
-                      border-radius: 40px;
-                      font-weight: 600;
-                }
-
-.border {
-    background-color: #ffffff;
-    height: 2px;
-    width: 1920px;
-    position: absolute;
-    /* opacity: 0.9; */
-    margin-top: 12%;
-    /* margin-left: 16%; */
-    border-radius: 40px;
-    }
-        .border2 {
-            /*background-color: white;*/
-            height: 45px;
-            width: 160px;
+        .label1 {
+            color: white;
+            font-size: 28px;
             position: absolute;
-            opacity: 0.9;
-                margin-top: 164px;
-                margin-left: 819px;
-            border-radius: 10px;
-                                    border: 1px solid white;
-
-        }
-        .border4 {
-            /*background-color: white;*/
-            height: 45px;
-            width: 140px;
-            position: absolute;
-            opacity: 0.9;
-               margin-top: 163px;
-               margin-left: 1014px;
-            border-radius: 10px;
-                                    border: 1px solid white;
-
-        }
-        .border3 {
-            /*background-color: white;*/
-            height: 45px;
-            width: 170px;
-            position: absolute;
-            opacity: 0.9;
-            margin-top: 8.6%;
-            margin-left: 61%;
-            border-radius: 10px;
-                                    border: 1px solid white;
-
-        }
-        .play {
-            background: url(image/newimg/xxxxx.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-                        width: 45px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 48%;
-        }
-        .play2 {
-          background: url(image/newimg/xxxxx.png) no-repeat center center;
-                      background-size: 100% 100%;
-                      height: 20px;
-                                  width: 45px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 57.5%;
+            margin-top: 360px;
+            margin-left: 42%;
+            line-height: 48px;
         }
 
-        .stop {
-            background: url(image/暂停.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-            width: 20px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 48%;
+        .control-bar {
+            border-bottom: 1px solid rgba(255,255,255,.5);
+            padding-bottom: 24px;
+            
         }
-
-        .stop2 {
-            background: url(image/暂停.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-            width: 20px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 57.5%;
+        .lable4 {
+            margin-right: 36px;
         }
-
-    .lable1 {
-               color: white;
-               font-size: 24px;
-               position: absolute;
-               margin-top: 8.9%;
-               margin-left: 32%;
-               border-radius: 40px;
-           }
-           .lable2 {
-               /*color: black;*/
-               color: white;
-               font-size: 18px;
-               position: absolute;
-               margin-top: 9.1%;
-               margin-left: 43.5%;
-               border-radius: 40px;
-               font-weight: 600;
-           }
-           .lable4 {
-                /*color: black;*/
-                           color: white;
-               font-size: 18px;
-               position: absolute;
-               margin-top: 9.1%;
-               margin-left: 53%;
-               border-radius: 40px;
-               font-weight: 600;
-           }
-           .lable3 {
-                /*color: black;*/
-                           color: white;
-               font-size: 18px;
-               position: absolute;
-               margin-top: 9.1%;
-               margin-left: 62.2%;
-               border-radius: 40px;
-               font-weight: 600;
-           }
-
        .input {
-                    color: black;
-                    font-size: 20px;
-                    position: absolute;
-                    margin-top: 15.2%;
-                    height: 27.2px;
-                    width: 200px;
-                    margin-left: 48.5%;
-                    font-weight: 400;
-              }
+            color: black;
+            font-size: 28px;
+            position: absolute;
+            margin-top: 360px;
+            height: 50px;
+            width: 200px;
+            margin-left: 48.5%;
+            padding: 0 12px;
+            border: none;
+            background: rgba(255,255,255,.4);
+            border-radius: 4px;
+        }
 
         .button1 {
-            position: absolute;
-            margin-top: 21%;
-            height: 50px;
-            width: 250px;
-            margin-left: 43.8%;
-            text-align: center;
-            border-radius: 10px;
-            border: 0;
-            padding-top: -1px;
+            
         }
 
         .button7 {
             position: absolute;
-            margin-top: 46%;
-            height: 50px;
+            margin-top: 858px;
+            margin-left: 885px;
+            height: 58px;
             width: 250px;
-            margin-left: 43.8%;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 30px;
             border: 0;
-            padding-top: -1px;
+            background: #2097FF;
+            color: #fff;
+            font-size: 28px;
         }
 
         .button2 {
@@ -278,25 +129,14 @@
             margin-top: -15px;
         }
 
-        .button_p7 {
-            color: black;
-            font-size: 18px;
-            position: absolute;
-            width: 250px;
-            font-weight: 600;
-            font-family: 宋体;
-            text-align: center;
-            margin-top: -9px;
-        }
 
         .xndb{
         background: url(image/newimg/性能对比.png) no-repeat center center;
-        background-size: 100% 100%;
         height: 111px;
         width: 342px;
         position: absolute;
-        margin-top: 728px;
-        margin-left: 785px;
+        margin-top: 900px;
+        margin-left: 800px;
         }
 
         .button6 {
@@ -323,19 +163,18 @@
             position: absolute;
             width: 250px;
             font-weight: 600;
-            font-family: 宋体;
             text-align: center;
             margin-top: 5px;
         }
 
         .label2 {
             color: white;
-            font-size: 18px;
+            font-size: 28px;
             position: absolute;
             margin-top: 23.9%;
             margin-left: 47.2%;
             border-radius: 40px;
-            font-weight: 600;
+            opacity: .8;
         }
         .completeicon{
                  background: url(image/newimg/接受数据图标.png) no-repeat center center;
@@ -344,54 +183,53 @@
                 width: 112px;
             position: absolute;
                margin-top: 428px;
-               margin-left: 780px;
+               margin-left: 700px;
         }
 
         .department2{
              background: url(image/newimg/工艺部门.png) no-repeat center center;
-                                 background-size: 100% 100%;
-                                     height: 75px;
-                                     width: 317px;
+                                 background-size: contain;
+                                     height: 91px;
+                                     width: 335px;
                                  position: absolute;
                                margin-top: 565px;
                                margin-left: 233px;
         }
          .department3{
              background: url(image/newimg/工艺部门.png) no-repeat center center;
-                                 background-size: 100% 100%;
-                                     height: 75px;
-                                     width: 317px;
+                                 background-size: contain;
+                                height: 91px;
+                                width: 335px;
                                  position: absolute;
                                margin-top: 565px;
                                margin-left: 633px;
         }
          .department4{
              background: url(image/newimg/工艺部门.png) no-repeat center center;
-                                 background-size: 100% 100%;
-                                     height: 75px;
-                                     width: 317px;
+                                 background-size: contain;
+                                height: 91px;
+                                width: 335px;
                                  position: absolute;
                                margin-top: 565px;
                                margin-left: 1033px;
         }
            .department5{
              background: url(image/newimg/工艺部门.png) no-repeat center center;
-                                 background-size: 100% 100%;
-                                     height: 75px;
-                                     width: 317px;
+                                 background-size: contain;
+                                height: 91px;
+                                width: 335px;
                                  position: absolute;
                                margin-top: 565px;
                                margin-left: 1425px;
         }
 
         .label3 {
-    color: white;
-        font-size: 23px;
+        color: white;
+        font-size: 32px;
         position: absolute;
-        margin-top: 468px;
-        margin-left: 892px;
+        margin-top: 458px;
+        margin-left: 832px;
         border-radius: 40px;
-        font-weight: 600;
         }
 
         .label3_a {
@@ -400,12 +238,10 @@
 
         .gongyibu {
             color: white;
-            font-size: 18px;
+            font-size: 28px;
             position: absolute;
-            margin-top: 34%;
-            margin-left: 15%;
-            border-radius: 40px;
-            font-weight: 600;
+            margin-top: 660px;
+            margin-left: 240px;
         }
 
         .gongyibu_a {
@@ -414,12 +250,10 @@
 
         .shebeibu {
             color: white;
-            font-size: 18px;
+            font-size: 28px;
             position: absolute;
-            margin-top: 34%;
-            margin-left: 35%;
-            border-radius: 40px;
-            font-weight: 600;
+            margin-top: 660px;
+            margin-left: 640px;
         }
 
         .shebeibu_a {
@@ -428,12 +262,11 @@
 
         .shengchanbu {
             color: white;
-            font-size: 18px;
+            font-size: 28px;
             position: absolute;
-            margin-top: 34%;
-            margin-left: 55%;
+            margin-top: 660px;
+            margin-left: 1040px;
             border-radius: 40px;
-            font-weight: 600;
         }
 
         .shengchanbu_a {
@@ -442,12 +275,11 @@
 
         .chanpinkaifabu {
             color: white;
-            font-size: 18px;
+            font-size: 28px;
             position: absolute;
-            margin-top: 34%;
-            margin-left: 74%;
+            margin-top: 660px;
+            margin-left: 1432px;
             border-radius: 40px;
-            font-weight: 600;
         }
 
         .chanpinkaifabu_a {
@@ -471,7 +303,6 @@
             margin-top: 19.5%;
             margin-left: 30.5%;
             border-radius: 40px;
-            font-weight: 600;
         }
 
         .label6 {
@@ -481,7 +312,6 @@
             margin-top: 19.5%;
             margin-left: 48%;
             border-radius: 40px;
-            font-weight: 600;
         }
 
         .label7 {
@@ -491,7 +321,6 @@
             margin-top: 19.5%;
             margin-left: 69%;
             border-radius: 40px;
-            font-weight: 600;
         }
 
         .division {
@@ -1142,52 +971,18 @@
             border-radius: 2px;
         }
 
-         .return {
-                margin-top: 157px;
-                margin-left: 90px;
-                height: 38px;
-                width: 36px;
-                position: absolute;
-                font-size: 12px;
-                background: url(image/newimg/首页图标.png) no-repeat center center;
-                background-size: 100% 100%;
-                border: 0;
-                line-height: 15px;
-                padding-left: 38px;
-                padding-top: 10px;
-                font-weight: 600;
-                color: white;
-            }
-
-                      .home {
-                   margin-top: 157px;
-                   margin-left: 144px;
-                   height: 40px;
-                   width: 61px;
-                   position: absolute;
-                   font-size: 12px;
-                   background: url(image/newimg/首页.png) no-repeat center center;
-                   background-size: 100% 100%;
-                   border: 0;
-                   line-height: 15px;
-                   padding-left: 38px;
-                   padding-top: 10px;
-                   font-weight: 600;
-                   color: white;
-               }
-               .go {
-                     background: url(image/newimg/首次获取数据.png) no-repeat center center;
-                     background-size: 100% 100%;
-                     position: absolute;
-                     margin-top: 353px;
-                     margin-left: 733px;
-                     height: 98px;
-                     width: 454px;
-                     color: white;
-                     font-size: 18px;
-                     border: 0;
-                     font-weight: 600;
-               }
+        .go {
+            background: url(image/newimg/首次获取数据.png) no-repeat center center;
+            background-size: contain;
+            position: absolute;
+            top: 568px;
+            left: 732px;
+            height: 116px;
+            width: 472px;
+            color: white;
+            font-size: 18px;
+            border: 0;
+        }
 
         .return2 {
             margin-top: 13%;
@@ -1206,24 +1001,6 @@
             color: white;
         }
 
-        .full{
-            margin-top: 1.5%;
-            margin-left: 97%;
-            height: 30px;
-            width: 35px;
-            opacity:0.9;
-            position: absolute;
-            font-size: 12px;
-            background: url(image/全屏.png) no-repeat center center;
-            background-size: 100% 100%;
-            border: 0;
-            color: white;
-        }
-
-        .bdy {
-            overflow: hidden;
-        }
-
         .image {
             margin-top: 13%;
             margin-left: 15%;
@@ -1238,162 +1015,160 @@
 </head>
 <body class="bdy">
     <div id="app">
-        <div v-bind:class="{ 'background': isActive}"></div>
-        <div v-bind:class="{ 'occlusion': isActive}"></div>
+        <div class="background"></div>
+        <div class="occlusion"></div>
 
-        <div v-bind:class="{ 'title': isActive }"></div>
-        <div v-bind:class="{ 'title': isActive }"></div>
-
-        <div v-bind:class="{ 'border': isActive }"></div>
-        <div v-bind:class="{ 'border2': isActive }"></div>
-        <div v-bind:class="{ 'border3': isActive }"></div>
-        <div v-bind:class="{ 'border4': isActive }"></div>
-        <div v-bind:class="{ 'play': isActive }"></div>
-        <div v-bind:class="{ 'play2': isActive }"></div>
-           <button v-bind:class="{'home':isActive}"></button>
-        <label v-bind:class="{'lable1':isActive}">二号投影大屏:</label>
-        <label v-bind:class="{'lable2':isActive}">场景介绍</label>
-        <label v-bind:class="{'lable4':isActive}">沙盘演示</label>
-        <label v-bind:class="{'lable3':isActive}">沙盘位置示意图</label>
-        <div v-bind:class="{'div1':isActive}">
-     <label v-bind:class="{'label1':isActive}">纪念币文字:</label>
-        <input type="text" value="之江实验室" v-bind:class="{'input':isActive}" maxlength="8" />
-<!--            <button v-bind:class="{'button1':isActive}">-->
-<!--                <p v-bind:class="{'button_p0':isActive}">质检部获取数据</p>-->
-<!--                <p v-bind:class="{'button_p1':isActive}">（首次）</p>-->
+        <div class="title"></div>
+        <div class="control-bar">
+            <label class="lable1">二号投影大屏：</label>
+            <div class="control-bar-button lable2">
+                背景介绍
+                <div class="play"></div>
+            </div>
+            <div class="control-bar-button lable4">
+                沙盘演示
+                <div class="play2"></div>
+            </div>
+            <div class="control-bar-button lable3">沙盘位置示意图</div>
+        </div>
+        <button class="home">首页</button>
+        <div class="div1">
+     <label class="label1">文件名:</label>
+        <input type="text" value="纪念币1" class="input" maxlength="8" />
+<!--            <button class="button1">-->
+<!--                <p class="button_p0">质检部获取数据</p>-->
+<!--                <p class="button_p1">（首次）</p>-->
 <!--            </button>-->
- <button v-bind:class="{'go':isActive,'button1':isActive}"></button>
-             <div v-bind:class="{'completeicon':isActive}"></div>
-            <label v-bind:class="{'label2':isActive}">数据传输中……</label>
-            <label v-bind:class="{'label3':isActive}">质检部已接收，<a href="#" v-bind:class="{'label3_a':isActive}">显示数据</a></label>
-            <div v-bind:class="{'jieduan2':isActive}">
-            <div v-bind:class="{'department2':isActive,'button2':isActive}"></div>
-<!--                <button v-bind:class="{'button2':isActive}">-->
-<!--                    <p v-bind:class="{'button_p0':isActive}">市场部获取数据</p>-->
-<!--                    <p v-bind:class="{'button_p1':isActive}">（再次）</p>-->
+ <button class="go button1"></button>
+             <div class="completeicon"></div>
+            <label class="label2">数据传输中……</label>
+            <label class="label3">质检部已接收，
+                <a href="#" class="label3_a">显示数据</a>
+            </label>
+            <div class="jieduan2">
+            <div class="department2 button2"></div>
+<!--                <button class="button2">-->
+<!--                    <p class="button_p0">市场部获取数据</p>-->
+<!--                    <p class="button_p1">（再次）</p>-->
 <!--                </button>-->
-            <div v-bind:class="{'department3':isActive,'button3':isActive}"></div>
+            <div class="department3 button3"></div>
 
-<!--                <button v-bind:class="{'button3':isActive}">-->
-<!--                    <p v-bind:class="{'button_p0':isActive}">运营部获取数据</p>-->
-<!--                    <p v-bind:class="{'button_p1':isActive}">（再次）</p>-->
-<!--                </button>-->
-
-            <div v-bind:class="{'department4':isActive,'button4':isActive}"></div>
-
-<!--                <button v-bind:class="{'button4':isActive}">-->
-<!--                    <p v-bind:class="{'button_p0':isActive}">产品部获取数据</p>-->
-<!--                    <p v-bind:class="{'button_p1':isActive}">（再次）</p>-->
+<!--                <button class="button3">-->
+<!--                    <p class="button_p0">运营部获取数据</p>-->
+<!--                    <p class="button_p1">（再次）</p>-->
 <!--                </button>-->
 
-            <div v-bind:class="{'department5':isActive,'button5':isActive}"></div>
+            <div class="department4 button4"></div>
 
-<!--                <button v-bind:class="{'button5':isActive}">-->
-<!--                    <p v-bind:class="{'button_p0':isActive}">监控部获取数据</p>-->
-<!--                    <p v-bind:class="{'button_p1':isActive}">（再次）</p>-->
+<!--                <button class="button4">-->
+<!--                    <p class="button_p0">产品部获取数据</p>-->
+<!--                    <p class="button_p1">（再次）</p>-->
 <!--                </button>-->
-                <label v-bind:class="{'gongyibu':isActive}">市场部已接收，<a href="#" v-bind:class="{'gongyibu_a':isActive}">显示数据</a></label>
-                <label v-bind:class="{'shebeibu':isActive}">运营部已接收，<a href="#" v-bind:class="{'shebeibu_a':isActive}">显示数据</a></label>
-                <label v-bind:class="{'shengchanbu':isActive}">产品部已接收，<a href="#" v-bind:class="{'shengchanbu_a':isActive}">显示数据</a></label>
-                <label v-bind:class="{'chanpinkaifabu':isActive}">监控部已接收，<a href="#" v-bind:class="{'chanpinkaifabu_a':isActive}">显示数据</a></label>
-<!--                <button v-bind:class="{'button6':isActive}">性能对比</button>-->
-                <div v-bind:class="{'xndb':isActive,'button6':isActive}"></div>
+
+            <div class="department5 button5"></div>
+
+<!--                <button class="button5">-->
+<!--                    <p class="button_p0">监控部获取数据</p>-->
+<!--                    <p class="button_p1">（再次）</p>-->
+<!--                </button>-->
+                <label class="gongyibu">工艺部已接收，
+                    <a href="#" class="gongyibu_a">显示数据</a></label>
+                <label class="shebeibu">设备部已接收，
+                    <a href="#" class="shebeibu_a">显示数据</a>
+                </label>
+                <label class="shengchanbu">生产部已接收，
+                    <a href="#" class="shengchanbu_a">显示数据</a>
+                </label>
+                <label class="chanpinkaifabu">产品部已接收，
+                    <a href="#" class="chanpinkaifabu_a">显示数据</a>
+                </label>
+<!--                <button class="button6">性能对比</button>-->
+                <div class="xndb button6"></div>
 
             </div>
         </div>
-        <div v-bind:class="{'div2':isActive}">
-             <div v-bind:class="{'perfbackground':isActive}"></div>
-            <label v-bind:class="{'label4':isActive}">性&nbsp;能&nbsp;对&nbsp;比</label>
-            <label v-bind:class="{'label5':isActive}">部门</label>
-            <label v-bind:class="{'label6':isActive}">传输路径</label>
-            <label v-bind:class="{'label7':isActive}">用户响应时间</label>
-            <div v-bind:class="{'division':isActive}"></div>
-            <div v-bind:class="{'quality_inspection':isActive}">
-                <label v-bind:class="{'quality_inspection_label':isActive}">质检部获取数据</label>
-                <label v-bind:class="{'quality_inspection_label_first':isActive}">（首次）</label>
-                <div v-bind:class="{'dun1':isActive}"></div>
-                <div v-bind:class="{'jiantou1':isActive}"></div>
-                <div v-bind:class="{'jiantou2':isActive}"></div>
-                <div v-bind:class="{'chuanshu1':isActive}"></div>
-                <div v-bind:class="{'jiantou3':isActive}"></div>
-                <div v-bind:class="{'jiantou4':isActive}"></div>
-                <div v-bind:class="{'fuwuqi1':isActive}"></div>
-                <div v-bind:class="{'time1':isActive}"></div>
+        <div class="div2">
+             <div class="perfbackground"></div>
+            <label class="label4">性&nbsp;能&nbsp;对&nbsp;比</label>
+            <label class="label5">部门</label>
+            <label class="label6">传输路径</label>
+            <label class="label7">用户响应时间</label>
+            <div class="division"></div>
+            <div class="quality_inspection">
+                <label class="quality_inspection_label">质检部获取数据</label>
+                <label class="quality_inspection_label_first">（首次）</label>
+                <div class="dun1"></div>
+                <div class="jiantou1"></div>
+                <div class="jiantou2"></div>
+                <div class="chuanshu1"></div>
+                <div class="jiantou3"></div>
+                <div class="jiantou4"></div>
+                <div class="fuwuqi1"></div>
+                <div class="time1"></div>
 
             </div>
 
-            <div v-bind:class="{'division2':isActive}"></div>
+            <div class="division2"></div>
 
-            <div v-bind:class="{'process':isActive}">
-                <label v-bind:class="{'process_label':isActive}">市场部获取数据</label>
-                <div v-bind:class="{'dun2':isActive}"></div>
-                <div v-bind:class="{'jiantou5':isActive}"></div>
-                <div v-bind:class="{'jiantou6':isActive}"></div>
-                <div v-bind:class="{'chuanshu2':isActive}"></div>
-                <div v-bind:class="{'jiantou7':isActive}"></div>
-                <div v-bind:class="{'jiantou8':isActive}"></div>
-                <div v-bind:class="{'fuwuqi2':isActive}"></div>
-                <div v-bind:class="{'time2':isActive}"></div>
+            <div class="process">
+                <label class="process_label">市场部获取数据</label>
+                <div class="dun2"></div>
+                <div class="jiantou5"></div>
+                <div class="jiantou6"></div>
+                <div class="chuanshu2"></div>
+                <div class="jiantou7"></div>
+                <div class="jiantou8"></div>
+                <div class="fuwuqi2"></div>
+                <div class="time2"></div>
             </div>
-            <div v-bind:class="{'division3':isActive}"></div>
+            <div class="division3"></div>
 
-            <div v-bind:class="{'equipment':isActive}">
-                <label v-bind:class="{'equipment_label':isActive}">运营部获取数据</label>
-                <div v-bind:class="{'dun3':isActive}"></div>
-                <div v-bind:class="{'jiantou9':isActive}"></div>
-                <div v-bind:class="{'jiantou10':isActive}"></div>
-                <div v-bind:class="{'chuanshu3':isActive}"></div>
-                <div v-bind:class="{'jiantou11':isActive}"></div>
-                <div v-bind:class="{'jiantou12':isActive}"></div>
-                <div v-bind:class="{'fuwuqi3':isActive}"></div>
-                <div v-bind:class="{'time3':isActive}"></div>
+            <div class="equipment">
+                <label class="equipment_label">运营部获取数据</label>
+                <div class="dun3"></div>
+                <div class="jiantou9"></div>
+                <div class="jiantou10"></div>
+                <div class="chuanshu3"></div>
+                <div class="jiantou11"></div>
+                <div class="jiantou12"></div>
+                <div class="fuwuqi3"></div>
+                <div class="time3"></div>
             </div>
-            <div v-bind:class="{'division4':isActive}"></div>
+            <div class="division4"></div>
 
-            <div v-bind:class="{'production':isActive}">
-                <label v-bind:class="{'production_label':isActive}">产品部获取数据</label>
-                <div v-bind:class="{'dun4':isActive}"></div>
-                <div v-bind:class="{'jiantou13':isActive}"></div>
-                <div v-bind:class="{'jiantou14':isActive}"></div>
-                <div v-bind:class="{'chuanshu4':isActive}"></div>
-                <div v-bind:class="{'jiantou15':isActive}"></div>
-                <div v-bind:class="{'jiantou16':isActive}"></div>
-                <div v-bind:class="{'fuwuqi4':isActive}"></div>
-                <div v-bind:class="{'time4':isActive}"></div>
+            <div class="production">
+                <label class="production_label">产品部获取数据</label>
+                <div class="dun4"></div>
+                <div class="jiantou13"></div>
+                <div class="jiantou14"></div>
+                <div class="chuanshu4"></div>
+                <div class="jiantou15"></div>
+                <div class="jiantou16"></div>
+                <div class="fuwuqi4"></div>
+                <div class="time4"></div>
             </div>
-            <div v-bind:class="{'division5':isActive}"></div>
+            <div class="division5"></div>
 
-            <div v-bind:class="{'monitor':isActive}">
-                <label v-bind:class="{'monitor_label':isActive}">监控部获取数据</label>
-                <div v-bind:class="{'dun5':isActive}"></div>
-                <div v-bind:class="{'jiantou17':isActive}"></div>
-                <div v-bind:class="{'jiantou18':isActive}"></div>
-                <div v-bind:class="{'chuanshu5':isActive}"></div>
-                <div v-bind:class="{'jiantou19':isActive}"></div>
-                <div v-bind:class="{'jiantou20':isActive}"></div>
-                <div v-bind:class="{'fuwuqi5':isActive}"></div>
-                <div v-bind:class="{'time5':isActive}"></div>
+            <div class="monitor">
+                <label class="monitor_label">监控部获取数据</label>
+                <div class="dun5"></div>
+                <div class="jiantou17"></div>
+                <div class="jiantou18"></div>
+                <div class="chuanshu5"></div>
+                <div class="jiantou19"></div>
+                <div class="jiantou20"></div>
+                <div class="fuwuqi5"></div>
+                <div class="time5"></div>
             </div>
-            <button v-bind:class="{'button7':isActive}">
-                <p v-bind:class="{'button_p7':isActive}">返回</p>
-            </button>
+            <button class="button7">返回</button>
         </div>
-
-        <button v-bind:class="{'return':isActive}"></button>
-        <button v-bind:class="{'full':isActive}"></button>
-        <image v-bind:class="{ 'image': isActive }"></image>
-        <button v-bind:class="{'return2':isActive}"></button>
+        <button class="full"></button>
+        <image class="image"></image>
+        <button class="return2"></button>
 
     </div>
     <script>
 
-        new Vue({
-            el: '#app',
-            data: {
-                counter: 0,
-                isActive: true,
-            }
-        })
         $(document).ready(function () {
 
             $(".image").hide(); $(".return2").hide();
@@ -1671,7 +1446,7 @@
                     }
                 })
             });
-            $(".return,.home").click(function (e) {
+            $(".home").click(function (e) {
                 if (btype) {
                     $(".div1").show();
                     $(".div2").hide();
@@ -1713,236 +1488,104 @@
                 } else {
                     $(".stop").removeClass("stop").addClass("play");
                     bofang = true;
-                                       $.ajax({
-                                           type: "post",
-                                           contentType: "application/json; charset=utf-8",//传值的方式
-                                           dataType: "json",
-                                           url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                           data: "{window1:9,window2:3,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                                           success: function (result) {
-                                               //alert(result.d);//result.d为后台返回的参数
-                                           }
-                                       })
-                                   }
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{window1:9,window2:3,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                }
 
-                               });
-                               $(".border2").click(function (e) {
-                                   if (bofang) {
-                                       $(".play").removeClass("play").addClass("stop");
-                                       bofang = false;
-                                       $.ajax({
-                                           type: "post",
-                                           contentType: "application/json; charset=utf-8",//传值的方式
-                                           dataType: "json",
-                                           url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                           data: "{window1:9,window2:3,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                                           success: function (result) {
-                                               //alert(result.d);//result.d为后台返回的参数
-                                           }
-                                       })
-                                   } else {
-                                       $(".stop").removeClass("stop").addClass("play");
-                                       bofang = true;
-                                       $.ajax({
-                                           type: "post",
-                                           contentType: "application/json; charset=utf-8",//传值的方式
-                                           dataType: "json",
-                                           url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                           data: "{window1:9,window2:3,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                                           success: function (result) {
-                                               //alert(result.d);//result.d为后台返回的参数
-                                           }
-                                       })
-                                   }
-                               });
-                               $(".play").click(function (e) {
-                                   if (bofang) {
-                                       $(".play").removeClass("play").addClass("stop");
-                                       bofang = false;
-                                       $.ajax({
-                                           type: "post",
-                                           contentType: "application/json; charset=utf-8",//传值的方式
-                                           dataType: "json",
-                                           url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                           data: "{window1:9,window2:3,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                                           success: function (result) {
-                                               //alert(result.d);//result.d为后台返回的参数
-                                           }
-                                       })
-                                   } else {
-                                       $(".stop").removeClass("stop").addClass("play");
-                                       bofang = true;
-                                       $.ajax({
-                                           type: "post",
-                                           contentType: "application/json; charset=utf-8",//传值的方式
-                                           dataType: "json",
-                                           url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                           data: "{window1:9,window2:3,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                                           success: function (result) {
-                                               //alert(result.d);//result.d为后台返回的参数
-                                           }
-                                       })
-                                   }
+            });
+            $(".lable4").click(function (e) {
+                if (bofang2) {
+                    $(".play2").removeClass("play2").addClass("stop2");
+                    bofang2 = false;
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{window1:14,window2:3,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                } else {
+                    $(".stop2").removeClass("stop2").addClass("play2");
+                    bofang2 = true;
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{window1:14,window2:3,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                }
 
-                               });
-                               $(".lable4").click(function (e) {
-                                   if (bofang2) {
-                                       $(".play2").removeClass("play2").addClass("stop2");
-                                       bofang2 = false;
-                                       $.ajax({
-                                           type: "post",
-                                           contentType: "application/json; charset=utf-8",//传值的方式
-                                           dataType: "json",
-                                           url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                           data: "{window1:14,window2:3,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                                           success: function (result) {
-                                               //alert(result.d);//result.d为后台返回的参数
-                                           }
-                                       })
-                                   } else {
-                                       $(".stop2").removeClass("stop2").addClass("play2");
-                                       bofang2 = true;
-                                       $.ajax({
-                                           type: "post",
-                                           contentType: "application/json; charset=utf-8",//传值的方式
-                                           dataType: "json",
-                                           url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                           data: "{window1:14,window2:3,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                                           success: function (result) {
-                                               //alert(result.d);//result.d为后台返回的参数
-                                           }
-                                       })
-                                   }
+            });
+            $.ajax({
+                type: "post",
+                contentType: "application/json; charset=utf-8",//传值的方式
+                dataType: "json",
+                url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                data: "{window1:3,window2:3,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
+                success: function (result) {
+                    //alert(result.d);//result.d为后台返回的参数
+                }
+            })
+            $(".lable3").click(function (e) {
+                bofang = true;
+                $.ajax({
+                    type: "post",
+                    contentType: "application/json; charset=utf-8",//传值的方式
+                    dataType: "json",
+                    url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                    data: "{window1:3,window2:3,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
+                    success: function (result) {
+                        //alert(result.d);//result.d为后台返回的参数
+                    }
+                })
+            });
+            $(".full").click(function (e) {
 
-                               });
-                               $(".border4").click(function (e) {
-                                   if (bofang2) {
-                                       $(".play2").removeClass("play2").addClass("stop2");
-                                       bofang2 = false;
-                                       $.ajax({
-                                           type: "post",
-                                           contentType: "application/json; charset=utf-8",//传值的方式
-                                           dataType: "json",
-                                           url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                           data: "{window1:14,window2:3,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                                           success: function (result) {
-                                               //alert(result.d);//result.d为后台返回的参数
-                                           }
-                                       })
-                                   } else {
-                                       $(".stop2").removeClass("stop2").addClass("play2");
-                                       bofang2 = true;
-                                       $.ajax({
-                                           type: "post",
-                                           contentType: "application/json; charset=utf-8",//传值的方式
-                                           dataType: "json",
-                                           url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                           data: "{window1:14,window2:3,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                                           success: function (result) {
-                                               //alert(result.d);//result.d为后台返回的参数
-                                           }
-                                       })
-                                   }
-
-                               });
-                               $(".play2").click(function (e) {
-                                   if (bofang2) {
-                                       $(".play2").removeClass("play2").addClass("stop2");
-                                       bofang2 = false;
-                                       $.ajax({
-                                           type: "post",
-                                           contentType: "application/json; charset=utf-8",//传值的方式
-                                           dataType: "json",
-                                           url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                           data: "{window1:14,window2:3,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                                           success: function (result) {
-                                               //alert(result.d);//result.d为后台返回的参数
-                                           }
-                                       })
-                                   } else {
-                                       $(".stop2").removeClass("stop2").addClass("play2");
-                                       bofang2 = true;
-                                       $.ajax({
-                                           type: "post",
-                                           contentType: "application/json; charset=utf-8",//传值的方式
-                                           dataType: "json",
-                                           url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                           data: "{window1:14,window2:3,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                                           success: function (result) {
-                                               //alert(result.d);//result.d为后台返回的参数
-                                           }
-                                       })
-                                   }
-
-                               });
-                               $.ajax({
-                                   type: "post",
-                                   contentType: "application/json; charset=utf-8",//传值的方式
-                                   dataType: "json",
-                                   url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                   data: "{window1:3,window2:3,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
-                                   success: function (result) {
-                                       //alert(result.d);//result.d为后台返回的参数
-                                   }
-                               })
-                               $(".lable3").click(function (e) {
-                                   bofang = true;
-                                   $.ajax({
-                                       type: "post",
-                                       contentType: "application/json; charset=utf-8",//传值的方式
-                                       dataType: "json",
-                                       url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                       data: "{window1:3,window2:3,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
-                                       success: function (result) {
-                                           //alert(result.d);//result.d为后台返回的参数
-                                       }
-                                   })
-                               });
-                               $(".boder3").click(function (e) {
-                                   bofang = true;
-                                   $.ajax({
-                                       type: "post",
-                                       contentType: "application/json; charset=utf-8",//传值的方式
-                                       dataType: "json",
-                                       url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                       data: "{window1:3,window2:3,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
-                                       success: function (result) {
-                                           //alert(result.d);//result.d为后台返回的参数
-                                       }
-                                   })
-                               });
-                               $(".full").click(function (e) {
-
-                                   let element = document.documentElement;
-                                   if (this.fullscreen) {
-                                       if (document.exitFullscreen) {
-                                           document.exitFullscreen();
-                                       } else if (document.webkitCancelFullScreen) {
-                                           document.webkitCancelFullScreen();
-                                       } else if (document.mozCancelFullScreen) {
-                                           document.mozCancelFullScreen();
-                                       } else if (document.msExitFullscreen) {
-                                           document.msExitFullscreen();
-                                       }
-                                   } else {
-                                       if (element.requestFullscreen) {
-                                           element.requestFullscreen();
-                                       } else if (element.webkitRequestFullScreen) {
-                                           element.webkitRequestFullScreen();
-                                       } else if (element.mozRequestFullScreen) {
-                                           element.mozRequestFullScreen();
-                                       } else if (element.msRequestFullscreen) {
-                                           // IE11
-                                           element.msRequestFullscreen();
-                                       }
-                                   }
-                                   this.fullscreen = !this.fullscreen;
+                let element = document.documentElement;
+                if (this.fullscreen) {
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                    } else if (document.webkitCancelFullScreen) {
+                        document.webkitCancelFullScreen();
+                    } else if (document.mozCancelFullScreen) {
+                        document.mozCancelFullScreen();
+                    } else if (document.msExitFullscreen) {
+                        document.msExitFullscreen();
+                    }
+                } else {
+                    if (element.requestFullscreen) {
+                        element.requestFullscreen();
+                    } else if (element.webkitRequestFullScreen) {
+                        element.webkitRequestFullScreen();
+                    } else if (element.mozRequestFullScreen) {
+                        element.mozRequestFullScreen();
+                    } else if (element.msRequestFullscreen) {
+                        // IE11
+                        element.msRequestFullscreen();
+                    }
+                }
+                this.fullscreen = !this.fullscreen;
 
 
-                               });
-                           });
+            });
+        });
 
 
-                       </script>
-                   </body>
-                   </html>
+    </script>
+</body>
+</html>

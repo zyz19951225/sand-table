@@ -6,8 +6,6 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <script type="text/javascript" src="/jquery-1.8.0.min.js"></script>
-    <script src="/vue.min.js"></script>
     <style>
 
         .background {
@@ -17,14 +15,6 @@
             width: 1920px;
             background-repeat: no-repeat;
             background-position: center;
-            position: absolute;
-        }
-
-        .occlusion {
-            background-color: black;
-            opacity: 0.6;
-            height: 1080px;
-            width: 1920px;
             position: absolute;
         }
 
