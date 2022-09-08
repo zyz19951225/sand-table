@@ -6,20 +6,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <script type="text/javascript" src="/jquery-1.8.0.min.js"></script>
-    <script src="/vue.min.js"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
         .background {
-            background: url(image/newimg/背景.png);
+            background: url(image/newimg/背景.jpg);
             background-size: cover;
             height: 1080px;
             width: 1920px;
@@ -28,14 +17,15 @@
             position: absolute;
         }
         .image {
-            height: 800px;
-            width: 1863px;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: center top;
             position: absolute;
-            background-size: 100% 100%;
-            margin-top: 252px;
-            margin-left: 29px;
+            background-size: 100% auto;
+            top: 262px;
+            left: 26px;
+            bottom: 26px;
+            right: 26px;
+            border-radius: 12px;
         }
         .occlusion {
             background-color: black;
@@ -45,311 +35,85 @@
             position: absolute;
         }
         .title {
-            background: url(image/newimg/协同研发设计场景.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 77px;
-            width: 661px;
-            position: absolute;
-            top: 2%;
-            left: 0;
-            right: 0;
-            margin: auto;
+            background-image: url(image/newimg/协同研发设计场景.png);
         }
-.border {
-    background-color: #ffffff;
-    height: 2px;
-    width: 1920px;
-    position: absolute;
-    /* opacity: 0.9; */
-    margin-top: 12%;
-    /* margin-left: 16%; */
-    border-radius: 40px;
-    }
-        .border2 {
-            /*background-color: white;*/
-            height: 45px;
-            width: 160px;
-            position: absolute;
-            opacity: 0.9;
-                margin-top: 164px;
-                margin-left: 819px;
-            border-radius: 10px;
-                                    border: 1px solid white;
-
-        }
-        .border4 {
-            /*background-color: white;*/
-            height: 45px;
-            width: 140px;
-            position: absolute;
-            opacity: 0.9;
-               margin-top: 163px;
-               margin-left: 1014px;
-            border-radius: 10px;
-                                    border: 1px solid white;
-
-        }
-        .border3 {
-            /*background-color: white;*/
-            height: 45px;
-            width: 170px;
-            position: absolute;
-            opacity: 0.9;
-            margin-top: 8.6%;
-            margin-left: 61%;
-            border-radius: 10px;
-                                    border: 1px solid white;
-
-        }
-        .play {
-            background: url(image/newimg/xxxxx.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-                        width: 45px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 48%;
-        }
-        .play2 {
-          background: url(image/newimg/xxxxx.png) no-repeat center center;
-                      background-size: 100% 100%;
-                      height: 20px;
-                                  width: 45px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 57.5%;
-        }
-        .stop {
-            background: url(image/暂停.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-            width: 20px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 48%;
-        }
-        .stop2 {
-            background: url(image/暂停.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-            width: 20px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 57.5%;
-        }
-        .lable1 {
-            color: white;
-            font-size: 24px;
-            position: absolute;
-            margin-top: 8.9%;
-            margin-left: 32%;
-            border-radius: 40px;
-        }
-        .lable2 {
-            /*color: black;*/
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 9.1%;
-            margin-left: 43.5%;
-            border-radius: 40px;
-            font-weight: 600;
+        
+        .control-bar {
+            border-bottom: 1px solid rgba(255,255,255,.5);
+            padding-bottom: 24px;
+            
         }
         .lable4 {
-             /*color: black;*/
-                        color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 9.1%;
-            margin-left: 53%;
-            border-radius: 40px;
-            font-weight: 600;
+            margin-right: 36px;
         }
-        .lable3 {
-             /*color: black;*/
-                        color: white;
-            font-size: 18px;
+        .options {
             position: absolute;
-            margin-top: 9.1%;
-            margin-left: 62.2%;
-            border-radius: 40px;
-            font-weight: 600;
+            width: 566px;
+            height: 184px;
+        }
+        .options-box {
+            position: absolute;
+            left: 0; right: 0; top: 0; bottom: 0;
+        }
+        .options-image {
+            position: absolute;
+            width: 142px;
+            height: 100%;
+            left: 16px;
+        }
+        .options-image::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 90px;
+            top: 47px;
+            right: -8px;
+            background: rgba(255,255,255,.5);
+        }
+        .tips1, .tips2 {
+            position: absolute;
+            left: 196px;
+            color: white;
+        }
+        .tips1 {
+            font-size: 42px;
+            top: 36px;
+        }
+        .tips2 {
+            font-size: 32px;
+            top: 100px;
+            opacity: .6;
         }
         .options1 {
-            background: url(image/newimg/矩形2.png) no-repeat center center;
-            background-size: 100% 100%;
-            position: absolute;
-            margin-top: 371px;
-            margin-left: 349px;
-                width: 579px;
-                height: 191px;
-            opacity: 0.2;
+            top: 411px;
+            left: 349px;
         }
         .image1 {
-           background: url(image/newimg/gitlab.png) no-repeat center center;
-           background-size: 100% 100%;
-           position: absolute;
-           margin-top: 402px;
-           margin-left: 400px;
-           width: 142px;
-           height: 135px;
-
+           background: url(image/newimg/OA.png) no-repeat center center;
         }
         .options2 {
-            background: url(image/newimg/矩形2.png) no-repeat center center;
-opacity: 0.2;
-            background-size: 100% 100%;
-            position: absolute;
-            margin-top: 371px;
-            margin-left: 991px;
-                width: 579px;
-                height: 191px;
+            top: 411px;
+            left: 991px;
         }
         .image2 {
-            background: url(image/newimg/知识.png) no-repeat center center;
-            background-size: 100% 100%;
-            position: absolute;
-margin-top: 638px;
-            margin-left: 400px;
-            width: 142px;
-            height: 135px;
+            background: url(image/newimg/gitlab.png) no-repeat center center;
         }
         .options3 {
-            background: url(image/newimg/矩形2.png) no-repeat center center;
-opacity: 0.2;
-            background-size: 100% 100%;
-            position: absolute;
-            margin-top: 610px;
-            margin-left: 349px;
-                width: 579px;
-                height: 191px;
+            top: 670px;
+            left: 349px;
         }
         .image3 {
-            background: url(image/newimg/OA.png) no-repeat center center;
-            background-size: 100% 100%;
-            position: absolute;
-            margin-top: 437px;
-            margin-left: 1056px;
-            width: 104px;
-            height: 60px;
+            background: url(image/newimg/知识.png) no-repeat center center;
         }
         .options4 {
-            background: url(image/newimg/矩形2.png) no-repeat center center;
-opacity: 0.2;
-            background-size: 100% 100%;
-            position: absolute;
-             margin-top: 610px;
-                        margin-left: 991px;
-                width: 579px;
-                height: 191px;
+            top: 670px;
+            left: 991px;
         }
         .image4 {
             background: url(image/newimg/知识.png) no-repeat center center;
-            background-size: 100% 100%;
-            position: absolute;
-
-            margin-left: 1038px;
-       margin-top: 638px;
-                    width: 142px;
-                    height: 135px;
         }
-        .tips1 {
-                color: white;
-                font-size: 45px;
-                position: absolute;
-                margin-top: 408px;
-                margin-left: 574PX;
-                border-radius: 40px;
-        }
-        .tips2 {
-              color: white;
-                  font-size: 31px;
-                  position: absolute;
-                  margin-top: 643px;
-                  margin-left: 572PX;
-                  border-radius: 40px;
-        }
-        .tips3 {
-           color: white;
-           font-size: 31px;
-           position: absolute;
-         margin-top: 643px;
-                           margin-left: 1209PX;
-           border-radius: 40px;
-        }
-        .tips4 {
-                  color: white;
-                  font-size: 45px;
-                  position: absolute;
-                  margin-top: 408px;
-                  margin-left: 1215PX;
-                  border-radius: 40px;
-        }
-        .tips5 {
-               color: white;
-               font-size: 34px;
-               position: absolute;
-               margin-top: 478PX;
-               margin-left: 572PX;
-               border-radius: 40px;
-        }
-        .tips6 {
-                   color: white;
-                   font-size: 34px;
-                   position: absolute;
-                   margin-top: 478PX;
-                   margin-left: 1215PX;
-                   border-radius: 40px;
-        }
-        .tips7 {
-               color: white;
-               font-size: 34px;
-               position: absolute;
-               margin-top: 717PX;
-               margin-left: 572PX;
-               border-radius: 40px;
-        }
-        .tips8 {
-              color: white;
-              font-size: 34px;
-              position: absolute;
-       margin-top: 715px;
-                  margin-left: 1215PX;
-              border-radius: 40px;
-        }
-        .return {
-            margin-top: 157px;
-            margin-left: 90px;
-            height: 38px;
-            width: 36px;
-            position: absolute;
-            font-size: 12px;
-            background: url(image/newimg/首页图标.png) no-repeat center center;
-            background-size: 100% 100%;
-            border: 0;
-            line-height: 15px;
-            padding-left: 38px;
-            padding-top: 10px;
-            font-weight: 600;
-            color: white;
-        }
-
-               .home {
-            margin-top: 157px;
-            margin-left: 144px;
-            height: 40px;
-            width: 61px;
-            position: absolute;
-            font-size: 12px;
-            background: url(image/newimg/首页.png) no-repeat center center;
-            background-size: 100% 100%;
-            border: 0;
-            line-height: 15px;
-            padding-left: 38px;
-            padding-top: 10px;
-            font-weight: 600;
-            color: white;
-        }
+        
+        
         .return2 {
             /*margin-top: 2%;*/
             /*margin-left: 2%;*/
@@ -367,79 +131,64 @@ opacity: 0.2;
             /*color: white;*/
             /*opacity: 0.7;*/
         }
-        .bdy{
-            overflow:hidden;
-        }
-        .full{
-            margin-top: 1.5%;
-            margin-left: 97%;
-            height: 30px;
-            width: 35px;
-            opacity:0.9;
-            position: absolute;
-            font-size: 12px;
-            background: url(image/全屏.png) no-repeat center center;
-            background-size: 100% 100%;
-            border: 0;
-            color: white;
-        }
     </style>
 </head>
 <body class="bdy">
     <div id="app">
 
-        <div v-bind:class="{ 'background': isActive }"></div>
-        <div v-bind:class="{ 'occlusion': isActive }"></div>
+        <div class="background"></div>
+        <div class="occlusion"></div>
 
-        <div v-bind:class="{ 'title': isActive }"></div>
-        <div v-bind:class="{ 'title': isActive }"></div>
+        <div class="title"></div>
 
-        <div v-bind:class="{ 'border': isActive }"></div>
-        <div v-bind:class="{ 'border2': isActive }"></div>
-        <div v-bind:class="{ 'border3': isActive }"></div>
-        <div v-bind:class="{ 'border4': isActive }"></div>
-        <div v-bind:class="{ 'play': isActive }"></div>
-        <div v-bind:class="{ 'play2': isActive }"></div>
-        <label v-bind:class="{'lable1':isActive}">二号投影大屏:</label>
-        <label v-bind:class="{'lable2':isActive}">场景介绍</label>
-        <label v-bind:class="{'lable4':isActive}">沙盘演示</label>
-        <label v-bind:class="{'lable3':isActive}">沙盘位置示意图</label>
+        <div class="control-bar">
+            <label class="lable1">二号投影大屏：</label>
+            <div class="control-bar-button lable2">
+                背景介绍
+                <div class="play"></div>
+            </div>
+            <div class="control-bar-button lable4">
+                沙盘演示
+                <div class="play2"></div>
+            </div>
+            <div class="control-bar-button lable3">沙盘位置示意图</div>
+        </div>
 
-        <div v-bind:class="{ 'options1': isActive }"></div>
-        <div v-bind:class="{ 'image1': isActive }"></div>
 
-        <div v-bind:class="{ 'options2': isActive }"></div>
-        <div v-bind:class="{ 'image2': isActive }"></div>
-
-        <div v-bind:class="{ 'options4': isActive }"></div>
-        <div v-bind:class="{ 'image4': isActive }"></div>
-
-        <div v-bind:class="{ 'options3': isActive }"></div>
-        <div v-bind:class="{ 'image3': isActive }"></div>
-
-        <label v-bind:class="{'tips1':isActive}">GITLAB</label>
-        <label v-bind:class="{'tips2':isActive}">知识与协同平台</label>
-        <label v-bind:class="{'tips4':isActive}">Gitlab</label>
-        <label v-bind:class="{'tips3':isActive}">知识与协同平台</label>
-        <label v-bind:class="{'tips5':isActive}">IPV4公网</label>
-        <label v-bind:class="{'tips6':isActive}">IPV4</label>
-        <label v-bind:class="{'tips7':isActive}">IPV6</label>
-        <label v-bind:class="{'tips8':isActive}">IPV4公网</label>
-        <div v-bind:class="{ 'image': isActive }"></div>
-        <button v-bind:class="{'return':isActive}"></button>
-        <button v-bind:class="{'home':isActive}"></button>
-        <button v-bind:class="{'return2':isActive}"></button>
-        <button v-bind:class="{'full':isActive}"></button>
+        <div class="options options1">
+            <div class="box options-box"></div>
+            <div class="options-image image1"></div>
+            <label class="tips1">OA系统</label>
+            <label class="tips2">IPv4</label>
+        </div>
+        
+        <div class="options options2">
+            <div class="box options-box"></div>
+            <div class="options-image image2"></div>
+            <label class="tips1">Gitlab</label>
+            <label class="tips2">IPv4</label>
+        </div>
+        <div class="options options3">
+            <div class="box options-box"></div>
+            <div class="options-image image3"></div>
+            <label class="tips1">知识与协同平台</label>
+            <label class="tips2">IPv6</label>
+        </div>
+        <div class="options options4">
+            <div class="box options-box"></div>
+            <div class="options-image image4"></div>
+            <label class="tips1">知识与协同平台</label>
+            <label class="tips2">IPv4</label>
+        </div>
+    
+        <div class="image"></div>
+        <button class="home">首页</button>
+        <button class="return2"></button>
+        <button class="full"></button>
 
 
     </div>
     <script>
-        new Vue({
-            el: '#app',
-            data: {
-                isActive: true
-            }
-        })
         $(document).ready(function () {
             $(".image").hide(); $(".return2").hide();
             $(".image").click(function (e) {
@@ -457,7 +206,7 @@ opacity: 0.2;
                     }
                 })
             });
-            $(".options1,.image1,.tips1,.tips5").click(function (e) {
+            $(".options1").click(function (e) {
                 $(".image").show(); $(".return2").show();
                 var src = 'image/OA.jpg';
                 $(".image").css('background-image', 'url(' + src + ')');
@@ -472,7 +221,7 @@ opacity: 0.2;
                     }
                 })
             });
-            $(".options2,.image2,.tips2,.tips6").click(function (e) {
+            $(".options4").click(function (e) {
                 $(".image").show();  $(".return2").show();
                 var src = 'image/confluence.png';
                 $(".image").css('background-image', 'url(' + src + ')');
@@ -487,7 +236,7 @@ opacity: 0.2;
                     }
                 })
             });
-            $(".options3,.image3,.tips3,.tips7").click(function (e) {
+            $(".options3").click(function (e) {
                 $(".image").show(); $(".return2").show();
                 var src = 'image/confluence.png';
                 $(".image").css('background-image', 'url(' + src + ')');
@@ -502,7 +251,7 @@ opacity: 0.2;
                     }
                 })
             });
-            $(".options4,.image4,.tips4,.tips8").click(function (e) {
+            $(".options2").click(function (e) {
                 $(".image").show();  $(".return2").show();
                var src = 'image/gitlab.png';
                               $(".image").css('background-image', 'url(' + src + ')');
@@ -518,11 +267,11 @@ opacity: 0.2;
                               })
                           });
 
-                          $(".return").click(function (e) {
+                          $(".return, .home").click(function (e) {
 
 //                               $(location).attr("href", "Main.aspx")
-                 $(".bdy").innerHTML=''
-                $(".bdy").load("Main.aspx")
+                            $(".bdy").innerHTML=''
+                            $(".bdy").load("Main.aspx")
                           });
                           $(".return2").click(function (e) {
                               $.ajax({
@@ -543,36 +292,6 @@ opacity: 0.2;
                           var bofang = true;
                           var bofang2 = true;
                           $(".lable2").click(function (e) {
-                              if (bofang) {
-                                  $(".play").removeClass("play").addClass("stop");
-                                  bofang = false;
-                                  $.ajax({
-                                      type: "post",
-                                      contentType: "application/json; charset=utf-8",//传值的方式
-                                      dataType: "json",
-                                      url: "协同研发设计场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                      data: "{window1:7,window2:1,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                                      success: function (result) {
-                                          //alert(result.d);//result.d为后台返回的参数
-                                      }
-                                  })
-                              } else {
-                                  $(".stop").removeClass("stop").addClass("play");
-                                  bofang = true;
-                                  $.ajax({
-                                      type: "post",
-                                      contentType: "application/json; charset=utf-8",//传值的方式
-                                      dataType: "json",
-                                      url: "协同研发设计场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                      data: "{window1:7,window2:1,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                                      success: function (result) {
-                                          //alert(result.d);//result.d为后台返回的参数
-                                      }
-                                  })
-                              }
-
-                          });
-                          $(".border2").click(function (e) {
                               if (bofang) {
                                   $(".play").removeClass("play").addClass("stop");
                                   bofang = false;
@@ -632,96 +351,10 @@ opacity: 0.2;
                               }
 
                           });
-                          $(".play").click(function (e) {
-                              if (bofang2) {
-                                  $(".play2").removeClass("play2").addClass("stop2");
-                                  bofang2 = false;
-                                  $.ajax({
-                                      type: "post",
-                                      contentType: "application/json; charset=utf-8",//传值的方式
-                                      dataType: "json",
-                                      url: "协同研发设计场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                      data: "{window1:12,window2:1,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                                      success: function (result) {
-                                          //alert(result.d);//result.d为后台返回的参数
-                                      }
-                                  })
-                              } else {
-                                  $(".stop2").removeClass("stop2").addClass("play2");
-                                  bofang2 = true;
-                                  $.ajax({
-                                      type: "post",
-                                      contentType: "application/json; charset=utf-8",//传值的方式
-                                      dataType: "json",
-                                      url: "协同研发设计场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                      data: "{window1:12,window2:1,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                                      success: function (result) {
-                                          //alert(result.d);//result.d为后台返回的参数
-                                      }
-                                  })
-                              }
 
-                          });
-                          $(".border4").click(function (e) {
-                              if (bofang2) {
-                                  $(".play2").removeClass("play2").addClass("stop2");
-                                  bofang2 = false;
-                                  $.ajax({
-                                      type: "post",
-                                      contentType: "application/json; charset=utf-8",//传值的方式
-                                      dataType: "json",
-                                      url: "协同研发设计场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                      data: "{window1:12,window2:1,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                                      success: function (result) {
-                                          //alert(result.d);//result.d为后台返回的参数
-                                      }
-                                  })
-                              } else {
-                                  $(".stop2").removeClass("stop2").addClass("play2");
-                                  bofang2 = true;
-                                  $.ajax({
-                                      type: "post",
-                                      contentType: "application/json; charset=utf-8",//传值的方式
-                                      dataType: "json",
-                                      url: "协同研发设计场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                      data: "{window1:12,window2:1,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                                      success: function (result) {
-                                          //alert(result.d);//result.d为后台返回的参数
-                                      }
-                                  })
-                              }
-
-                          });
-                          $(".play2").click(function (e) {
-                              if (bofang2) {
-                                  $(".play2").removeClass("play2").addClass("stop2");
-                                  bofang2 = false;
-                                  $.ajax({
-                                      type: "post",
-                                      contentType: "application/json; charset=utf-8",//传值的方式
-                                      dataType: "json",
-                                      url: "协同研发设计场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                      data: "{window1:12,window2:1,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                                      success: function (result) {
-                                          //alert(result.d);//result.d为后台返回的参数
-                                      }
-                                  })
-                              } else {
-                                  $(".stop2").removeClass("stop2").addClass("play2");
-                                  bofang2 = true;
-                                  $.ajax({
-                                      type: "post",
-                                      contentType: "application/json; charset=utf-8",//传值的方式
-                                      dataType: "json",
-                                      url: "协同研发设计场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                      data: "{window1:12,window2:1,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                                      success: function (result) {
-                                          //alert(result.d);//result.d为后台返回的参数
-                                      }
-                                  })
-                              }
-
-                          });
+                          
+                          
+                          
                           $.ajax({
                               type: "post",
                               contentType: "application/json; charset=utf-8",//传值的方式
@@ -734,19 +367,6 @@ opacity: 0.2;
                           })
 
                           $(".lable3").click(function (e) {
-                              bofang = true;
-                              $.ajax({
-                                  type: "post",
-                                  contentType: "application/json; charset=utf-8",//传值的方式
-                                  dataType: "json",
-                                  url: "协同研发设计场景.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                                  data: "{window1:1,window2:1,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
-                                  success: function (result) {
-                                      //alert(result.d);//result.d为后台返回的参数
-                                  }
-                              })
-                          });
-                          $(".border3").click(function (e) {
                               bofang = true;
                               $.ajax({
                                   type: "post",

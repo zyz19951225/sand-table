@@ -9,20 +9,9 @@
     <script type="text/javascript" src="/jquery-1.8.0.min.js"></script>
     <script src="/vue.min.js"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
 
         .background {
-            background: url(image/newimg/背景.png);
+            background: url(image/newimg/背景.jpg);
             background-size: cover;
             height: 1080px;
             width: 1920px;
@@ -40,138 +29,16 @@
         }
 
         .title {
-            background: url(image/newimg/设备故障诊断场景.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 77px;
-            width: 712px;
-            position: absolute;
-            top: 2%;
-            left: 0;
-            right: 0;
-            margin: auto;
+            background-image: url(image/newimg/设备故障诊断场景.png);
         }
 
-        .border {
-            background-color: #ffffff;
-            height: 2px;
-            width: 1920px;
-            position: absolute;
-            /* opacity: 0.9; */
-            margin-top: 12%;
-            /* margin-left: 16%; */
-            border-radius: 40px;
-            }
-                .border2 {
-                    /*background-color: white;*/
-                    height: 45px;
-                    width: 160px;
-                    position: absolute;
-                    opacity: 0.9;
-                        margin-top: 164px;
-                        margin-left: 819px;
-                    border-radius: 10px;
-                                            border: 1px solid white;
-
-                }
-                .border4 {
-                    /*background-color: white;*/
-                    height: 45px;
-                    width: 140px;
-                    position: absolute;
-                    opacity: 0.9;
-                       margin-top: 163px;
-                       margin-left: 1014px;
-                    border-radius: 10px;
-                                            border: 1px solid white;
-
-                }
-                .border3 {
-                    /*background-color: white;*/
-                    height: 45px;
-                    width: 170px;
-                    position: absolute;
-                    opacity: 0.9;
-                    margin-top: 8.6%;
-                    margin-left: 61%;
-                    border-radius: 10px;
-                                            border: 1px solid white;
-
-                }
-                .play {
-                    background: url(image/newimg/xxxxx.png) no-repeat center center;
-                    background-size: 100% 100%;
-                    height: 20px;
-                                width: 45px;
-                    position: absolute;
-                    margin-top: 9.3%;
-                    margin-left: 48%;
-                }
-                .play2 {
-                  background: url(image/newimg/xxxxx.png) no-repeat center center;
-                              background-size: 100% 100%;
-                              height: 20px;
-                                          width: 45px;
-                    position: absolute;
-                    margin-top: 9.3%;
-                    margin-left: 57.5%;
-                }
-
-        .stop {
-            background: url(image/暂停.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-            width: 20px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 48%;
-        }
-
-        .stop2 {
-            background: url(image/暂停.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 20px;
-            width: 20px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 57.5%;
-        }
-.lable1 {
-            color: white;
-            font-size: 24px;
-            position: absolute;
-            margin-top: 8.9%;
-            margin-left: 32%;
-            border-radius: 40px;
-        }
-        .lable2 {
-            /*color: black;*/
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 9.1%;
-            margin-left: 43.5%;
-            border-radius: 40px;
-            font-weight: 600;
+        .control-bar {
+            border-bottom: 1px solid rgba(255,255,255,.5);
+            padding-bottom: 24px;
+            
         }
         .lable4 {
-             /*color: black;*/
-                        color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 9.1%;
-            margin-left: 53%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-        .lable3 {
-             /*color: black;*/
-                        color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 9.1%;
-            margin-left: 62.2%;
-            border-radius: 40px;
-            font-weight: 600;
+            margin-right: 36px;
         }
 
 
@@ -335,99 +202,47 @@
              position: absolute;
         }
 
- .return {
-            margin-top: 157px;
-            margin-left: 90px;
-            height: 38px;
-            width: 36px;
-            position: absolute;
-            font-size: 12px;
-            background: url(image/newimg/首页图标.png) no-repeat center center;
-            background-size: 100% 100%;
-            border: 0;
-            line-height: 15px;
-            padding-left: 38px;
-            padding-top: 10px;
-            font-weight: 600;
-            color: white;
-        }
-
-               .home {
-            margin-top: 157px;
-            margin-left: 144px;
-            height: 40px;
-            width: 61px;
-            position: absolute;
-            font-size: 12px;
-            background: url(image/newimg/首页.png) no-repeat center center;
-            background-size: 100% 100%;
-            border: 0;
-            line-height: 15px;
-            padding-left: 38px;
-            padding-top: 10px;
-            font-weight: 600;
-            color: white;
-        }
-
-
-        .full {
-            margin-top: 1.5%;
-            margin-left: 97%;
-            height: 30px;
-            width: 35px;
-            opacity: 0.9;
-            position: absolute;
-            font-size: 12px;
-            background: url(image/全屏.png) no-repeat center center;
-            background-size: 100% 100%;
-            border: 0;
-            color: white;
-        }
-
-.image1 {
-     background: url(image/newimg/矩形大.png) no-repeat center center;
-     background-size: 100% 100%;
-     position: absolute;
-     margin-top: 292px;
-     margin-left: 81px;
-     width: 1759px;
-     height: 583px;
-     opacity: 0.2;
+    .image1 {
+        background: url(image/newimg/矩形大.png) no-repeat center center;
+        background-size: 100% 100%;
+        position: absolute;
+        margin-top: 292px;
+        margin-left: 81px;
+        width: 1759px;
+        height: 583px;
+        opacity: 0.2;
     }
 
-        .bdy {
-            overflow: hidden;
-        }
+    .menu2 {
+        width: 40px;
+        width: 1295px;
+        height: 60px;
+        position: absolute;
+        background-color: #e5e4e4;
+        margin-top: 12.85%;
+        margin-left: 10%;
+    }
+    .option-group {
+        position: absolute;
+        top: 340px;
+        left: 170px;
+        border: 1px solid #fff;
+        border-radius: 26px;
+        display: flex;
+    }
+    .option {
+        height: 48px;
+        line-height: 48px;
+        padding: 0 28px;
+        border-radius: 26px;
+        font-size: 20px;
+        color: #fff;
+    }
+    .option.active {
+        background-color: #2097FF;
+    }
 
-        .menu2 {
-            width: 40px;
-            width: 1295px;
-            height: 60px;
-            position: absolute;
-            background-color: #e5e4e4;
-            margin-top: 12.85%;
-            margin-left: 10%;
-        }
-
-        .option1 {
-                margin-top: 339px;
-                margin-left: 169px;
-                height: 44px;
-                width: 120px;
-                position: absolute;
-                background-color: #2097FF;
-                border-radius: 26px;
-        }
-
-        .option2 {
-       margin-top: 339px;
-       margin-left: 307px;
-       height: 44px;
-       width: 120px;
-       position: absolute;
-       background-color: #2097FF;
-       border-radius: 26px;
-      }
+    
 
         .radio1 {
                  color: white;
@@ -643,103 +458,98 @@
     </style>
 </head>
 <body class="bdy">
-    <div id="app">
-        <div v-bind:class="{ 'background': isActive}"></div>
-        <div v-bind:class="{ 'occlusion': isActive}"></div>
-<div class="image1"></div>
-        <div v-bind:class="{ 'title': isActive }"></div>
-        <div v-bind:class="{ 'title': isActive }"></div>
+    
+        <div class="background"></div>
+        <div class="occlusion"></div>
+        <div class="image1"></div>
+        <div class="title"></div>
+        <div class="control-bar">
+            <label class="lable1">二号投影大屏：</label>
+            <div class="control-bar-button lable2">
+                背景介绍
+                <div class="play"></div>
+            </div>
+            <div class="control-bar-button lable4">
+                沙盘演示
+                <div class="play2"></div>
+            </div>
+            <div class="control-bar-button lable3">沙盘位置示意图</div>
+        </div>
+        <button class="full"></button>
+        <button class="home">首页</button>
 
-        <div v-bind:class="{ 'border': isActive }"></div>
-        <div v-bind:class="{ 'border2': isActive }"></div>
-        <div v-bind:class="{ 'border3': isActive }"></div>
-        <div v-bind:class="{ 'border4': isActive }"></div>
-        <div v-bind:class="{ 'play': isActive }"></div>
-        <div v-bind:class="{ 'play2': isActive }"></div>
-        <label v-bind:class="{'lable1':isActive}">二号投影大屏:</label>
-        <label v-bind:class="{'lable2':isActive}">场景介绍</label>
-        <label v-bind:class="{'lable4':isActive}">沙盘演示</label>
-        <label v-bind:class="{'lable3':isActive}">沙盘位置示意图</label>
-        <button v-bind:class="{'full':isActive}"></button>
-        <button v-bind:class="{'return':isActive}"></button>
-         <button v-bind:class="{'home':isActive}"></button>
-
-        <canvas v-bind:class="{'myCanvas':isActive}" width="1295" height="622" id="myCanvas"></canvas>
-<!--        <canvas v-bind:class="{ 'menu': isActive }"></canvas>-->
-        <div v-bind:class="{ 'square': isActive }"></div>
-        <div v-bind:class="{ 'circular': isActive }"></div>
-        <div v-bind:class="{ 'triangle': isActive }"></div>
-<!--         <input type="number" value="1000" v-bind:class="{'width':isActive}" maxlength="3" /> -->
-<!--         <input type="number" value="1000" v-bind:class="{'height':isActive}" maxlength="3" /> -->
-<!--         <label v-bind:class="{'width_label':isActive}">宽:</label> -->
-<!--         <label v-bind:class="{'height_label':isActive}">高:</label> -->
-<!--        <button v-bind:class="{'warning':isActive}">-->
-<!--            <div v-bind:class="{'d':isActive}">发出警告</div>-->
+        <canvas class="myCanvas" width="1295" height="622" id="myCanvas"></canvas>
+<!--        <canvas class="menu"></canvas>-->
+        <div class="square"></div>
+        <div class="circular"></div>
+        <div class="triangle"></div>
+<!--         <input type="number" value="1000" class="width" maxlength="3" /> -->
+<!--         <input type="number" value="1000" class="height" maxlength="3" /> -->
+<!--         <label class="width_label">宽:</label> -->
+<!--         <label class="height_label">高:</label> -->
+<!--        <button class="warning">-->
+<!--            <div class="d">发出警告</div>-->
 <!--        </button>-->
-        <div v-bind:class="{ 'warning': isActive,'d':isActive }"></div>
+        <div class="warning d"></div>
 
 
-<!--        <canvas v-bind:class="{ 'menu2': isActive }"></canvas>-->
-        <button v-bind:class="{'option1':isActive}">选择目标区域</button>
-        <button v-bind:class="{'option2':isActive}">自定义绘制</button>
-        <div v-bind:class="{'information1':isActive}">
-            <input type="radio" name="radios" v-bind:class="{'radio1':isActive}" />
-            <label v-bind:class="{'coordinate1':isActive}">目标寻址区域1</label>
-            <label v-bind:class="{'coordinate2':isActive}">中心经度：119.9711553</label>
-            <label v-bind:class="{'coordinate3':isActive}">中心纬度：30.2773782</label>
-            <label v-bind:class="{'coordinate4':isActive}">边长：700</label>
+<!--        <canvas class="menu2"></canvas>-->
+        <div class="option-group">
+            <div class="option option1">选择目标区域</div>
+            <div class="option option2">自定义绘制</div>
+        </div>
+        <div class="information1">
+            <input type="radio" name="radios" class="radio1" />
+            <label class="coordinate1">目标寻址区域1</label>
+            <label class="coordinate2">中心经度：119.9711553</label>
+            <label class="coordinate3">中心纬度：30.2773782</label>
+            <label class="coordinate4">边长：700</label>
 
 
-            <input type="radio" name="radios" v-bind:class="{'radio2':isActive}" />
-            <label v-bind:class="{'coordinate5':isActive}">目标寻址区域2</label>
-            <label v-bind:class="{'coordinate6':isActive}">中心经度：119.9711553</label>
-            <label v-bind:class="{'coordinate7':isActive}">中心纬度：30.2773782</label>
-            <label v-bind:class="{'coordinate8':isActive}">半径：1000</label>
+            <input type="radio" name="radios" class="radio2" />
+            <label class="coordinate5">目标寻址区域2</label>
+            <label class="coordinate6">中心经度：119.9711553</label>
+            <label class="coordinate7">中心纬度：30.2773782</label>
+            <label class="coordinate8">半径：1000</label>
 
 
-            <input type="radio" name="radios" v-bind:class="{'radio3':isActive}" />
-            <label v-bind:class="{'coordinate9':isActive}">目标寻址区域3</label>
-            <label v-bind:class="{'coordinate10':isActive}">中心经度：119.9711553</label>
-            <label v-bind:class="{'coordinate11':isActive}">中心纬度：30.2773782</label>
-            <label v-bind:class="{'coordinate12':isActive}">水平半径：500</label>
-            <label v-bind:class="{'coordinate13':isActive}">垂直半径：900</label>
+            <input type="radio" name="radios" class="radio3" />
+            <label class="coordinate9">目标寻址区域3</label>
+            <label class="coordinate10">中心经度：119.9711553</label>
+            <label class="coordinate11">中心纬度：30.2773782</label>
+            <label class="coordinate12">水平半径：500</label>
+            <label class="coordinate13">垂直半径：900</label>
 
         </div>
-        <div v-bind:class="{'information2':isActive}">
-            <div v-bind:class="{ 'd1': isActive }">
-                <input type="number" value="1000" v-bind:class="{'width':isActive}" maxlength="3" />
-                <input type="number" value="1000" v-bind:class="{'height':isActive}" maxlength="3" />
-                <label v-bind:class="{'width_label':isActive}">宽:</label>
-                <label v-bind:class="{'height_label':isActive}">高:</label>
+        <div class="information2">
+            <div class="d1">
+                <input type="number" value="1000" class="width" maxlength="3" />
+                <input type="number" value="1000" class="height" maxlength="3" />
+                <label class="width_label">宽:</label>
+                <label class="height_label">高:</label>
             </div>
-            <div v-bind:class="{ 'd2': isActive }">
-                <input type="number" value="1000" v-bind:class="{'bianchang':isActive}" maxlength="3" />
-                <label v-bind:class="{'width_label':isActive}">边长:</label>
+            <div class="d2">
+                <input type="number" value="1000" class="bianchang" maxlength="3" />
+                <label class="width_label">边长:</label>
             </div>
-            <div v-bind:class="{ 'd3': isActive }">
-                <input type="number" value="500" v-bind:class="{'banjing':isActive}" maxlength="3" />
-                <label v-bind:class="{'width_label':isActive}">半径:</label>
+            <div class="d3">
+                <input type="number" value="500" class="banjing" maxlength="3" />
+                <label class="width_label">半径:</label>
             </div>
-            <label v-bind:class="{'mm_label1':isActive}">mm</label>
-            <label v-bind:class="{'mm_label2':isActive}">mm</label>
-            <label v-bind:class="{'mm_label3':isActive}">mm</label>
-            <button v-bind:class="{'clearCanvas':isActive}"></button>
-            <label v-bind:class="{'coordinate14':isActive}">自定义寻址区域</label>
-            <label v-bind:class="{'coordinate15':isActive}">中心经度：0</label>
-            <label v-bind:class="{'coordinate16':isActive}">中心纬度：0</label>
-            <label v-bind:class="{'coordinate17':isActive}">水平边长：0</label>
-            <label v-bind:class="{'coordinate18':isActive}"></label>
-            <label v-bind:class="{'coordinate19':isActive}"></label>
-            <label v-bind:class="{'coordinate20':isActive}"></label>
+            <label class="mm_label1">mm</label>
+            <label class="mm_label2">mm</label>
+            <label class="mm_label3">mm</label>
+            <button class="clearCanvas"></button>
+            <label class="coordinate14">自定义寻址区域</label>
+            <label class="coordinate15">中心经度：0</label>
+            <label class="coordinate16">中心纬度：0</label>
+            <label class="coordinate17">水平边长：0</label>
+            <label class="coordinate18"></label>
+            <label class="coordinate19"></label>
+            <label class="coordinate20"></label>
         </div>
-    </div>
+    
     <script>
-        new Vue({
-            el: '#app',
-            data: {
-                isActive: true
-            }
-        });
         $(document).ready(function () {
             $(".d2").hide();
             $(".d3").hide();
@@ -827,8 +637,8 @@
 
             });
 
-            $(".option1").css("color", "red");
-            $(".option2").css("color", "black");
+            $(".option1").addClass("active");
+            $(".option2").removeClass("active");
             zidingyi = false;
             $(".square,.circular,.triangle,.width,.height,.width_label,.height_label").hide();
             $(".information1").show();
@@ -837,8 +647,8 @@
             var b2 = false;
             var b3 = false;
             $(".option1").click(function (e) {
-                $(".option1").css("color", "red");
-                $(".option2").css("color", "black");
+                $(".option1").addClass("active");
+                $(".option2").removeClass("active");
                 zidingyi = false;
                 $(".square,.circular,.triangle,.width,.height,.width_label,.height_label").hide();
                 $(".information1").show(); $(".information2").hide();
@@ -850,8 +660,8 @@
                 ctx.clearRect(0, 0, $("#myCanvas").width(), $("#myCanvas").height());
             });
             $(".option2").click(function (e) {
-                $(".option2").css("color", "red");
-                $(".option1").css("color", "black");
+                $(".option2").addClass("active");
+                $(".option1").removeClass("active");
                 zidingyi = true;
                 $(".square,.circular,.triangle,.width,.height,.width_label,.height_label").show();
                 $(".information1").hide(); $(".information2").show();
@@ -1102,7 +912,7 @@
 
             });
 
-            $(".return").click(function (e) {
+            $(".home").click(function (e) {
                 $.ajax({
                     type: "post",
                     contentType: "application/json; charset=utf-8",//传值的方式
@@ -1150,66 +960,7 @@
                 }
 
             });
-            $(".border2").click(function (e) {
-                if (bofang) {
-                    $(".play").removeClass("play").addClass("stop");
-                    bofang = false;
-                    $.ajax({
-                        type: "post",
-                        contentType: "application/json; charset=utf-8",//传值的方式
-                        dataType: "json",
-                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                        data: "{window1:11,window2:5,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                        success: function (result) {
-                            //alert(result.d);//result.d为后台返回的参数
-                        }
-                    })
-                } else {
-                    $(".stop").removeClass("stop").addClass("play");
-                    bofang = true;
-                    $.ajax({
-                        type: "post",
-                        contentType: "application/json; charset=utf-8",//传值的方式
-                        dataType: "json",
-                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                        data: "{window1:11,window2:5,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                        success: function (result) {
-                            //alert(result.d);//result.d为后台返回的参数
-                        }
-                    })
-                }
-
-            });
-            $(".play").click(function (e) {
-                if (bofang) {
-                    $(".play").removeClass("play").addClass("stop");
-                    bofang = false;
-                    $.ajax({
-                        type: "post",
-                        contentType: "application/json; charset=utf-8",//传值的方式
-                        dataType: "json",
-                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                        data: "{window1:11,window2:5,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                        success: function (result) {
-                            //alert(result.d);//result.d为后台返回的参数
-                        }
-                    })
-                } else {
-                    $(".stop").removeClass("stop").addClass("play");
-                    bofang = true;
-                    $.ajax({
-                        type: "post",
-                        contentType: "application/json; charset=utf-8",//传值的方式
-                        dataType: "json",
-                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                        data: "{window1:11,window2:5,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                        success: function (result) {
-                            //alert(result.d);//result.d为后台返回的参数
-                        }
-                    })
-                }
-
-            });
+            
             $(".lable4").click(function (e) {
                 if (bofang2) {
                     $(".play2").removeClass("play2").addClass("stop2");
@@ -1240,66 +991,7 @@
                 }
 
             });
-            $(".border4").click(function (e) {
-                if (bofang2) {
-                    $(".play2").removeClass("play2").addClass("stop2");
-                    bofang2 = false;
-                    $.ajax({
-                        type: "post",
-                        contentType: "application/json; charset=utf-8",//传值的方式
-                        dataType: "json",
-                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                        data: "{window1:16,window2:5,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                        success: function (result) {
-                            //alert(result.d);//result.d为后台返回的参数
-                        }
-                    })
-                } else {
-                    $(".stop2").removeClass("stop2").addClass("play2");
-                    bofang2 = true;
-                    $.ajax({
-                        type: "post",
-                        contentType: "application/json; charset=utf-8",//传值的方式
-                        dataType: "json",
-                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                        data: "{window1:16,window2:5,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                        success: function (result) {
-                            //alert(result.d);//result.d为后台返回的参数
-                        }
-                    })
-                }
-
-            });
-            $(".play2").click(function (e) {
-                if (bofang2) {
-                    $(".play2").removeClass("play2").addClass("stop2");
-                    bofang2 = false;
-                    $.ajax({
-                        type: "post",
-                        contentType: "application/json; charset=utf-8",//传值的方式
-                        dataType: "json",
-                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                        data: "{window1:16,window2:5,operation:1}",//username 为想问后台传的参数（这里的参数可有可无）
-                        success: function (result) {
-                            //alert(result.d);//result.d为后台返回的参数
-                        }
-                    })
-                } else {
-                    $(".stop2").removeClass("stop2").addClass("play2");
-                    bofang2 = true;
-                    $.ajax({
-                        type: "post",
-                        contentType: "application/json; charset=utf-8",//传值的方式
-                        dataType: "json",
-                        url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                        data: "{window1:16,window2:5,operation:2}",//username 为想问后台传的参数（这里的参数可有可无）
-                        success: function (result) {
-                            //alert(result.d);//result.d为后台返回的参数
-                        }
-                    })
-                }
-
-            });
+            
             $.ajax({
                 type: "post",
                 contentType: "application/json; charset=utf-8",//传值的方式
@@ -1323,19 +1015,7 @@
                     }
                 })
             });
-            $(".border3").click(function (e) {
-                bofang = true;
-                $.ajax({
-                    type: "post",
-                    contentType: "application/json; charset=utf-8",//传值的方式
-                    dataType: "json",
-                    url: "地理标识模态.aspx/Qie",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                    data: "{window1:5,window2:5,operation:0}",//username 为想问后台传的参数（这里的参数可有可无）
-                    success: function (result) {
-                        //alert(result.d);//result.d为后台返回的参数
-                    }
-                })
-            });
+           
             $(".full").click(function (e) {
 
                 let element = document.documentElement;
