@@ -363,7 +363,7 @@ color: white;
     position: absolute;
     /* margin-top: 614px; */
     /* margin-left: 177px; */
-    top: 350px;
+    top: 376px;
     left: 76px;
     border-radius: 40px;
         }
