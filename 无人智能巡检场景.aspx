@@ -20,12 +20,11 @@
         }
 
         .image1 {
-                 position: absolute;
-                 margin-top: 316px;
-                 margin-left: 375px;
-                 width: 1171px;
-                 height: 668PX;
-
+                position: absolute;
+                    margin-top: 289px;
+                    margin-left: 375px;
+                    width: 1171px;
+                    height: 660PX;
                         }
 
         .title {
@@ -58,21 +57,19 @@
         }
 
         .switch {
-                        background: url(image/newimg/切换至IP模式.png) no-repeat center center;
-
-                color: black;
-                font-size: 18px;
-                position: absolute;
-                top:468px;
-                left:472px;
-                height: 50px;
-                width: 250px;
-
-                font-weight: 600;
-                font-family: 宋体;
-                text-align: center;
-                border-radius: 10px;
-                border: 0;
+                 background: url(image/newimg/切换至IP模式.png) no-repeat center center;
+                 color: black;
+                 font-size: 18px;
+                 position: absolute;
+                 top: 500px;
+                 left: 472px;
+                 height: 50px;
+                 width: 250px;
+                 font-weight: 600;
+                 font-family: 宋体;
+                 text-align: center;
+                 border-radius: 10px;
+                 border: 0;
         }
 
         .load {
@@ -119,25 +116,29 @@
         }
 
         .loadLabel1 {
-      color: white;
-      font-size: 30px;
-      position: absolute;
-      top: 94px;
-      left: 530px;
-      font-weight: 600;
-      width: 250px;
-      text-align: center;
+     color: white;
+     font-size: 30px;
+     position: absolute;
+     top: 94px;
+     left: 486px;
+     font-weight: 600;
+     width: 250px;
+     text-align: center;
+     font-weight: 100;
+
         }
-            .loadLabel12 {
+    .loadLabel12 {
        color: white;
        font-size: 30px;
        position: absolute;
-     top: 182px;
-          left: 530px;
+       top: 182px;
+       left: 530px;
        font-weight: 600;
        width: 250px;
        text-align: center;
-        }
+       font-weight: 100;
+
+      }
 
         .loadLabel2 {
             color: white;
@@ -154,6 +155,7 @@
               color: white;
                font-size: 30px;
                position: absolute;
+               font-weight: 100;
                top: 387px;
                left: 368px;
                /* font-weight: 600; */
@@ -162,14 +164,14 @@
         }
 
         .loadLabel4 {
-                color: #ada5a5;
-                font-size: 18px;
-                position: absolute;
-                top:535px;
-                left:448px;
-                font-weight: 600;
-                width: 300px;
-                text-align: center;
+                   color: #ffffff;
+                   font-size: 27px;
+                   position: absolute;
+                   top: 563px;
+                   left: 448px;
+                   font-weight: 100;
+                   width: 300px;
+                   text-align: center;
         }
 
     </style>
