@@ -25,8 +25,8 @@
             color: white;
             font-size: 28px;
             position: absolute;
-            margin-top: 360px;
-            margin-left: 42%;
+            top: 400px;
+            left: 781px;
             line-height: 48px;
         }
 
@@ -39,16 +39,16 @@
             margin-right: 36px;
         }
        .input {
-            color: black;
+            color: rgba(255,255,255,.6);
             font-size: 28px;
             position: absolute;
-            margin-top: 360px;
+            margin-top: 400px;
             height: 50px;
             width: 200px;
-            margin-left: 48.5%;
+            margin-left: 900px;
             padding: 0 12px;
             border: none;
-            background: rgba(255,255,255,.4);
+            background: rgba(255,255,255,.3);
             border-radius: 4px;
         }
 
@@ -58,8 +58,8 @@
 
         .button7 {
             position: absolute;
-            margin-top: 858px;
-            margin-left: 885px;
+            margin-top: 932px;
+            margin-left: 850px;
             height: 58px;
             width: 250px;
             text-align: center;
@@ -68,180 +68,128 @@
             background: #2097FF;
             color: #fff;
             font-size: 28px;
+            box-shadow: 0 3px 6px rgba(0,0,0,.38);
         }
 
-        .button2 {
-            /*position: absolute;*/
-            /*margin-top: 28%;*/
-            /*height: 50px;*/
-            /*width: 250px;*/
-            /*margin-left: 13.5%;*/
-            /*text-align: center;*/
-            /*border-radius: 10px;*/
-            /*border: 0;*/
-            /*padding-top: -1px;*/
-        }
-
-        .button3 {
-            /*position: absolute;*/
-            /*margin-top: 28%;*/
-            /*height: 50px;*/
-            /*width: 250px;*/
-            /*margin-left: 33.5%;*/
-            /*text-align: center;*/
-            /*border-radius: 10px;*/
-            /*border: 0;*/
-            /*padding-top: -1px;*/
-        }
-
-        .button4 {
-            /*position: absolute;*/
-            /*margin-top: 28%;*/
-            /*height: 50px;*/
-            /*width: 250px;*/
-            /*margin-left: 53.5%;*/
-            /*text-align: center;*/
-            /*border-radius: 10px;*/
-            /*border: 0;*/
-            /*padding-top: -1px;*/
-        }
-
-        .button5 {
-            /*position: absolute;*/
-            /*margin-top: 28%;*/
-            /*height: 50px;*/
-            /*width: 250px;*/
-            /*margin-left: 73.5%;*/
-            /*text-align: center;*/
-            /*border-radius: 10px;*/
-            /*border: 0;*/
-            /*padding-top: -1px;*/
-        }
-
-        .button_p0 {
-            color: black;
-            font-size: 18px;
-            position: absolute;
-            width: 250px;
-            font-weight: 600;
-            font-family: 宋体;
-            text-align: center;
-            margin-top: -15px;
-        }
-
-
-        .xndb{
-        background: url(image/newimg/性能对比.png) no-repeat center center;
-        height: 111px;
-        width: 342px;
-        position: absolute;
-        margin-top: 900px;
-        margin-left: 800px;
-        }
-
-        .button6 {
-            /*position: absolute;*/
-            /*margin-top: 35%;*/
-            /*height: 50px;*/
-            /*width: 250px;*/
-            /*margin-left: 43.8%;*/
-            /*text-align: center;*/
-            /*border-radius: 10px;*/
-            /*border: 0;*/
-            /*color: black;*/
-            /*font-size: 18px;*/
-            /*position: absolute;*/
-            /*width: 250px;*/
-            /*font-weight: 600;*/
-            /*font-family: 宋体;*/
-            /*text-align: center;*/
-        }
-
-        .button_p1 {
-            color: black;
-            font-size: 12px;
-            position: absolute;
-            width: 250px;
-            font-weight: 600;
-            text-align: center;
-            margin-top: 5px;
-        }
 
         .label2 {
             color: white;
             font-size: 28px;
             position: absolute;
-            margin-top: 23.9%;
-            margin-left: 47.2%;
-            border-radius: 40px;
-            opacity: .8;
+            margin-top: 618px;
+            margin-left: 856px;
+            opacity: .9;
         }
         .completeicon{
-                 background: url(image/newimg/接受数据图标.png) no-repeat center center;
+            background: url(image/newimg/接受数据图标.png) no-repeat center center;
             background-size: 100% 100%;
-                height: 113px;
-                width: 112px;
+            height: 113px;
+            width: 112px;
             position: absolute;
-               margin-top: 428px;
-               margin-left: 700px;
+            margin-top: 466px;
+            margin-left: 678px;
+        }
+        .button_p0 {
+            position: absolute;
+            text-align: left;
+            letter-spacing: 2px;
+            left: 92px;
+            top: 5px;
+        }
+        .button_p1 {
+            position: absolute;
+            left: 212px;
+            top: 36px;
         }
 
+        .xndb{
+            background: url(image/newimg/性能对比.png) no-repeat center center;
+            height: 111px;
+            width: 342px;
+            position: absolute;
+            margin-top: 900px;
+            margin-left: 800px;
+        }
+        .go {
+            background: url(image/newimg/download.png) no-repeat 40px center/auto 70px #2097FF;
+            position: absolute;
+            top: 508px;
+            left: 732px;
+            height: 98px;
+            width: 454px;
+            color: white;
+            font-size: 30px;
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 3px 6px rgba(0,0,0,.38);
+            font-weight: lighter;
+        }
+        .go.disabled {
+            opacity: .6;
+        }
+        .go .button_p0 {
+            left: 152px;
+            top: 8px;
+            letter-spacing: 4px;
+        }
+        .go .button_p1 {
+            left: 302px;
+            top: 48px;
+        }
+        .department {
+            position: absolute;
+            width: 316px;
+            height: 74px;
+            background: url(image/newimg/download.png) no-repeat 26px center/auto 50px #2097FF;
+            border-radius: 12px;
+            color: #fff;
+            box-shadow: 0 3px 6px rgba(0,0,0,.38);
+            font-weight: lighter;
+            font-size: 26px;
+            line-height: 1.2;
+        }
+        .department.disabled {
+            opacity: .5;
+        }
         .department2{
-             background: url(image/newimg/工艺部门.png) no-repeat center center;
-                                 background-size: contain;
-                                     height: 91px;
-                                     width: 335px;
-                                 position: absolute;
-                               margin-top: 565px;
-                               margin-left: 233px;
+            top: 623px;
+            left: 272px;
         }
-         .department3{
-             background: url(image/newimg/工艺部门.png) no-repeat center center;
-                                 background-size: contain;
-                                height: 91px;
-                                width: 335px;
-                                 position: absolute;
-                               margin-top: 565px;
-                               margin-left: 633px;
+        .department3{
+            top: 623px;
+            left: 625px;
         }
-         .department4{
-             background: url(image/newimg/工艺部门.png) no-repeat center center;
-                                 background-size: contain;
-                                height: 91px;
-                                width: 335px;
-                                 position: absolute;
-                               margin-top: 565px;
-                               margin-left: 1033px;
+        .department4{
+            top: 623px;
+            left: 979px;
         }
-           .department5{
-             background: url(image/newimg/工艺部门.png) no-repeat center center;
-                                 background-size: contain;
-                                height: 91px;
-                                width: 335px;
-                                 position: absolute;
-                               margin-top: 565px;
-                               margin-left: 1425px;
+        .department5{
+            top: 623px;
+            left: 1332px;
         }
 
         .label3 {
         color: white;
         font-size: 32px;
         position: absolute;
-        margin-top: 458px;
-        margin-left: 832px;
-        border-radius: 40px;
+        margin-top: 498px;
+        margin-left: 792px;
         }
 
         .label3_a {
             color: #13FFEF;
         }
 
-        .gongyibu {
-            color: white;
-            font-size: 28px;
+        .gongyibu, .shebeibu, .shengchanbu, .chanpinkaifabu {
             position: absolute;
-            margin-top: 660px;
-            margin-left: 240px;
+            top: 710px;
+            width: 316px;
+            color: white;
+            font-size: 27px;
+            text-align: center;
+        }
+        .gongyibu {
+            left: 272px;
         }
 
         .gongyibu_a {
@@ -249,11 +197,7 @@
         }
 
         .shebeibu {
-            color: white;
-            font-size: 28px;
-            position: absolute;
-            margin-top: 660px;
-            margin-left: 640px;
+            left: 625px;
         }
 
         .shebeibu_a {
@@ -261,25 +205,15 @@
         }
 
         .shengchanbu {
-            color: white;
-            font-size: 28px;
-            position: absolute;
-            margin-top: 660px;
-            margin-left: 1040px;
-            border-radius: 40px;
+            left: 979px;
         }
 
         .shengchanbu_a {
             color: #13FFEF;
         }
 
-        .chanpinkaifabu {
-            color: white;
-            font-size: 28px;
-            position: absolute;
-            margin-top: 660px;
-            margin-left: 1432px;
-            border-radius: 40px;
+        .chanpinkaifabu { 
+            left: 1332px;
         }
 
         .chanpinkaifabu_a {
@@ -287,703 +221,124 @@
         }
 
         .label4 {
-            color: white;
-            font-size: 22px;
+            font-size: 48px;
             position: absolute;
-            margin-top: 16%;
-            margin-left: 47%;
-            border-radius: 40px;
-            font-weight: 600;
+            margin-top: 320px;
+            margin-left: 868px;
+            color: #fff;
         }
 
-        .label5 {
-            color: white;
-            font-size: 18px;
+        .compare-table {
+            border-collapse: collapse;
             position: absolute;
-            margin-top: 19.5%;
-            margin-left: 30.5%;
-            border-radius: 40px;
+            width: 1318px;
+            top: 400px;
+            left: 300px;
         }
 
-        .label6 {
-            color: white;
-            font-size: 18px;
+        .compare-table th, .compare-table td {
+            padding: 18px;
+            border-bottom: 2px solid rgba(255, 255, 255, .8);
+            text-align: center;
+            font-size: 26px;
+            color: #fff;
+            font-weight: normal;
+        }
+        .compare-table td {
+            border-bottom: 1px solid rgba(255, 255, 255, .5);
+        }
+        .compare-table th {
+            padding: 12px 0;
+        }
+        .compare-th-label {
+            display: block;
+            width: 286px;
+            margin: 0 auto;
+            text-align: left;
+            white-space: nowrap;
+        }
+        .compare-path {
+            position: relative;
+            width: 438px;
+            height: 50px;
+            margin: 0 auto;
+        }
+        .dun, .chuanshu, .fuwuqi {
+            height: 50px;
             position: absolute;
-            margin-top: 19.5%;
-            margin-left: 48%;
-            border-radius: 40px;
+            top: 0;
+            box-sizing: border-box;
+            padding-top: 30px;
+            font-size: 20px;
+            white-space: nowrap;
         }
-
-        .label7 {
-            color: white;
-            font-size: 18px;
+        .dun {
+            width: 60px;
+            background: url(image/newimg/department.png) no-repeat center top/auto 26px;
+            left: 0; 
+        }
+        .chuanshu {
+            width: 96px;
+            background: url(image/newimg/连接.png) no-repeat center top/auto 26px;
+            left: 170px;
+            top: 2px;
+            padding-top: 28px;
+        }
+        .fuwuqi {
+            width: 90px;
+            background: url(image/newimg/服务器.png) no-repeat center top/auto 26px;
+            left: 362px; 
+        }
+        .jiantou, .jiantou-gray {
             position: absolute;
-            margin-top: 19.5%;
-            margin-left: 69%;
-            border-radius: 40px;
+            height: 10px;
+            width: 134px;
+            background: url(image/newimg/右向箭头.png) no-repeat center center/contain;
         }
-
-        .division {
-            width: 1350px;
-            height: 2px;
-            margin-top: 21%;
-            margin-left: 15%;
-            position: absolute;
-            background-color: white;
+        .jiantou-gray {
+            background: url(image/newimg/灰色箭头.png) no-repeat center center/contain;
         }
-
-        .division2 {
-            width: 1350px;
-            height: 2px;
-            margin-top: 26%;
-            margin-left: 15%;
-            position: absolute;
-            background-color: white;
+        .jiantou-left-top {
+            left: 49px;
+            top: 1px;
         }
-
-        .division3 {
-            width: 1350px;
-            height: 2px;
-            margin-top: 30%;
-            margin-left: 15%;
-            position: absolute;
-            background-color: white;
-        }
-
-        .division4 {
-            width: 1350px;
-            height: 2px;
-            margin-top: 34%;
-            margin-left: 15%;
-            position: absolute;
-            background-color: white;
-        }
-
-        .division5 {
-            width: 1350px;
-            height: 2px;
-            margin-top: 38%;
-            margin-left: 15%;
-            position: absolute;
-            background-color: white;
-        }
-
-        .quality_inspection_label {
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 23%;
-            margin-left: 28%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-
-        .process_label {
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 27.5%;
-            margin-left: 28%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-
-        .equipment_label {
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 31.5%;
-            margin-left: 28%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-
-        .production_label {
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 35.5%;
-            margin-left: 28%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-
-        .monitor_label {
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 39.5%;
-            margin-left: 28%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-
-        .quality_inspection_label_first {
-            color: white;
-            font-size: 12px;
-            position: absolute;
-            margin-top: 24.5%;
-            margin-left: 30%;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-
-        .perfbackground{
-        background: url(image/newimg/大矩形.png) no-repeat center center;
-        background-size: 100% 100%;
-        height: 807px;
-        width: 1450px;
-        position: absolute;
-        margin-top: 228px;
-        margin-left: 240px;
-        opacity: 0.2;
-        }
-
-
-        .dun1 {
-            background: url(image/newimg/盾牌.png) no-repeat center center;
-            background-size: 100% 100%;
-                height: 37px;
-                width: 35px;
-            position: absolute;
-            margin-top: 23%;
-            margin-left: 37%;
-        }
-
-        .jiantou1 {
-              background: url(image/newimg/右向箭头.png) no-repeat center center;
-              background-size: 100% 100%;
-              height: 10px;
-              width: 134px;
-              position: absolute;
-              margin-top: 22.9%;
-              margin-left: 40.6%;
-        }
-
-        .jiantou2 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 24%;
-            margin-left: 40%;
+        .jiantou-left-bottom {
+            left: 49px;
+            top: 18px;
             transform: rotate(180deg);
         }
-
-        .chuanshu1 {
-            background: url(image/newimg/连接.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 35px;
-            width: 70px;
-            position: absolute;
-            margin-top: 22.8%;
-            margin-left: 48%;
+        .jiantou-right-top {
+            left: 250px;
+            top: 1px;
         }
-
-        .jiantou3 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 23%;
-            margin-left: 52%;
-        }
-
-        .jiantou4 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 24%;
-            margin-left: 52%;
+        .jiantou-right-bottom {
             transform: rotate(180deg);
+            left: 250px;
+            top: 18px;
         }
-
-        .fuwuqi1 {
-            background: url(image/newimg/服务器.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 36px;
-                width: 46px;
-            position: absolute;
-            margin-top: 23%;
-            margin-left: 60%;
+        .time1, .time2, .time3, .time4, .time5 {
+            height: 24px;
+            border-radius: 2px;
+            background: #53D6FF;
         }
-
         .time1 {
-            background: url(image/newimg/方块.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 30px;
-            width: 300px;
-            position: absolute;
-            margin-top: 23.5%;
-            margin-left: 65%;
-            opacity: 0.9;
-            border-radius: 2px;
+            width: 300px;    
         }
-
-
-
-
-        .dun2 {
-            background: url(image/newimg/盾牌.png) no-repeat center center;
-            background-size: 100% 100%;
-                height: 37px;
-                width: 35px;
-            position: absolute;
-            margin-top: 27%;
-            margin-left: 37%;
-        }
-
-        .jiantou5 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 27%;
-            margin-left: 39.7%;
-        }
-
-        .jiantou6 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 28%;
-            margin-left: 40%;
-            transform: rotate(180deg);
-        }
-
-        .chuanshu2 {
-            background: url(image/newimg/连接.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 35px;
-            width: 70px;
-            position: absolute;
-            margin-top: 26.8%;
-            margin-left: 48%;
-        }
-
-        .jiantou7 {
-            background: url(image/newimg/灰色箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 27%;
-            margin-left: 51.7%;
-        }
-
-        .jiantou8 {
-            background: url(image/newimg/灰色箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 28%;
-            margin-left: 52%;
-            transform: rotate(180deg);
-        }
-
-        .fuwuqi2 {
-            background: url(image/newimg/服务器.png) no-repeat center center;
-            background-size: 100% 100%;
-           height: 36px;
-               width: 46px;
-            position: absolute;
-            margin-top: 27%;
-            margin-left: 60%;
-        }
-
-        .time2 {
-            background: url(image/newimg/方块.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 30px;
-            width: 140px;
-            position: absolute;
-            margin-top: 27.5%;
-            margin-left: 65%;
-            opacity: 0.9;
-            border-radius: 2px;
-        }
-
-
-        .dun3 {
-            background: url(image/newimg/盾牌.png) no-repeat center center;
-            background-size: 100% 100%;
-                height: 37px;
-                width: 35px;
-            position: absolute;
-            margin-top: 31%;
-            margin-left: 37%;
-        }
-
-        .dun4 {
-            background: url(image/newimg/盾牌.png) no-repeat center center;
-            background-size: 100% 100%;
-                height: 37px;
-                width: 35px;
-            position: absolute;
-            margin-top: 35%;
-            margin-left: 37%;
-        }
-
-        .dun5 {
-            background: url(image/newimg/盾牌.png) no-repeat center center;
-            background-size: 100% 100%;
-                height: 37px;
-                width: 35px;
-            position: absolute;
-            margin-top: 39%;
-            margin-left: 37%;
-        }
-
-        .jiantou9 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 31%;
-            margin-left: 39.7%;
-        }
-
-        .jiantou10 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 32%;
-            margin-left: 40%;
-            transform: rotate(180deg);
-        }
-
-        .chuanshu3 {
-            background: url(image/newimg/连接.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 35px;
-            width: 70px;
-            position: absolute;
-            margin-top: 30.8%;
-            margin-left: 48%;
-        }
-
-        .jiantou11 {
-            background: url(image/newimg/灰色箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 31%;
-            margin-left: 51.7%;
-        }
-
-        .jiantou12 {
-            background: url(image/newimg/灰色箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 32%;
-            margin-left: 52%;
-            transform: rotate(180deg);
-        }
-
-        .jiantou13 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 35%;
-            margin-left: 39.7%;
-        }
-
-        .jiantou14 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 36%;
-            margin-left: 40%;
-            transform: rotate(180deg);
-        }
-
-        .chuanshu4 {
-            background: url(image/newimg/连接.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 35px;
-            width: 70px;
-            position: absolute;
-            margin-top: 34.8%;
-            margin-left: 48%;
-        }
-
-        .jiantou15 {
-            background: url(image/newimg/灰色箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 35%;
-            margin-left: 51.7%;
-        }
-
-        .jiantou16 {
-            background: url(image/newimg/灰色箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 36%;
-            margin-left: 52%;
-            transform: rotate(180deg);
-        }
-
-        .jiantou17 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 39%;
-            margin-left: 39.7%;
-        }
-
-        .jiantou18 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 40%;
-            margin-left: 40%;
-            transform: rotate(180deg);
-        }
-
-        .chuanshu5 {
-            background: url(image/newimg/连接.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 35px;
-            width: 70px;
-            position: absolute;
-            margin-top: 38.8%;
-            margin-left: 48%;
-        }
-
-        .jiantou19 {
-            background: url(image/newimg/灰色箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 39%;
-            margin-left: 51.7%;
-        }
-
-        .jiantou20 {
-            background: url(image/newimg/灰色箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 40%;
-            margin-left: 52%;
-            transform: rotate(180deg);
-        }
-
-        .fuwuqi3 {
-            background: url(image/newimg/服务器.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 36px;
-                width: 46px;
-            position: absolute;
-            margin-top: 31%;
-            margin-left: 60%;
-        }
-
+        
         .time3 {
-            background: url(image/newimg/方块.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 30px;
             width: 140px;
-            position: absolute;
-            margin-top: 31.5%;
-            margin-left: 65%;
-            opacity: 0.9;
-            border-radius: 2px;
-        }
-
-        .fuwuqi4 {
-            background: url(image/newimg/服务器.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 36px;
-                width: 46px;
-            position: absolute;
-            margin-top: 35%;
-            margin-left: 60%;
         }
 
         .time4 {
-            background: url(image/newimg/方块.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 30px;
             width: 140px;
-            position: absolute;
-            margin-top: 35.5%;
-            margin-left: 65%;
-            opacity: 0.9;
-            border-radius: 2px;
-        }
-
-        .fuwuqi5 {
-            background: url(image/newimg/服务器.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 36px;
-                width: 46px;
-            position: absolute;
-            margin-top: 39%;
-            margin-left: 60%;
         }
 
         .time5 {
-            background: url(image/newimg/方块.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 30px;
             width: 140px;
-            position: absolute;
-            margin-top: 39.5%;
-            margin-left: 65%;
-            opacity: 0.9;
-            border-radius: 2px;
         }
-
-        .dun3 {
-            background: url(image/newimg/盾牌.png) no-repeat center center;
-            background-size: 100% 100%;
-                height: 37px;
-                width: 35px;
-            position: absolute;
-            margin-top: 31%;
-            margin-left: 37%;
-        }
-
-        .jiantou9 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 31%;
-            margin-left: 39.7%;
-        }
-
-        .jiantou10 {
-         background: url(image/newimg/右向箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 32%;
-            margin-left: 40%;
-            transform: rotate(180deg);
-        }
-
-        .chuanshu3 {
-            background: url(image/newimg/连接.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 35px;
-            width: 70px;
-            position: absolute;
-            margin-top: 31.8%;
-            margin-left: 48%;
-        }
-
-        .jiantou11 {
-            background: url(image/newimg/灰色箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 31%;
-            margin-left: 51.7%;
-        }
-
-        .jiantou12 {
-            background: url(image/newimg/灰色箭头.png) no-repeat center center;
-            background-size: 100% 100%;
-               height: 10px;
-    width: 134px;
-
-            position: absolute;
-            margin-top: 32%;
-            margin-left: 52%;
-            transform: rotate(180deg);
-        }
-
-        .fuwuqi3 {
-            background: url(image/newimg/服务器.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 36px;
-                width: 46px;
-            position: absolute;
-            margin-top: 31%;
-            margin-left: 60%;
-        }
-
-        .time3 {
-            background: url(image/newimg/方块.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 30px;
+        .time2 {
             width: 140px;
-            position: absolute;
-            margin-top: 31.5%;
-            margin-left: 65%;
-            opacity: 0.9;
-            border-radius: 2px;
         }
-
-        .go {
-            background: url(image/newimg/首次获取数据.png) no-repeat center center;
-            background-size: contain;
-            position: absolute;
-            top: 568px;
-            left: 732px;
-            height: 116px;
-            width: 472px;
-            color: white;
-            font-size: 18px;
-            border: 0;
-        }
-
         .return2 {
             margin-top: 13%;
             margin-left: 82%;
@@ -997,7 +352,6 @@
             line-height: 15px;
             padding-left: 38px;
             padding-top: 10px;
-            font-weight: 600;
             color: white;
         }
 
@@ -1010,6 +364,13 @@
             background-position: center;
             position: absolute;
             background-size: 100% 100%;
+        }
+        .box-visual {
+            position: absolute;
+            width: 1451px;
+            height: 726px;
+            top: 296px;
+            left: 235px;
         }
     </style>
 </head>
@@ -1032,134 +393,161 @@
             <div class="control-bar-button lable3">沙盘位置示意图</div>
         </div>
         <button class="home">首页</button>
+        <div class="box box-visual"></div>
         <div class="div1">
      <label class="label1">文件名:</label>
         <input type="text" value="纪念币1" class="input" maxlength="8" />
-<!--            <button class="button1">-->
-<!--                <p class="button_p0">质检部获取数据</p>-->
-<!--                <p class="button_p1">（首次）</p>-->
-<!--            </button>-->
- <button class="go button1"></button>
+        <button class="go button1">
+            <p class="button_p0">质检部<br>获取数据</p>
+            <p class="button_p1">（首次）</p>
+        </button>
              <div class="completeicon"></div>
             <label class="label2">数据传输中……</label>
             <label class="label3">质检部已接收，
                 <a href="#" class="label3_a">显示数据</a>
             </label>
             <div class="jieduan2">
-            <div class="department2 button2"></div>
-<!--                <button class="button2">-->
-<!--                    <p class="button_p0">市场部获取数据</p>-->
-<!--                    <p class="button_p1">（再次）</p>-->
-<!--                </button>-->
-            <div class="department3 button3"></div>
+            <div class="department department2 button2">
+                <p class="button_p0">市场部<br>获取数据</p>
+                <p class="button_p1">（再次）</p>
+            </div>
+            <div class="department department3 button3">
+                <p class="button_p0">运营部<br>获取数据</p>
+                <p class="button_p1">（再次）</p>
+            </div>
 
-<!--                <button class="button3">-->
-<!--                    <p class="button_p0">运营部获取数据</p>-->
-<!--                    <p class="button_p1">（再次）</p>-->
-<!--                </button>-->
+            <div class="department department4 button4">
+                <p class="button_p0">产品部<br>获取数据</p>
+                <p class="button_p1">（再次）</p>
+            </div>
 
-            <div class="department4 button4"></div>
-
-<!--                <button class="button4">-->
-<!--                    <p class="button_p0">产品部获取数据</p>-->
-<!--                    <p class="button_p1">（再次）</p>-->
-<!--                </button>-->
-
-            <div class="department5 button5"></div>
-
-<!--                <button class="button5">-->
-<!--                    <p class="button_p0">监控部获取数据</p>-->
-<!--                    <p class="button_p1">（再次）</p>-->
-<!--                </button>-->
-                <label class="gongyibu">工艺部已接收，
-                    <a href="#" class="gongyibu_a">显示数据</a></label>
-                <label class="shebeibu">设备部已接收，
-                    <a href="#" class="shebeibu_a">显示数据</a>
-                </label>
-                <label class="shengchanbu">生产部已接收，
-                    <a href="#" class="shengchanbu_a">显示数据</a>
-                </label>
-                <label class="chanpinkaifabu">产品部已接收，
-                    <a href="#" class="chanpinkaifabu_a">显示数据</a>
-                </label>
+            <div class="department department5 button5">
+                <p class="button_p0">监控部<br>获取数据</p>
+                <p class="button_p1">（再次）</p>
+            </div>
+            <label class="gongyibu">市场部已接收，
+                <a href="#" class="gongyibu_a">显示数据</a></label>
+            <label class="shebeibu">运营部已接收，
+                <a href="#" class="shebeibu_a">显示数据</a>
+            </label>
+            <label class="shengchanbu">产品部已接收，
+                <a href="#" class="shengchanbu_a">显示数据</a>
+            </label>
+            <label class="chanpinkaifabu">监控部已接收，
+                <a href="#" class="chanpinkaifabu_a">显示数据</a>
+            </label>
 <!--                <button class="button6">性能对比</button>-->
-                <div class="xndb button6"></div>
+            <div class="xndb button6"></div>
 
             </div>
         </div>
         <div class="div2">
-             <div class="perfbackground"></div>
-            <label class="label4">性&nbsp;能&nbsp;对&nbsp;比</label>
-            <label class="label5">部门</label>
-            <label class="label6">传输路径</label>
-            <label class="label7">用户响应时间</label>
-            <div class="division"></div>
-            <div class="quality_inspection">
-                <label class="quality_inspection_label">质检部获取数据</label>
-                <label class="quality_inspection_label_first">（首次）</label>
-                <div class="dun1"></div>
-                <div class="jiantou1"></div>
-                <div class="jiantou2"></div>
-                <div class="chuanshu1"></div>
-                <div class="jiantou3"></div>
-                <div class="jiantou4"></div>
-                <div class="fuwuqi1"></div>
-                <div class="time1"></div>
+            <label class="label4">性能对比</label>
+            <table class="compare-table">
+                <tr>
+                    <th><label class="label5">部门</label></th>
+                    <th><label class="label6">传输路径</label></th>
+                    <th><label class="label7">用户响应时间</label></th>
+                </tr>
+                <tr class="quality_inspection">
+                    <td>
+                        <label class="compare-th-label quality_inspection_label">质检部获取数据（首次）</label>
+                    </td>
+                    <td>
+                        <div class="compare-path">
+                            <div class="dun dun1">质检部</div>
+                            <div class="jiantou jiantou-left-top jiantou1"></div>
+                            <div class="jiantou jiantou-left-bottom jiantou2"></div>
+                            <div class="chuanshu chuanshu1">多模态网元</div>
+                            <div class="jiantou jiantou-right-top jiantou3"></div>
+                            <div class="jiantou jiantou-right-bottom jiantou4"></div>
+                            <div class="fuwuqi fuwuqi1">企业云平台</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="time1"></div>
+                    </td>
+                </tr>
+                <tr class="process">
+                    <td>
+                        <label class="compare-th-label process_label">市场部获取数据</label>
+                    </td>
+                    <td>
+                        <div class="compare-path">
+                            <div class="dun dun2">市场部</div>
+                            <div class="jiantou jiantou-left-top jiantou5"></div>
+                            <div class="jiantou jiantou-left-bottom jiantou6"></div>
+                            <div class="chuanshu chuanshu2">多模态网元</div>
+                            <div class="jiantou-gray jiantou-right-top jiantou7"></div>
+                            <div class="jiantou-gray jiantou-right-bottom jiantou8"></div>
+                            <div class="fuwuqi fuwuqi2">企业云平台</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="time2"></div>
+                    </td>
+                </tr>
 
-            </div>
+                <tr class="equipment">
+                    <td>
+                        <label class="compare-th-label equipment_label">运营部获取数据</label>
+                    </td>
+                    <td>
+                        <div class="compare-path">
+                            <div class="dun dun3">运营部</div>
+                            <div class="jiantou jiantou-left-top jiantou9"></div>
+                            <div class="jiantou jiantou-left-bottom jiantou10"></div>
+                            <div class="chuanshu chuanshu3">多模态网元</div>
+                            <div class="jiantou-gray jiantou-right-top jiantou11"></div>
+                            <div class="jiantou-gray jiantou-right-bottom jiantou12"></div>
+                            <div class="fuwuqi fuwuqi3">企业云平台</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="time3"></div>
+                    </td>
+                </tr>
 
-            <div class="division2"></div>
+                <tr class="production">
+                    <td>
+                        <label class="compare-th-label production_label">产品部获取数据</label>
+                    </td>
+                    <td>
+                        <div class="compare-path">
+                            <div class="dun dun4">产品部</div>
+                            <div class="jiantou jiantou-left-top jiantou13"></div>
+                            <div class="jiantou jiantou-left-bottom jiantou14"></div>
+                            <div class="chuanshu chuanshu4">多模态网元</div>
+                            <div class="jiantou-gray jiantou-right-top jiantou15"></div>
+                            <div class="jiantou-gray jiantou-right-bottom jiantou16"></div>
+                            <div class="fuwuqi fuwuqi4">企业云平台</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="time4"></div>
+                    </td>
+                </tr>
 
-            <div class="process">
-                <label class="process_label">市场部获取数据</label>
-                <div class="dun2"></div>
-                <div class="jiantou5"></div>
-                <div class="jiantou6"></div>
-                <div class="chuanshu2"></div>
-                <div class="jiantou7"></div>
-                <div class="jiantou8"></div>
-                <div class="fuwuqi2"></div>
-                <div class="time2"></div>
-            </div>
-            <div class="division3"></div>
-
-            <div class="equipment">
-                <label class="equipment_label">运营部获取数据</label>
-                <div class="dun3"></div>
-                <div class="jiantou9"></div>
-                <div class="jiantou10"></div>
-                <div class="chuanshu3"></div>
-                <div class="jiantou11"></div>
-                <div class="jiantou12"></div>
-                <div class="fuwuqi3"></div>
-                <div class="time3"></div>
-            </div>
-            <div class="division4"></div>
-
-            <div class="production">
-                <label class="production_label">产品部获取数据</label>
-                <div class="dun4"></div>
-                <div class="jiantou13"></div>
-                <div class="jiantou14"></div>
-                <div class="chuanshu4"></div>
-                <div class="jiantou15"></div>
-                <div class="jiantou16"></div>
-                <div class="fuwuqi4"></div>
-                <div class="time4"></div>
-            </div>
-            <div class="division5"></div>
-
-            <div class="monitor">
-                <label class="monitor_label">监控部获取数据</label>
-                <div class="dun5"></div>
-                <div class="jiantou17"></div>
-                <div class="jiantou18"></div>
-                <div class="chuanshu5"></div>
-                <div class="jiantou19"></div>
-                <div class="jiantou20"></div>
-                <div class="fuwuqi5"></div>
-                <div class="time5"></div>
-            </div>
+                <tr class="monitor">
+                    <td>
+                        <label class="compare-th-label monitor_label">监控部获取数据</label>
+                    </td>
+                    <td>
+                        <div class="compare-path">
+                            <div class="dun dun5">监控部</div>
+                            <div class="jiantou jiantou-left-top jiantou17"></div>
+                            <div class="jiantou jiantou-left-bottom jiantou18"></div>
+                            <div class="chuanshu chuanshu5">多模态网元</div>
+                            <div class="jiantou-gray jiantou-right-top jiantou19"></div>
+                            <div class="jiantou-gray jiantou-right-bottom jiantou20"></div>
+                            <div class="fuwuqi fuwuqi5">企业云平台</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="time5"></div>
+                    </td>
+                </tr>
+            </table>
             <button class="button7">返回</button>
         </div>
         <button class="full"></button>
@@ -1353,8 +741,7 @@
                     }
                 })
                 $(".button1").attr("readonly", "readonly");
-                $(".button1 .button_p0").css("color", "gray");
-                $(".button1 .button_p1").css("color", "gray");
+                $(".button1").addClass('disabled');
                 $(".label2").show();
                 setTimeout(function () {
                     $(".label2").hide()
@@ -1367,8 +754,7 @@
             });
             $(".button2").click(function (e) {
                 state2 = true;
-                $(".button2 .button_p0").css("color", "gray");
-                $(".button2 .button_p1").css("color", "gray");
+                $(".button2").addClass("disabled");
                 setTimeout(function () {
                     $(".gongyibu").show();
                     $(".button6").show();
@@ -1387,8 +773,7 @@
             });
             $(".button3").click(function (e) {
                 state3 = true;
-                $(".button3 .button_p0").css("color", "gray");
-                $(".button3 .button_p1").css("color", "gray");
+                $(".button3").addClass("disabled");;
                 setTimeout(function () {
                     $(".shebeibu").show();
                     $(".button6").show();
@@ -1408,8 +793,7 @@
             });
             $(".button4").click(function (e) {
                 state4 = true;
-                $(".button4 .button_p0").css("color", "gray");
-                $(".button4 .button_p1").css("color", "gray");
+                $(".button4").addClass("disabled");;
                 setTimeout(function () {
                     $(".shengchanbu").show();
                     $(".button6").show();
@@ -1428,8 +812,7 @@
             });
             $(".button5").click(function (e) {
                 state5 = true;
-                $(".button5 .button_p0").css("color", "gray");
-                $(".button5 .button_p1").css("color", "gray");
+                $(".button5").addClass("disabled");;
                 setTimeout(function () {
                     $(".chanpinkaifabu").show();
                     $(".button6").show();
