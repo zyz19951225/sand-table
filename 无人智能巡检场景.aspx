@@ -20,14 +20,12 @@
         }
 
         .image1 {
-              background: url(image/newimg/矩形.png) no-repeat center center;
-                  background-size: 100% 100%;
-                  position: absolute;
-                  margin-top: 216px;
-                  margin-left: 375px;
-                  width: 1171px;
-                  height: 810px;
-                  opacity: 0.2;
+                 position: absolute;
+                 margin-top: 316px;
+                 margin-left: 375px;
+                 width: 1171px;
+                 height: 668PX;
+
                         }
 
         .title {
@@ -44,27 +42,32 @@
         }
 
         .inspection {
-             background: url(image/newimg/智能巡检.png) no-repeat center center;
-             position: absolute;
-             margin-top: 525px;
-             height: 98px;
-             width: 454px;
-             margin-left: 733px;
-             font-weight: 600;
-             font-family: 宋体;
-             text-align: center;
-             border-radius: 10px;
-             border: 0;
+                background: url(image/newimg/智能巡检.png) no-repeat center center;
+                position: absolute;
+                left: 358px;
+                top: 258px;
+                /* margin-top: 525px; */
+                height: 116px;
+                width: 472px;
+                /* margin-left: 733px; */
+                font-weight: 600;
+                font-family: 宋体;
+                text-align: center;
+                border-radius: 10px;
+                border: 0;
         }
 
         .switch {
+                        background: url(image/newimg/切换至IP模式.png) no-repeat center center;
+
                 color: black;
                 font-size: 18px;
                 position: absolute;
-                margin-top: 774px;
+                top:468px;
+                left:472px;
                 height: 50px;
                 width: 250px;
-                margin-left: 842px;
+
                 font-weight: 600;
                 font-family: 宋体;
                 text-align: center;
@@ -75,8 +78,8 @@
         .load {
             background: url(image/加载2.png) no-repeat center center;
             background-size: 100% 100%;
-            height: 20px;
-            width: 20px;
+            height: 48px;
+            width: 48px;
             position: absolute;
         }
 
@@ -100,12 +103,14 @@
         }
 
         .load1 {
-       margin-top: 392px;
-           margin-left: 849px;
+         position: absolute;
+         top: 177px;
+         left: 431px;
         }
            .load12 {
-              margin-top: 447px;
-                       margin-left: 849px;
+                position: absolute;
+                top: 89px;
+                left: 431px;
         }
 
         .load2 {
@@ -117,8 +122,8 @@
       color: white;
       font-size: 30px;
       position: absolute;
-      margin-top: 378px;
-      margin-left: 831px;
+      top: 94px;
+      left: 530px;
       font-weight: 600;
       width: 250px;
       text-align: center;
@@ -127,8 +132,8 @@
        color: white;
        font-size: 30px;
        position: absolute;
-       margin-top: 434px;
-       margin-left: 875px;
+     top: 182px;
+          left: 530px;
        font-weight: 600;
        width: 250px;
        text-align: center;
@@ -146,22 +151,22 @@
         }
 
         .loadLabel3 {
-             color: white;
-             font-size: 30px;
-             position: absolute;
-             margin-top: 650px;
-             margin-left: 732PX;
-             /* font-weight: 600; */
-             /* width: 300px; */
-             text-align: center;
+              color: white;
+               font-size: 30px;
+               position: absolute;
+               top: 387px;
+               left: 368px;
+               /* font-weight: 600; */
+               /* width: 300px; */
+               text-align: center;
         }
 
         .loadLabel4 {
                 color: #ada5a5;
                 font-size: 18px;
                 position: absolute;
-                margin-top: 837px;
-                margin-left: 813px;
+                top:535px;
+                left:448px;
                 font-weight: 600;
                 width: 300px;
                 text-align: center;
@@ -187,22 +192,24 @@
             </div>
             <div class="control-bar-button lable3">沙盘位置示意图</div>
         </div>
-        <div class="image1"></div>
         <label class="lable1">二号投影大屏:</label>
         <label class="lable2">场景介绍</label>
         <label class="lable4">沙盘演示</label>
         <label class="lable3">沙盘位置示意图</label>
 <!--        <button class="inspection">智能巡检</button>-->
-        <div class="inspection"></div>
-        <div class="load load1"></div>
-        <div class="load load2"></div>
-        <div class="load load12"></div>
-        <label class="loadLabel1">巡检中......</label>
-        <label class="loadLabel12">正在数据采集......</label>
-        <label class="loadLabel2"></label>
-        <label class="loadLabel3">当前巡检数据上传模式为身份模态</label>
-        <button class="switch">切换至ip模式</button>
-        <label class="loadLabel4">请在数据采集状态下切换</label>
+      <div class="image1 box">
+          <div class="inspection"></div>
+          <div class="load load1"></div>
+          <div class="load load2"></div>
+          <div class="load load12"></div>
+          <label class="loadLabel1">巡检中......</label>
+          <label class="loadLabel12">正在数据采集......</label>
+          <label class="loadLabel2"></label>
+          <label class="loadLabel3">当前巡检数据上传模式为身份模态</label>
+          <div class="switch"></div>
+          <label class="loadLabel4">请在数据采集状态下切换</label>
+       </div>
+
         <button class="home">首页</button>
         <button class="full"></button>
 
