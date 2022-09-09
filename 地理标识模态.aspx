@@ -86,15 +86,19 @@
         }
 
         .width {
-    top: 86px;
-    left: 75px;
-    height: 27.2px;
-    color: black;
-    font-size: 20px;
-    position: absolute;
-    width: 100px;
-    font-weight: 400;
-    text-align: center;
+     top: 86px;
+     left: 75px;
+     height: 27.2px;
+     color: black;
+     font-size: 20px;
+     position: absolute;
+     width: 100px;
+     font-weight: 400;
+     text-align: center;
+     background-color: transparent;
+     border-radius: 10px;
+     color: white;
+     border: white 1px solid;
         }
 		.bianchang {
     top: 86px;
@@ -106,6 +110,10 @@
     width: 100px;
     font-weight: 400;
     text-align: center;
+        background-color: transparent;
+        border-radius: 10px;
+        color: white;
+        border: white 1px solid;
         }
 
         .banjing {
@@ -118,6 +126,10 @@
                width: 100px;
                font-weight: 400;
                text-align: center;
+                   background-color: transparent;
+                   border-radius: 10px;
+                   color: white;
+                   border: white 1px solid;
         }
 
         .height {
@@ -132,6 +144,10 @@
         text-align: center;
         top: 139px;
         left: 75px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    border: white 1px solid;
         }
 
         .mm_label1 {
@@ -258,23 +274,24 @@
 }
 
 .radioone{
-    left: 125PX;
+    left: 100PX;
     top: 135px;
 }
 .radiosecond{
-    left: 125PX;
+    left: 100PX;
     top: 279px;
 }
 .radiothree{
-    left: 125PX;
+    left: 100PX;
     top: 423px;
 }
         .radio1 {
-                 color: white;
-                 font-size: 24px;
-                 position: absolute;
-                 width: 20px;
-                 height: 20px;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 7px;
         }
 
         .coordinate1 {
@@ -300,7 +317,7 @@
               color: white;
               font-size: 20px;
               position: absolute;
-top: 30px;
+top: 34px;
     left: 20px;
               border-radius: 40px;
         }
@@ -340,7 +357,7 @@ top: 30px;
         color: white;
                            font-size: 20px;
                            position: absolute;
-    top: 62px;
+    top: 64px;
     left: 20px;
                            border-radius: 40px;
                            font-weight:100
@@ -391,11 +408,12 @@ color: white;
         }
 
         .radio2 {
-               color: white;
-               font-size: 24px;
-               position: absolute;
-               width: 20px;
-               height: 20px;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 7px;
 
         }
 
@@ -441,11 +459,12 @@ top: 30px;
         }
 
         .radio3 {
-           color: white;
-               font-size: 24px;
-               position: absolute;
-               width: 20px;
-               height: 20px;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 7px;
         }
 
         .coordinate9 {
@@ -509,7 +528,7 @@ top: 30px;
         .xzxz{
             border: 1px dashed white;
             height: 195px;
-            width: 383px;
+            width: 393px;
             left: 56px;
             top: 20px;
             position: absolute;
