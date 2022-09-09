@@ -25,22 +25,18 @@
         .control-bar {
             border-bottom: 1px solid rgba(255,255,255,.5);
             padding-bottom: 24px;
-            
         }
         .lable4 {
             margin-right: 36px;
         }
-
-
         .myCanvas {
-  position: absolute;
-      background-color: white;
-      margin-top: 271px;
-      margin-left: 581px;
-      background: url(image/newimg/地图.png) no-repeat center center;
-      background-size: 79% 78%;
+    position: absolute;
+    background-color: white;
+    margin-top: 47px;
+    margin-left: 720px;
+    background: url(image/newimg/地图.png) no-repeat center center;
+    background-size: 100%;
         }
-
         .menu {
             width: 40px;
             width: 1295px;
@@ -52,13 +48,21 @@
         }
 
         .square {
-            background: url(image/newimg/矩形区域.png) no-repeat center center;
-                background-size: 100% 100%;
-                width: 40px;
-                height: 40px;
-                position: absolute;
-                margin-top: 421px;
-                margin-left: 189px;
+        background: url(image/newimg/矩形区域.png) no-repeat center center;
+        background-size: 100% 100%;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 29px;
+        left: 158px;
+        }
+
+        .choosexz{
+            color: white;
+    position: absolute;
+    top: 36px;
+    left: 28px;
+    font-size: 22px;
         }
 
         .circular {
@@ -67,8 +71,8 @@
                width: 40px;
                height: 40px;
                position: absolute;
-               margin-top: 421px;
-               margin-left: 260px;
+                     top: 29px;
+                            left: 250px;
         }
 
         .triangle {
@@ -77,110 +81,127 @@
                 width: 40px;
                 height: 40px;
                 position: absolute;
-                margin-top: 421px;
-                margin-left: 320px;
+           top: 29px;
+                  left: 330px;
         }
 
         .width {
-
-           margin-top: 17%;
-            height: 27.2px;
-            color: black;
-                font-size: 20px;
-                position: absolute;
-                margin-top: 492PX;
-                width: 100px;
-                margin-left: 217px;
-                font-weight: 400;
-                text-align: center;
+    top: 86px;
+    left: 75px;
+    height: 27.2px;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    width: 100px;
+    font-weight: 400;
+    text-align: center;
         }
 		.bianchang {
-             color: black;
-             font-size: 20px;
-             position: absolute;
-             margin-top: 489px;
-             height: 27.2px;
-             width: 100px;
-             margin-left: 242px;
-             font-weight: 400;
-             text-align: center;
+    top: 86px;
+    left: 85px;
+    height: 27.2px;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    width: 100px;
+    font-weight: 400;
+    text-align: center;
         }
 
         .banjing {
-            color: black;
-            font-size: 20px;
-            position: absolute;
- margin-top: 489px;
-  height: 27.2px;
-            width: 100px;
-          margin-left: 242px;
-            font-weight: 400;
-            text-align: center;
+            top: 86px;
+               left: 85px;
+               height: 27.2px;
+               color: black;
+               font-size: 20px;
+               position: absolute;
+               width: 100px;
+               font-weight: 400;
+               text-align: center;
         }
 
         .height {
-            color: black;
-            font-size: 20px;
-            position: absolute;
-             margin-top: 492PX;
-            height: 27.2px;
-            width: 100px;
-           margin-left: 422px;
-            font-weight: 400;
-            text-align: center;
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        /* margin-top: 492PX; */
+        height: 27.2px;
+        width: 100px;
+        /* margin-left: 422px; */
+        font-weight: 400;
+        text-align: center;
+        top: 139px;
+        left: 75px;
         }
 
         .mm_label1 {
           color: #ffffff;
-              font-size: 19px;
-              font-family: 'Source Han Sans CN';
-              position: absolute;
-              margin-top: 492PX;
-              margin-left: 330PX;
-              border-radius: 40px;
-              font-weight: 600;
+          font-size: 19px;
+          font-family: 'Source Han Sans CN';
+          position: absolute;
+          /* margin-top: 492PX; */
+          /* margin-left: 330PX; */
+          border-radius: 40px;
+          font-weight: 600;
+          top: 89px;
+          left: 204px;
         }
 
         .mm_label2 {
-         color: #ffffff;
-             font-size: 19px;
-             font-family: 'Source Han Sans CN';
-             position: absolute;
-             margin-top: 492PX;
-             margin-left: 530px;
-             border-radius: 40px;
-             font-weight: 600;
+        color: #ffffff;
+                font-size: 19px;
+                font-family: 'Source Han Sans CN';
+                position: absolute;
+                /* margin-top: 492PX; */
+                /* margin-left: 330PX; */
+                border-radius: 40px;
+                font-weight: 600;
+                top: 138px;
+                left: 204px;
+        }
+
+          .mm_label3 {
+    color: #ffffff;
+    font-size: 19px;
+    font-family: 'Source Han Sans CN';
+    position: absolute;
+    /* margin-top: 492PX; */
+    /* margin-left: 330PX; */
+    border-radius: 40px;
+    font-weight: 600;
+    top: 105px;
+    left: 279px;
         }
 
         .width_label {
-              color: #ffffff;
-              font-size: 19px;
-              font-family: 'Source Han Sans CN';
-              position: absolute;
-              margin-top: 490px;
-              margin-left: 186px;
-              border-radius: 40px;
-              font-weight: 600;
+          color: #ffffff;
+          font-size: 19px;
+          font-family: 'Source Han Sans CN';
+          position: absolute;
+          top: 84px;
+          left: 28px;
+          border-radius: 40px;
+          font-weight: 600;
         }
 
         .height_label {
-            color: #ffffff;
-            font-size: 19px;
-            font-family: 'Source Han Sans CN';
-            position: absolute;
-           margin-top: 490px;
-                         margin-left: 386px;
-            border-radius: 40px;
-            font-weight: 600;
+     color: #ffffff;
+     font-size: 19px;
+     font-family: 'Source Han Sans CN';
+     position: absolute;
+     top: 138px;
+     left: 28px;
+     border-radius: 40px;
+     font-weight: 600;
         }
 
         .clearCanvas {
-                      background: url(image/newimg/清空画布.png) no-repeat center center;
-                      margin-top: 429px;
-                      margin-left: 393px;
-                      height: 30px;
-                      width: 120px;
-                      position: absolute;
+    top: 125px;
+    left: 278px;
+    position: absolute;
+    color:#2097FF;
+    font-size:20px;
+        border-bottom: 1px dashed;
         }
 
         .warning {
@@ -193,14 +214,11 @@
         }
 
     .image1 {
-        background: url(image/newimg/矩形大.png) no-repeat center center;
-        background-size: 100% 100%;
         position: absolute;
         margin-top: 292px;
         margin-left: 81px;
         width: 1759px;
         height: 583px;
-        opacity: 0.2;
     }
 
     .menu2 {
@@ -214,8 +232,8 @@
     }
     .option-group {
         position: absolute;
-        top: 340px;
-        left: 170px;
+       top: 47px;
+           left: 96px;
         border: 1px solid #fff;
         border-radius: 26px;
         display: flex;
@@ -232,14 +250,29 @@
         background-color: #2097FF;
     }
 
-    
 
+.choseMenu{
+    position: absolute;
+    width: 550PX;
+    height: 100PX;
+}
+
+.radioone{
+    left: 125PX;
+    top: 135px;
+}
+.radiosecond{
+    left: 125PX;
+    top: 279px;
+}
+.radiothree{
+    left: 125PX;
+    top: 423px;
+}
         .radio1 {
                  color: white;
                  font-size: 24px;
                  position: absolute;
-                 margin-top: 432px;
-                 margin-left: 173px;
                  width: 20px;
                  height: 20px;
         }
@@ -248,36 +281,39 @@
             color: white;
             font-size: 24px;
             position: absolute;
-            margin-top: 427px;
-            margin-left: 205px;
+    left: 20px;
             border-radius: 40px;
         }
 
-        .coordinate14 {
-         color: white;
-             font-size: 24px;
-             position: absolute;
-             margin-top: 544px;
-             margin-left: 177px;
-             border-radius: 40px;
+.coordinate14 {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    /* margin-top: 544px; */
+    /* margin-left: 177px; */
+    border-radius: 40px;
+    top: 232px;
+    left: 76px;
         }
 
         .coordinate2 {
               color: white;
               font-size: 20px;
               position: absolute;
-              margin-top: 464px;
-              margin-left: 200px;
+top: 30px;
+    left: 20px;
               border-radius: 40px;
         }
 
         .coordinate15 {
-           color: white;
-                     font-size: 20px;
-                     position: absolute;
-                     margin-top: 584px;
-                     margin-left: 177px;
-                     border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    /* margin-top: 614px; */
+    /* margin-left: 177px; */
+    top: 272px;
+    left: 76px;
+    border-radius: 40px;
         }
 
         .coordinate3 {
@@ -290,85 +326,98 @@
         }
 
         .coordinate16 {
-             color: white;
-                         font-size: 20px;
-                         position: absolute;
-                         margin-top: 614px;
-                         margin-left: 177px;
-                         border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    /* margin-top: 614px; */
+    /* margin-left: 177px; */
+    top: 308px;
+    left: 76px;
+    border-radius: 40px;
         }
 
         .coordinate4 {
         color: white;
                            font-size: 20px;
                            position: absolute;
-                           margin-top: 504px;
-                           margin-left: 200px;
+    top: 62px;
+    left: 20px;
                            border-radius: 40px;
+                           font-weight:100
         }
 
         .coordinate17 {
-             color: white;
-                                 font-size: 20px;
-                                 position: absolute;
-                                 margin-top: 644px;
-                                 margin-left: 177px;
-                                 border-radius: 40px;
+color: white;
+    font-size: 20px;
+    position: absolute;
+    /* margin-top: 614px; */
+    /* margin-left: 177px; */
+    top: 343px;
+    left: 76px;
+    border-radius: 40px;
         }
 
         .coordinate18 {
-               color: white;
-                                   font-size: 20px;
-                                   position: absolute;
-                                   margin-top: 674px;
-                                   margin-left: 177px;
-                                   border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    /* margin-top: 614px; */
+    /* margin-left: 177px; */
+    top: 350px;
+    left: 76px;
+    border-radius: 40px;
         }
 
         .coordinate19 {
-               color: white;
-                                   font-size: 20px;
-                                   position: absolute;
-                                   margin-top: 704px;
-                                   margin-left: 177px;
-                                   border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    /* margin-top: 614px; */
+    /* margin-left: 177px; */
+    top: 370px;
+    left: 76px;
+    border-radius: 40px;
         }
 
         .coordinate20 {
-                color: white;
-                                    font-size: 20px;
-                                    position: absolute;
-                                    margin-top: 734px;
-                                    margin-left: 177px;
-                                    border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    /* margin-top: 614px; */
+    /* margin-left: 177px; */
+    top: 390px;
+    left: 76px;
+    border-radius: 40px;
         }
 
         .radio2 {
                color: white;
                font-size: 24px;
                position: absolute;
-               margin-top: 560px;
-               margin-left: 174px;
                width: 20px;
                height: 20px;
+
         }
 
         .coordinate5 {
           color: white;
-               font-size: 24px;
-                                     position: absolute;
-                                     margin-top: 554px;
-                                     margin-left: 200px;
-                                     border-radius: 40px;
+color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 89px;
+    left: 20px;
+    border-radius: 40px;
+    font-weight: 100;
         }
 
         .coordinate6 {
               color: white;
               font-size: 20px;
               position: absolute;
-              margin-top: 593px;
-              margin-left: 200px;
+top: 30px;
+    left: 20px;
               border-radius: 40px;
+              font-weight: 100
         }
 
         .coordinate7 {
@@ -378,6 +427,7 @@
                 margin-top: 620px;
                 margin-left: 200px;
                 border-radius: 40px;
+                  font-weight: 100
         }
 
         .coordinate8 {
@@ -387,14 +437,13 @@
           margin-top: 644px;
           margin-left: 200px;
           border-radius: 40px;
+            font-weight: 100
         }
 
         .radio3 {
            color: white;
                font-size: 24px;
                position: absolute;
-               margin-top: 689px;
-               margin-left: 172px;
                width: 20px;
                height: 20px;
         }
@@ -406,6 +455,7 @@
     margin-top: 682px;
     margin-left: 200px;
     border-radius: 40px;
+      font-weight: 100
         }
 
         .coordinate10 {
@@ -415,6 +465,7 @@
          margin-top: 717px;
          margin-left: 200px;
          border-radius: 40px;
+           font-weight: 100
         }
 
         .coordinate11 {
@@ -424,6 +475,7 @@
          margin-top: 741px;
          margin-left: 200px;
          border-radius: 40px;
+           font-weight: 100
         }
 
         .coordinate12 {
@@ -433,6 +485,7 @@
               margin-top: 767px;
               margin-left: 200px;
               border-radius: 40px;
+                font-weight: 100
         }
 
         .coordinate13 {
@@ -442,16 +495,34 @@
               margin-top: 790px;
               margin-left: 200px;
               border-radius: 40px;
+                font-weight: 100
+        }
+
+        .zdyhz{
+    position: absolute;
+    width: 650px;
+    height: 425px;
+    top: 120px;
+        }
+
+
+        .xzxz{
+            border: 1px dashed white;
+            height: 195px;
+            width: 383px;
+            left: 56px;
+            top: 20px;
+            position: absolute;
+
         }
 
 
     </style>
 </head>
 <body class="bdy">
-    
+
         <div class="background"></div>
         <div class="occlusion"></div>
-        <div class="image1"></div>
         <div class="title"></div>
         <div class="control-bar">
             <label class="lable1">二号投影大屏：</label>
@@ -468,11 +539,7 @@
         <button class="full"></button>
         <button class="home">首页</button>
 
-        <canvas class="myCanvas" width="1295" height="622" id="myCanvas"></canvas>
-<!--        <canvas class="menu"></canvas>-->
-        <div class="square"></div>
-        <div class="circular"></div>
-        <div class="triangle"></div>
+
 <!--         <input type="number" value="1000" class="width" maxlength="3" /> -->
 <!--         <input type="number" value="1000" class="height" maxlength="3" /> -->
 <!--         <label class="width_label">宽:</label> -->
@@ -481,7 +548,48 @@
 <!--            <div class="d">发出警告</div>-->
 <!--        </button>-->
         <div class="warning d"></div>
+       <div class=" box image1">
+                <canvas class="myCanvas" width="960" height="480" id="myCanvas"></canvas>
+        <!--        <canvas class="menu"></canvas>-->
+        <div class="zdyhz">
 
+        <div class = xzxz>
+          <div class=choosexz>选择形状:</div>
+           <div class="square"></div>
+           <div class="circular"></div>
+           <div class="triangle"></div>
+          <div class="clearCanvas">清空画布</div>
+            <div class="d1">
+            <input type="number" value="1000" class="width" maxlength="3" />
+            <input type="number" value="1000" class="height" maxlength="3" />
+            <label class="width_label">宽:</label>
+            <label class="height_label">高:</label>
+              <label class="mm_label1">mm</label>
+                                                <label class="mm_label2">mm</label>
+             </div>
+               <div class="d2">
+              <input type="number" value="1000" class="bianchang" maxlength="3" />
+                <label class="width_label">边长:</label>
+              </div>
+                 <div class="d3">
+               <input type="number" value="500" class="banjing" maxlength="3" />
+               <label class="width_label">半径:</label>
+               </div>
+              </div>
+
+                          <div class="information2">
+
+
+                                    <label class="mm_label3">mm</label>
+
+                                    <label class="coordinate14">自定义寻址区域</label>
+                                    <label class="coordinate15">中心经度：0</label>
+                                    <label class="coordinate16">中心纬度：0</label>
+                                    <label class="coordinate17">水平边长：0</label>
+                                    <label class="coordinate18"></label>
+                                    <label class="coordinate19"></label>
+                                    <label class="coordinate20"></label></div>
+        </div>
 
 <!--        <canvas class="menu2"></canvas>-->
         <div class="option-group">
@@ -489,56 +597,32 @@
             <div class="option option2">自定义绘制</div>
         </div>
         <div class="information1">
+        <div class="radioone choseMenu">
             <input type="radio" name="radios" class="radio1" />
             <label class="coordinate1">目标寻址区域1</label>
-            <label class="coordinate2">中心经度：119.9711553</label>
-            <label class="coordinate3">中心纬度：30.2773782</label>
+            <label class="coordinate2">中心点经纬度：119.9711553,中心纬度：30.2773782</label>
+<!--             <label class="coordinate3">中心纬度：30.2773782</label> -->
             <label class="coordinate4">边长：700</label>
-
-
+</div>
+  <div class="radiosecond choseMenu">
             <input type="radio" name="radios" class="radio2" />
-            <label class="coordinate5">目标寻址区域2</label>
-            <label class="coordinate6">中心经度：119.9711553</label>
-            <label class="coordinate7">中心纬度：30.2773782</label>
-            <label class="coordinate8">半径：1000</label>
-
-
+            <label class="coordinate1">目标寻址区域2</label>
+            <label class="coordinate2">中心经度：119.9711553</label>
+<!--             <label class="coordinate7">中心纬度：30.2773782</label> -->
+            <label class="coordinate4">半径：1000</label>
+</div>
+  <div class="radiothree choseMenu">
             <input type="radio" name="radios" class="radio3" />
-            <label class="coordinate9">目标寻址区域3</label>
-            <label class="coordinate10">中心经度：119.9711553</label>
-            <label class="coordinate11">中心纬度：30.2773782</label>
-            <label class="coordinate12">水平半径：500</label>
-            <label class="coordinate13">垂直半径：900</label>
+            <label class="coordinate1">目标寻址区域3</label>
+            <label class="coordinate2">中心经度：119.9711553</label>
+<!--             <label class="coordinate11">中心纬度：30.2773782</label> -->
+            <label class="coordinate4">水平半径：500</label>
+            <label class="coordinate5">垂直半径：900</label>
+</div>
+        </div>
 
         </div>
-        <div class="information2">
-            <div class="d1">
-                <input type="number" value="1000" class="width" maxlength="3" />
-                <input type="number" value="1000" class="height" maxlength="3" />
-                <label class="width_label">宽:</label>
-                <label class="height_label">高:</label>
-            </div>
-            <div class="d2">
-                <input type="number" value="1000" class="bianchang" maxlength="3" />
-                <label class="width_label">边长:</label>
-            </div>
-            <div class="d3">
-                <input type="number" value="500" class="banjing" maxlength="3" />
-                <label class="width_label">半径:</label>
-            </div>
-            <label class="mm_label1">mm</label>
-            <label class="mm_label2">mm</label>
-            <label class="mm_label3">mm</label>
-            <button class="clearCanvas"></button>
-            <label class="coordinate14">自定义寻址区域</label>
-            <label class="coordinate15">中心经度：0</label>
-            <label class="coordinate16">中心纬度：0</label>
-            <label class="coordinate17">水平边长：0</label>
-            <label class="coordinate18"></label>
-            <label class="coordinate19"></label>
-            <label class="coordinate20"></label>
-        </div>
-    
+
     <script>
         $(document).ready(function () {
             $(".d2").hide();
@@ -551,14 +635,16 @@
             jQuery("body").trigger(vare);
 
 
-            $(".coordinate2").text("中心经度：" + (119.8929680 + (915 * 0.00000006501)));
-            $(".coordinate3").text("中心纬度：" + (30.2609691 + (286 * 0.00000005948)));
+            $(".coordinate2").text("中心点经纬度：" + (119.8929680 + (915 * 0.00000006501))+","+ (30.2609691 + (286 * 0.00000005948)));
+//             $(".coordinate3").text("中心纬度：" + (30.2609691 + (286 * 0.00000005948)));
             $(".coordinate4").text("边长：" + (200 * 6.2) + "  mm");
-            $(".coordinate6").text("中心经度：" + (119.8929680 + (914 * 0.00000006501)));
-            $(".coordinate7").text("中心纬度：" + (30.2609691 + (306 * 0.00000005948)));
+            $(".coordinate6").text("中心点经纬度：" + (119.8929680 + (915 * 0.00000006501))+","+ (30.2609691 + (306 * 0.00000005948)));
+//             $(".coordinate6").text("中心经度：" + (119.8929680 + (914 * 0.00000006501)));
+//             $(".coordinate7").text("中心纬度：" + (30.2609691 + (306 * 0.00000005948)));
             $(".coordinate8").text("半径：" + (110 * 6.2) + "  mm");
-            $(".coordinate10").text("中心经度：" + (119.8929680 + (600 * 0.00000006501)));
-            $(".coordinate11").text("中心纬度：" + (30.2609691 + (286 * 0.00000005948)));
+            $(".coordinate10").text("中心点经纬度：" + (119.8929680 + (915 * 0.00000006501))+","+ (30.2609691 + (286 * 0.00000005948)));
+//             $(".coordinate10").text("中心经度：" + (119.8929680 + (600 * 0.00000006501)));
+//             $(".coordinate11").text("中心纬度：" + (30.2609691 + (286 * 0.00000005948)));
             //$(".coordinate12").text("水平半径：" + (65 * 6.2) + "  mm");
             //$(".coordinate13").text("垂直半径：" + (110 * 6.2) + "  mm");
             $(".radio1").click(function (e) {
@@ -630,7 +716,7 @@
             $(".option1").addClass("active");
             $(".option2").removeClass("active");
             zidingyi = false;
-            $(".square,.circular,.triangle,.width,.height,.width_label,.height_label").hide();
+            $(".square,.circular,.triangle,.width,.height,.width_label,.height_label,.zdyhz").hide();
             $(".information1").show();
             $(".information2").hide();
             var b1 = false;
@@ -640,7 +726,7 @@
                 $(".option1").addClass("active");
                 $(".option2").removeClass("active");
                 zidingyi = false;
-                $(".square,.circular,.triangle,.width,.height,.width_label,.height_label").hide();
+                $(".square,.circular,.triangle,.width,.height,.width_label,.height_label,.zdyhz").hide();
                 $(".information1").show(); $(".information2").hide();
                 $(".radio1").attr("checked", false);
                 $(".radio2").attr("checked", false);
@@ -653,7 +739,7 @@
                 $(".option2").addClass("active");
                 $(".option1").removeClass("active");
                 zidingyi = true;
-                $(".square,.circular,.triangle,.width,.height,.width_label,.height_label").show();
+                $(".square,.circular,.triangle,.width,.height,.width_label,.height_label,.zdyhz").show();
                 $(".information1").hide(); $(".information2").show();
                 $(".radio1").attr("checked", false);
                 $(".radio2").attr("checked", false);
@@ -951,7 +1037,7 @@
                 }
 
             });
-            
+
             $(".lable4").click(function (e) {
                 if (bofang2) {
                     $(".play2").removeClass("play2").addClass("stop2");
@@ -982,7 +1068,7 @@
                 }
 
             });
-            
+
             $.ajax({
                 type: "post",
                 contentType: "application/json; charset=utf-8",//传值的方式
@@ -1006,7 +1092,7 @@
                     }
                 })
             });
-           
+
             $(".full").click(function (e) {
 
                 let element = document.documentElement;
@@ -1040,3 +1126,4 @@
     </script>
 </body>
 </html>
+
