@@ -120,10 +120,9 @@
      font-size: 30px;
      position: absolute;
      top: 94px;
-     left: 486px;
+     left: 517px;
      font-weight: 600;
-     width: 250px;
-     text-align: center;
+
      font-weight: 100;
 
         }
@@ -132,10 +131,9 @@
        font-size: 30px;
        position: absolute;
        top: 182px;
-       left: 530px;
+       left: 517px;
        font-weight: 600;
-       width: 250px;
-       text-align: center;
+
        font-weight: 100;
 
       }
