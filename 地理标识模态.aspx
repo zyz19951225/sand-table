@@ -274,15 +274,15 @@
 }
 
 .radioone{
-    left: 100PX;
+    left: 60PX;
     top: 135px;
 }
 .radiosecond{
-    left: 100PX;
+    left: 60PX;
     top: 279px;
 }
 .radiothree{
-    left: 100PX;
+    left: 60PX;
     top: 423px;
 }
         .radio1 {
