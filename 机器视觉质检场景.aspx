@@ -274,7 +274,7 @@
         }
         .dun {
             width: 60px;
-            background: url(image/newimg/盾牌.png) no-repeat center top/auto 26px;
+            background: url(image/newimg/department.png) no-repeat center top/auto 26px;
             left: 0; 
         }
         .chuanshu {
@@ -314,7 +314,7 @@
         .jiantou-right-bottom {
             transform: rotate(180deg);
             left: 250px;
-            top: 18x;
+            top: 18px;
         }
         .time1, .time2, .time3, .time4, .time5 {
             height: 24px;
