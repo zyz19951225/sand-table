@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="之江.Main" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="生产制造场景.aspx.cs" Inherits="之江.生产制造场景" %>
 
 <!DOCTYPE html>
 
@@ -22,7 +22,7 @@
         .control-bar {
             border-bottom: 1px solid rgba(255,255,255,.5);
             padding-bottom: 24px;
-            
+
         }
         .lable4 {
             margin-right: 36px;
@@ -63,7 +63,7 @@
             line-height: 48px;;
         }
         .label1 {
-            top: 566px;       
+            top: 566px;
         }
 
         .label2 {
@@ -158,13 +158,13 @@
         <div class="box image1"></div>
         <div class="chanxian">产线生产控制</div>
 <!--        <div class="image"></div>-->
-          
+
 <!--        <label class="state" id="type" runat="server">待启动</label>-->
         <label class="label1">纪念币文字:</label>
         <label class="label2">纪念币数量:</label>
         <input type="text" value="之江实验室" class="input" maxlength="8" />
-        <input type="number" v-model="counter" class="input2" max="5" 
-            oninput="console.log(1111);if(counter>5){counter=5};if(counter<0)counter=0;" 
+        <input type="number" v-model="counter" class="input2" max="5"
+            oninput="console.log(1111);if(counter>5){counter=5};if(counter<0)counter=0;"
             />
         <button class="but1" v-on:click="counter++;if(counter>5)counter=5">+</button>
         <button class="but2" v-on:click="counter--;if(counter<0)counter=0">-</button>
@@ -174,7 +174,7 @@
         <button class="full"></button>
     </div>
     <script>
-        
+
         new Vue({
             el: '#app',
             data: {
@@ -275,7 +275,7 @@
                 }
 
             });
-          
+
             $(".lable4").click(function (e) {
                 if (bofang2) {
                     $(".play2").removeClass("play2").addClass("stop2");
@@ -329,7 +329,7 @@
                     }
                 })
             });
-            
+
             $(".full").click(function (e) {
 
                 let element = document.documentElement;

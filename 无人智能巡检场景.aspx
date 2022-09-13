@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="之江.Main" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="无人智能巡检场景.aspx.cs" Inherits="之江.无人智能巡检场景" %>
 
 
 <!DOCTYPE html>
@@ -34,7 +34,7 @@
         .control-bar {
             border-bottom: 1px solid rgba(255,255,255,.5);
             padding-bottom: 24px;
-            
+
         }
         .lable4 {
             margin-right: 36px;
@@ -213,7 +213,7 @@
         <button class="home">首页</button>
         <button class="full"></button>
 
-    
+
     <script>
         $(document).ready(function () {
             var start = false;
