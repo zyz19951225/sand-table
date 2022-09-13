@@ -60,9 +60,9 @@
         .choosexz{
             color: white;
     position: absolute;
-    top: 36px;
+    top: 32px;
     left: 28px;
-    font-size: 22px;
+    font-size: 24px;
         }
 
         .circular {
@@ -71,7 +71,7 @@
                width: 40px;
                height: 40px;
                position: absolute;
-                     top: 29px;
+                     top: 27px;
                             left: 250px;
         }
 
@@ -88,7 +88,7 @@
         .width {
      top: 86px;
      left: 75px;
-     height: 27.2px;
+     height: 32px;
      color: black;
      font-size: 20px;
      position: absolute;
@@ -102,8 +102,8 @@
         }
 		.bianchang {
     top: 86px;
-    left: 85px;
-    height: 27.2px;
+    left: 94px;
+    height: 32px;
     color: black;
     font-size: 20px;
     position: absolute;
@@ -118,8 +118,8 @@
 
         .banjing {
             top: 86px;
-               left: 85px;
-               height: 27.2px;
+               left: 94px;
+               height: 32px;
                color: black;
                font-size: 20px;
                position: absolute;
@@ -137,7 +137,7 @@
         font-size: 20px;
         position: absolute;
         /* margin-top: 492PX; */
-        height: 27.2px;
+        height: 32px;
         width: 100px;
         /* margin-left: 422px; */
         font-weight: 400;
@@ -160,7 +160,7 @@
           border-radius: 40px;
 
           top: 89px;
-          left: 204px;
+          left: 196px;
         }
 
         .mm_label2 {
@@ -172,8 +172,8 @@
                 /* margin-left: 330PX; */
                 border-radius: 40px;
 
-                top: 138px;
-                left: 204px;
+                top: 140px;
+                left: 196px;
         }
 
           .mm_label3 {
@@ -185,13 +185,13 @@
     /* margin-left: 330PX; */
     border-radius: 40px;
 
-    top: 105px;
-    left: 279px;
+    top: 110px;
+    left: 272px;
         }
 
         .width_label {
           color: #ffffff;
-          font-size: 19px;
+          font-size: 24px;
           font-family: 'Source Han Sans CN';
           position: absolute;
           top: 84px;
@@ -202,7 +202,7 @@
 
         .height_label {
      color: #ffffff;
-     font-size: 19px;
+     font-size: 24px;
      font-family: 'Source Han Sans CN';
      position: absolute;
      top: 138px;
@@ -279,11 +279,11 @@
 }
 .radiosecond{
     left: 60PX;
-    top: 279px;
+    top: 265px;
 }
 .radiothree{
     left: 60PX;
-    top: 423px;
+    top: 395px;
 }
         .radio1 {
     color: white;
@@ -296,9 +296,9 @@
 
         .coordinate1 {
             color: white;
-            font-size: 24px;
+            font-size: 26px;
             position: absolute;
-    left: 20px;
+    left: 24px;
             border-radius: 40px;
         }
 
@@ -315,27 +315,27 @@
 
         .coordinate2 {
               color: white;
-              font-size: 20px;
+              font-size: 22px;
               position: absolute;
-top: 34px;
-    left: 20px;
+top: 42px;
+    left: 24px;
               border-radius: 40px;
         }
 
         .coordinate15 {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     position: absolute;
     /* margin-top: 614px; */
     /* margin-left: 177px; */
-    top: 236px;
+    top: 248px;
     left: 60px;
     border-radius: 40px;
         }
 
         .coordinate3 {
               color: white;
-                     font-size: 20px;
+                     font-size: 22px;
                      position: absolute;
                      margin-top: 484px;
                      margin-left: 200px;
@@ -344,61 +344,58 @@ top: 34px;
 
         .coordinate16 {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     position: absolute;
     /* margin-top: 614px; */
     /* margin-left: 177px; */
-    top: 272px;
+    top: 284px;
     left: 60px;
-    border-radius: 40px;
         }
 
         .coordinate4 {
         color: white;
-                           font-size: 20px;
+                           font-size: 22px;
                            position: absolute;
-    top: 64px;
-    left: 20px;
-                           border-radius: 40px;
-                           font-weight:100
+    top: 72px;
+    left: 24px;
         }
 
         .coordinate17 {
 color: white;
-    font-size: 20px;
+    font-size: 22px;
     position: absolute;
     /* margin-top: 614px; */
     /* margin-left: 177px; */
-    top: 306px;
+    top: 320px;
     left: 60px;
     border-radius: 40px;
         }
 
         .coordinate18 {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     position: absolute;
     /* margin-top: 614px; */
     /* margin-left: 177px; */
-    top: 338px;
+    top: 358px;
     left: 60px;
     border-radius: 40px;
         }
 
         .coordinate19 {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     position: absolute;
     /* margin-top: 614px; */
     /* margin-left: 177px; */
-    top: 370px;
+    top: 382px;
     left: 60px;
     border-radius: 40px;
         }
 
         .coordinate20 {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     position: absolute;
     /* margin-top: 614px; */
     /* margin-left: 177px; */
@@ -420,17 +417,16 @@ color: white;
         .coordinate5 {
           color: white;
 color: white;
-    font-size: 20px;
+    font-size: 22px;
     position: absolute;
-    top: 89px;
-    left: 20px;
+    top: 72px;
+    left: 260px;
     border-radius: 40px;
-    font-weight: 100;
         }
 
         .coordinate6 {
               color: white;
-              font-size: 20px;
+              font-size: 22px;
               position: absolute;
 top: 30px;
     left: 20px;
@@ -440,7 +436,7 @@ top: 30px;
 
         .coordinate7 {
             color: white;
-                font-size: 20px;
+                font-size: 22px;
                 position: absolute;
                 margin-top: 620px;
                 margin-left: 200px;
@@ -450,7 +446,7 @@ top: 30px;
 
         .coordinate8 {
       color: white;
-          font-size: 20px;
+          font-size: 22px;
           position: absolute;
           margin-top: 644px;
           margin-left: 200px;
@@ -479,7 +475,7 @@ top: 30px;
 
         .coordinate10 {
          color: white;
-         font-size: 20px;
+         font-size: 22px;
          position: absolute;
          margin-top: 717px;
          margin-left: 200px;
@@ -489,7 +485,7 @@ top: 30px;
 
         .coordinate11 {
          color: white;
-         font-size: 20px;
+         font-size: 22px;
          position: absolute;
          margin-top: 741px;
          margin-left: 200px;
@@ -499,7 +495,7 @@ top: 30px;
 
         .coordinate12 {
               color: white;
-              font-size: 20px;
+              font-size: 22px;
               position: absolute;
               margin-top: 767px;
               margin-left: 200px;
@@ -509,7 +505,7 @@ top: 30px;
 
         .coordinate13 {
               color: white;
-              font-size: 20px;
+              font-size: 22px;
               position: absolute;
               margin-top: 790px;
               margin-left: 200px;
@@ -619,24 +615,24 @@ top: 30px;
         <div class="radioone choseMenu">
             <input type="radio" name="radios" class="radio1" id="radio1"/>
             <label class="coordinate1" for="radio1">目标寻址区域1</label>
-            <label class="coordinate2">中心点经纬度：119.9711553,中心纬度：30.2773782</label>
+            <label class="coordinate2" for="radio1">中心点经纬度：119.9711553, 中心纬度：30.2773782</label>
 <!--             <label class="coordinate3">中心纬度：30.2773782</label> -->
-            <label class="coordinate4">边长：700</label>
+            <label class="coordinate4" for="radio1">边长：700</label>
 </div>
   <div class="radiosecond choseMenu">
             <input type="radio" name="radios" class="radio2"id="radio2"/>
             <label class="coordinate1" for="radio2">目标寻址区域2</label>
-            <label class="coordinate2">中心经度：119.9711553</label>
+            <label class="coordinate2" for="radio2">中心经度：119.9711553</label>
 <!--             <label class="coordinate7">中心纬度：30.2773782</label> -->
-            <label class="coordinate4">半径：1000</label>
+            <label class="coordinate4" for="radio2">半径：1000</label>
 </div>
   <div class="radiothree choseMenu">
             <input type="radio" name="radios" class="radio3" id="radio3"/>
             <label class="coordinate1" for="radio3">目标寻址区域3</label>
-            <label class="coordinate2">中心经度：119.9711553</label>
+            <label class="coordinate2" for="radio3">中心经度：119.9711553</label>
 <!--             <label class="coordinate11">中心纬度：30.2773782</label> -->
-            <label class="coordinate4">水平半径：500</label>
-            <label class="coordinate5">垂直半径：900</label>
+            <label class="coordinate4" for="radio3">水平半径：500</label>
+            <label class="coordinate5" for="radio3">垂直半径：900</label>
 </div>
         </div>
 
