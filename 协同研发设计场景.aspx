@@ -1,4 +1,5 @@
-﻿
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="协同研发设计场景.aspx.cs" Inherits="之江.协同研发设计场景" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -30,11 +31,11 @@
         .title {
             background-image: url(image/newimg/协同研发设计场景.png);
         }
-        
+
         .control-bar {
             border-bottom: 1px solid rgba(255,255,255,.5);
             padding-bottom: 24px;
-            
+
         }
         .lable4 {
             margin-right: 36px;
@@ -105,8 +106,8 @@
         .image4 {
             background: url(image/newimg/知识.png) no-repeat center center;
         }
-        
-        
+
+
         .return2 {
             /*margin-top: 2%;*/
             /*margin-left: 2%;*/
@@ -153,7 +154,7 @@
             <label class="tips1">OA系统</label>
             <label class="tips2">IPv4</label>
         </div>
-        
+
         <div class="options options2">
             <div class="box options-box"></div>
             <div class="options-image image2"></div>
@@ -172,14 +173,14 @@
             <label class="tips1">知识与协同平台</label>
             <label class="tips2">IPv4</label>
         </div>
-    
+
         <div class="image"></div>
         <button class="home">首页</button>
         <button class="return2"></button>
         <button class="full"></button>
 
 
-    
+
     <script>
         $(document).ready(function () {
             $(".image").hide(); $(".return2").hide();
@@ -344,9 +345,9 @@
 
                           });
 
-                          
-                          
-                          
+
+
+
                           $.ajax({
                               type: "post",
                               contentType: "application/json; charset=utf-8",//传值的方式
