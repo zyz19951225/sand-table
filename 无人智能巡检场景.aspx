@@ -126,7 +126,7 @@
      font-weight: 100;
 
         }
-    .loadLabel12 {
+    .loadLabel2 {
        color: white;
        font-size: 30px;
        position: absolute;
@@ -138,7 +138,7 @@
 
       }
 
-        .loadLabel2 {
+        /* .loadLabel2 {
             color: white;
             font-size: 18px;
             position: absolute;
@@ -147,7 +147,7 @@
             font-weight: 600;
             width: 250px;
             text-align: center;
-        }
+        } */
 
         .loadLabel3 {
               color: white;
@@ -203,7 +203,7 @@
           <div class="load load2"></div>
           <div class="load load12"></div>
           <label class="loadLabel1">巡检中......</label>
-          <label class="loadLabel12">正在数据采集......</label>
+          <!-- <label class="loadLabel12">正在数据采集......</label> -->
           <label class="loadLabel2"></label>
           <label class="loadLabel3">当前巡检数据上传模式为身份模态</label>
           <div class="switch"></div>
@@ -256,7 +256,7 @@
                             $(".loadLabel2").show();
                         }
                         if (result.d == 1) {
-                            $(".loadLabel2").text("采集中……");
+                            $(".loadLabel2").text("正在数据采集……");
                             $(".switch").css("color", "black");
                         } else if (result.d == 2) {
                             $(".loadLabel2").text("采集完成，正在上传数据……");
@@ -277,7 +277,7 @@
             $(".load2").hide();
             $(".loadLabel1").hide();
             $(".load12").hide();
-            $(".loadLabel12").hide();
+            //$(".loadLabel12").hide();
             $(".loadLabel2").hide();
             $(".loadLabel3").hide();
             $(".loadLabel4").hide();
@@ -289,7 +289,7 @@
                   $(".inspection").css({"background":"url(image/newimg/停止巡检.png) no-repeat center center"});
                 $(".loadLabel1").show();
                 $(".load12").show();
-                $(".loadLabel12").show();
+                // $(".loadLabel12").show();
                $(".loadLabel3").show();
                 $(".loadLabel4").show();
                 $(".switch").show();
