@@ -425,13 +425,12 @@ color: white;
         }
 
         .coordinate6 {
-              color: white;
-              font-size: 22px;
-              position: absolute;
-top: 30px;
-    left: 20px;
-              border-radius: 40px;
-              font-weight: 100
+     color: white;
+     font-size: 22px;
+     position: absolute;
+     top: 42px;
+     left: 24px;
+     border-radius: 40px;
         }
 
         .coordinate7 {
@@ -474,13 +473,12 @@ top: 30px;
         }
 
         .coordinate10 {
-         color: white;
-         font-size: 22px;
-         position: absolute;
-         margin-top: 717px;
-         margin-left: 200px;
-         border-radius: 40px;
-           font-weight: 100
+               color: white;
+               font-size: 22px;
+               position: absolute;
+               top: 42px;
+               left: 24px;
+               border-radius: 40px;
         }
 
         .coordinate11 {
@@ -622,14 +620,14 @@ top: 30px;
   <div class="radiosecond choseMenu">
             <input type="radio" name="radios" class="radio2"id="radio2"/>
             <label class="coordinate1" for="radio2">目标寻址区域2</label>
-            <label class="coordinate2" for="radio2">中心经度：119.9711553</label>
+            <label class="coordinate6" for="radio2">中心经度：119.9711553</label>
 <!--             <label class="coordinate7">中心纬度：30.2773782</label> -->
             <label class="coordinate4" for="radio2">半径：1000</label>
 </div>
   <div class="radiothree choseMenu">
             <input type="radio" name="radios" class="radio3" id="radio3"/>
             <label class="coordinate1" for="radio3">目标寻址区域3</label>
-            <label class="coordinate2" for="radio3">中心经度：119.9711553</label>
+            <label class="coordinate10" for="radio3">中心经度：119.9711553</label>
 <!--             <label class="coordinate11">中心纬度：30.2773782</label> -->
             <label class="coordinate4" for="radio3">水平半径：500</label>
             <label class="coordinate5" for="radio3">垂直半径：900</label>
