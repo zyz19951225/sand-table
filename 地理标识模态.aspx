@@ -523,7 +523,7 @@
         </div>
         <div class="control-bar-button lable3">沙盘位置示意图</div>
     </div>
-    <button class="full"></button>
+    <!-- <button class="full"></button> -->
     <button class="home">首页</button>
 
 
@@ -536,7 +536,7 @@
     <!--        </button>-->
     <div class="warning d"></div>
     <div class=" box image1">
-        <canvas class="myCanvas" width="960" height="461" id="myCanvas"></canvas>
+        <canvas class="myCanvas" width="960" height="466" id="myCanvas"></canvas>
         <!--        <canvas class="menu"></canvas>-->
         <div class="zdyhz">
 
@@ -613,6 +613,8 @@
 
     <script>
         $(document).ready(function () {
+            var biaoshi = false;
+            var zidingyi = false;
             $(".d2").hide();
             $(".d3").hide();
             $(".mm_label3").hide();
@@ -815,14 +817,13 @@
                 var ctx = c.getContext("2d");
                 ctx.clearRect(0, 0, $("#myCanvas").width(), $("#myCanvas").height());
             });
-            var biaoshi = false;
-            var zidingyi = true;
+            
             $("#myCanvas").click(function (e) {
                 if (biaoshi) {
                     return;
                 }
 
-                //$(".coordinate16").text("中心纬度：" + (Math.abs(mouseY - 461)));
+                //$(".coordinate16").text("中心纬度：" + (Math.abs(mouseY - 466)));
                 if (zidingyi) {
                     var c = document.getElementById("myCanvas");
                     var ctx = c.getContext("2d");
@@ -845,11 +846,11 @@
                     zanshimouseY = mouseY;
                     var kuan = $(".width").val() / 8.3;
                     var gao = $(".height").val() / 8.3;
-                    //alert((mouseX) + "-" + Math.abs(mouseY - 461));
+                    //alert((mouseX) + "-" + Math.abs(mouseY - 466));
                     //一个像素点是8.3mm
                     //y轴一个像素点是0.00000008026经纬度
                     $(".coordinate15").text("中心经度：" + (119.8929680 + (Math.abs(mouseX) * 0.00000009083)));
-                    $(".coordinate16").text("中心纬度：" + (30.2609691 + (Math.abs(mouseY - 461) * 0.00000008026)));
+                    $(".coordinate16").text("中心纬度：" + (30.2609691 + (Math.abs(mouseY - 466) * 0.00000008026)));
                     $(".coordinate17").text("水平边长：" + (kuan * 8.3) + "  mm");
                     $(".coordinate18").text("垂直边长：" + (gao * 8.3) + "  mm");
                     //                     $(".coordinate19").text("水平半径：" + ((kuan * 8.3) / 2) + "  mm");
@@ -945,7 +946,6 @@
                     $(".radio3").hide();
                     // $(".warning").text("异常处理完毕");
                     $(".warning").css({ "background": "url(image/newimg/异常处理完毕.png) no-repeat center center" });
-                    $(".warning").css("background-color", "lightskyblue");
                     var c = document.getElementById("myCanvas");
                     var a = document.createElement("a");
                     a.href = c.toDataURL();
@@ -955,7 +955,7 @@
                     let id = date + '' + rund;
                     a.download = id;
                     a.click();
-                    var lat = (30.2609691 + (Math.abs(zanshimouseY - 461) * 0.00000008026));
+                    var lat = (30.2609691 + (Math.abs(zanshimouseY - 466) * 0.00000008026));
                     var lon = (119.8929680 + (Math.abs(zanshimouseX) * 0.00000009083));
                     if (b1) {
                         var ldm = zanshiH / 2;
@@ -1208,36 +1208,6 @@
                         //alert(result.d);//result.d为后台返回的参数
                     }
                 })
-            });
-
-            $(".full").click(function (e) {
-
-                let element = document.documentElement;
-                if (this.fullscreen) {
-                    if (document.exitFullscreen) {
-                        document.exitFullscreen();
-                    } else if (document.webkitCancelFullScreen) {
-                        document.webkitCancelFullScreen();
-                    } else if (document.mozCancelFullScreen) {
-                        document.mozCancelFullScreen();
-                    } else if (document.msExitFullscreen) {
-                        document.msExitFullscreen();
-                    }
-                } else {
-                    if (element.requestFullscreen) {
-                        element.requestFullscreen();
-                    } else if (element.webkitRequestFullScreen) {
-                        element.webkitRequestFullScreen();
-                    } else if (element.mozRequestFullScreen) {
-                        element.mozRequestFullScreen();
-                    } else if (element.msRequestFullscreen) {
-                        // IE11
-                        element.msRequestFullscreen();
-                    }
-                }
-                this.fullscreen = !this.fullscreen;
-
-
             });
         });
     </script>

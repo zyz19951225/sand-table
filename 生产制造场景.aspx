@@ -177,7 +177,7 @@
         <button class="go"></button>
 
         <button class="home">首页</button>
-        <button class="full"></button>
+        <!-- <button class="full"></button> -->
     </div>
     <script>
 
@@ -336,34 +336,6 @@
                         //alert(result.d);//result.d为后台返回的参数
                     }
                 })
-            });
-
-            $(".full").click(function (e) {
-
-                let element = document.documentElement;
-                if (this.fullscreen) {
-                    if (document.exitFullscreen) {
-                        document.exitFullscreen();
-                    } else if (document.webkitCancelFullScreen) {
-                        document.webkitCancelFullScreen();
-                    } else if (document.mozCancelFullScreen) {
-                        document.mozCancelFullScreen();
-                    } else if (document.msExitFullscreen) {
-                        document.msExitFullscreen();
-                    }
-                } else {
-                    if (element.requestFullscreen) {
-                        element.requestFullscreen();
-                    } else if (element.webkitRequestFullScreen) {
-                        element.webkitRequestFullScreen();
-                    } else if (element.mozRequestFullScreen) {
-                        element.mozRequestFullScreen();
-                    } else if (element.msRequestFullscreen) {
-                        // IE11
-                        element.msRequestFullscreen();
-                    }
-                }
-                this.fullscreen = !this.fullscreen;
             });
         });
     </script>

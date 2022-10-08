@@ -192,9 +192,9 @@
         .full{
             margin-top: 1.5%;
             margin-left: 97%;
-            height: 30px;
-            width: 35px;
-            opacity:0.9;
+            height: 32px;
+            width: 32px;
+            opacity:0.6;
             position: absolute;
             font-size: 12px;
             background: url(image/全屏.png) no-repeat center center;

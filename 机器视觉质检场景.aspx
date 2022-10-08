@@ -370,32 +370,25 @@
         .time2 {
             width: 140px;
         }
-
+        .image-wrap {
+            position: absolute;
+            width: 800px;
+            left: 50%;
+            top: 650px;
+            transform: translate(-50%, -50%);
+        }
         .return2 {
-            margin-top: 13%;
-            margin-left: 67%;
             height: 50px;
             width: 50px;
             position: absolute;
-            font-size: 12px;
+            right: 16px;
+            top: 12px;
             background: url(机器视觉质检/关闭.png) no-repeat center center;
             background-size: 100% 100%;
             border: 0;
-            line-height: 15px;
-            padding-left: 38px;
-            padding-top: 10px;
-            color: white;
         }
-
         .image {
-            margin-top: 13%;
-            margin-left: 28%;
-            height: 600px;
-            width: 800px;
-            background-repeat: no-repeat;
-            background-position: center;
-            position: absolute;
-            background-size: 100% 100%;
+            width: 100%;
         }
 
         .box-visual {
@@ -596,9 +589,12 @@
             </table>
             <button class="button7">返回</button>
         </div>
-        <button class="full"></button>
-        <image class="image"></image>
-        <button class="return2"></button>
+        <!-- <button class="full"></button> -->
+        <div class="image-wrap">
+            <image class="image"/>
+            <button class="return2"></button>
+        </div>
+        
 
     </div>
     <script>
@@ -996,35 +992,7 @@
                     }
                 })
             });
-            $(".full").click(function (e) {
-
-                let element = document.documentElement;
-                if (this.fullscreen) {
-                    if (document.exitFullscreen) {
-                        document.exitFullscreen();
-                    } else if (document.webkitCancelFullScreen) {
-                        document.webkitCancelFullScreen();
-                    } else if (document.mozCancelFullScreen) {
-                        document.mozCancelFullScreen();
-                    } else if (document.msExitFullscreen) {
-                        document.msExitFullscreen();
-                    }
-                } else {
-                    if (element.requestFullscreen) {
-                        element.requestFullscreen();
-                    } else if (element.webkitRequestFullScreen) {
-                        element.webkitRequestFullScreen();
-                    } else if (element.mozRequestFullScreen) {
-                        element.mozRequestFullScreen();
-                    } else if (element.msRequestFullscreen) {
-                        // IE11
-                        element.msRequestFullscreen();
-                    }
-                }
-                this.fullscreen = !this.fullscreen;
-
-
-            });
+            
         });
 
 
