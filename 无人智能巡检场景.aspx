@@ -8,7 +8,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <style>
-
         .background {
             background: url(image/newimg/背景.jpg);
             background-size: cover;
@@ -45,31 +44,30 @@
                 position: absolute;
                 left: 358px;
                 top: 258px;
-                /* margin-top: 525px; */
                 height: 116px;
                 width: 472px;
-                /* margin-left: 733px; */
-                font-weight: 600;
-                font-family: 宋体;
                 text-align: center;
                 border-radius: 10px;
                 border: 0;
         }
+        .inspection.disabled {
+            opacity: .5;
+        }
 
         .switch {
                  background: url(image/newimg/切换至IP模式.png) no-repeat center center;
-                 color: black;
                  font-size: 18px;
                  position: absolute;
                  top: 500px;
                  left: 472px;
                  height: 50px;
                  width: 250px;
-                 font-weight: 600;
-                 font-family: 宋体;
                  text-align: center;
                  border-radius: 10px;
                  border: 0;
+        }
+        .switch.disabled {
+            opacity: .5;
         }
 
         .load {
@@ -132,9 +130,6 @@
        position: absolute;
        top: 182px;
        left: 517px;
-       font-weight: 600;
-
-       font-weight: 100;
 
       }
 
@@ -233,8 +228,8 @@
                     type: "post",
                     contentType: "application/json; charset=utf-8",//传值的方式
                     dataType: "json",
-                    url: "无人智能巡检场景.aspx/Fasong2",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                    data: "{t:2}",//username 为想问后台传的参数（这里的参数可有可无）
+                    url: "无人智能巡检场景.aspx/Fasong",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                    data: "{t:3}",//username 为想问后台传的参数（这里的参数可有可无）
                     success: function (result) {
                         //alert(result.d);//result.d为后台返回的参数
                     }
@@ -257,18 +252,26 @@
                         }
                         if (result.d == 1) {
                             $(".loadLabel2").text("正在数据采集……");
-                            $(".switch").css("color", "black");
+                            $(".switch").removeClass("disabled");
+                            $(".load1").show();
+
                         } else if (result.d == 2) {
                             $(".loadLabel2").text("采集完成，正在上传数据……");
-                            $(".switch").css("color", "gray");
+                            $(".switch").addClass("disabled");
+                            $(".load1").show();
+
                         } else if (result.d == 3) {
                             $(".loadLabel2").text("上传失败。");
                             $(".loadLabel3").text("当前巡检数据上传模式为身份模态");
-                            $(".switch").css("color", "gray");
+                            $(".switch").addClass("disabled");
+                            $(".load1").show();
+
                         } else if (result.d == 4) {
                             $(".loadLabel2").text("上传成功。");
                             $(".loadLabel3").text("当前巡检数据上传模式为身份模态");
-                            $(".switch").css("color", "gray");
+                            $(".switch").addClass("disabled");
+                            $(".load1").show();
+
                         }
                     }
                 })
@@ -285,11 +288,11 @@
 
             $(".inspection").click(function (e) {
                 start = true;
-                $(".load1").show();
-                  $(".inspection").css({"background":"url(image/newimg/停止巡检.png) no-repeat center center"});
+                $(".load1").hide();
+                $(".inspection").addClass('disabled');
                 $(".loadLabel1").show();
                 $(".load12").show();
-                // $(".loadLabel12").show();
+                $(".loadLabel12").show();
                $(".loadLabel3").show();
                 $(".loadLabel4").show();
                 $(".switch").show();
@@ -303,6 +306,32 @@
                         //alert(result.d);//result.d为后台返回的参数
                     }
                 })
+                /*
+                if (!xunjianzhangt) {
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "无人智能巡检场景.aspx/Fasong",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{t:1}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                } else {
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "无人智能巡检场景.aspx/Fasong",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{t:3}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                }*/
+                
+                xunjianzhangt = true;
             });
             $(".switch").click(function (e) {
                 if (types == 1) {

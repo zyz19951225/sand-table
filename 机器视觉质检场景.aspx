@@ -7,7 +7,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <style>
-
         .background {
             background: url(image/newimg/背景.jpg);
             background-size: cover;
@@ -21,6 +20,7 @@
         .title {
             background-image: url(image/newimg/机器视觉质检场景.png);
         }
+
         .label1 {
             color: white;
             font-size: 28px;
@@ -33,12 +33,13 @@
         .control-bar {
             border-bottom: 1px solid rgba(255,255,255,.5);
             padding-bottom: 24px;
-            
         }
+
         .lable4 {
             margin-right: 36px;
         }
-       .input {
+
+        .input {
             color: rgba(255,255,255,.6);
             font-size: 28px;
             position: absolute;
@@ -53,7 +54,6 @@
         }
 
         .button1 {
-            
         }
 
         .button7 {
@@ -80,7 +80,8 @@
             margin-left: 856px;
             opacity: .9;
         }
-        .completeicon{
+
+        .completeicon {
             background: url(image/newimg/接受数据图标.png) no-repeat center center;
             background-size: 100% 100%;
             height: 113px;
@@ -89,6 +90,7 @@
             margin-top: 466px;
             margin-left: 678px;
         }
+
         .button_p0 {
             position: absolute;
             text-align: left;
@@ -96,13 +98,14 @@
             left: 92px;
             top: 5px;
         }
+
         .button_p1 {
             position: absolute;
             left: 212px;
             top: 36px;
         }
 
-        .xndb{
+        .xndb {
             background: url(image/newimg/性能对比.png) no-repeat center center;
             height: 111px;
             width: 342px;
@@ -110,6 +113,7 @@
             margin-top: 900px;
             margin-left: 800px;
         }
+
         .go {
             background: url(image/newimg/download.png) no-repeat 40px center/auto 70px #2097FF;
             position: absolute;
@@ -124,18 +128,22 @@
             box-shadow: 0 3px 6px rgba(0,0,0,.38);
             font-weight: lighter;
         }
-        .go.disabled {
-            opacity: .6;
-        }
-        .go .button_p0 {
-            left: 152px;
-            top: 8px;
-            letter-spacing: 4px;
-        }
-        .go .button_p1 {
-            left: 302px;
-            top: 48px;
-        }
+
+            .go.disabled {
+                opacity: .6;
+            }
+
+            .go .button_p0 {
+                left: 152px;
+                top: 8px;
+                letter-spacing: 4px;
+            }
+
+            .go .button_p1 {
+                left: 302px;
+                top: 48px;
+            }
+
         .department {
             position: absolute;
             width: 316px;
@@ -148,32 +156,37 @@
             font-size: 26px;
             line-height: 1.2;
         }
-        .department.disabled {
-            opacity: .5;
-        }
-        .department2{
+
+            .department.disabled {
+                opacity: .5;
+            }
+
+        .department2 {
             top: 623px;
             left: 272px;
         }
-        .department3{
+
+        .department3 {
             top: 623px;
             left: 625px;
         }
-        .department4{
+
+        .department4 {
             top: 623px;
             left: 979px;
         }
-        .department5{
+
+        .department5 {
             top: 623px;
             left: 1332px;
         }
 
         .label3 {
-        color: white;
-        font-size: 32px;
-        position: absolute;
-        margin-top: 498px;
-        margin-left: 792px;
+            color: white;
+            font-size: 32px;
+            position: absolute;
+            margin-top: 498px;
+            margin-left: 792px;
         }
 
         .label3_a {
@@ -188,6 +201,7 @@
             font-size: 27px;
             text-align: center;
         }
+
         .gongyibu {
             left: 272px;
         }
@@ -212,7 +226,7 @@
             color: #13FFEF;
         }
 
-        .chanpinkaifabu { 
+        .chanpinkaifabu {
             left: 1332px;
         }
 
@@ -236,20 +250,23 @@
             left: 300px;
         }
 
-        .compare-table th, .compare-table td {
-            padding: 18px;
-            border-bottom: 2px solid rgba(255, 255, 255, .8);
-            text-align: center;
-            font-size: 26px;
-            color: #fff;
-            font-weight: normal;
-        }
-        .compare-table td {
-            border-bottom: 1px solid rgba(255, 255, 255, .5);
-        }
-        .compare-table th {
-            padding: 12px 0;
-        }
+            .compare-table th, .compare-table td {
+                padding: 18px;
+                border-bottom: 2px solid rgba(255, 255, 255, .8);
+                text-align: center;
+                font-size: 26px;
+                color: #fff;
+                font-weight: normal;
+            }
+
+            .compare-table td {
+                border-bottom: 1px solid rgba(255, 255, 255, .5);
+            }
+
+            .compare-table th {
+                padding: 12px 0;
+            }
+
         .compare-th-label {
             display: block;
             width: 286px;
@@ -257,12 +274,14 @@
             text-align: left;
             white-space: nowrap;
         }
+
         .compare-path {
             position: relative;
             width: 438px;
             height: 50px;
             margin: 0 auto;
         }
+
         .dun, .chuanshu, .fuwuqi {
             height: 50px;
             position: absolute;
@@ -272,11 +291,13 @@
             font-size: 20px;
             white-space: nowrap;
         }
+
         .dun {
             width: 60px;
             background: url(image/newimg/department.png) no-repeat center top/auto 26px;
-            left: 0; 
+            left: 0;
         }
+
         .chuanshu {
             width: 96px;
             background: url(image/newimg/连接.png) no-repeat center top/auto 26px;
@@ -284,47 +305,56 @@
             top: 2px;
             padding-top: 28px;
         }
+
         .fuwuqi {
             width: 90px;
             background: url(image/newimg/服务器.png) no-repeat center top/auto 26px;
-            left: 362px; 
+            left: 362px;
         }
+
         .jiantou, .jiantou-gray {
             position: absolute;
             height: 10px;
             width: 134px;
             background: url(image/newimg/右向箭头.png) no-repeat center center/contain;
         }
+
         .jiantou-gray {
             background: url(image/newimg/灰色箭头.png) no-repeat center center/contain;
         }
+
         .jiantou-left-top {
             left: 49px;
             top: 1px;
         }
+
         .jiantou-left-bottom {
             left: 49px;
             top: 18px;
             transform: rotate(180deg);
         }
+
         .jiantou-right-top {
             left: 250px;
             top: 1px;
         }
+
         .jiantou-right-bottom {
             transform: rotate(180deg);
             left: 250px;
             top: 18px;
         }
+
         .time1, .time2, .time3, .time4, .time5 {
             height: 24px;
             border-radius: 2px;
             background: #53D6FF;
         }
+
         .time1 {
-            width: 300px;    
+            width: 300px;
         }
-        
+
         .time3 {
             width: 140px;
         }
@@ -336,12 +366,14 @@
         .time5 {
             width: 140px;
         }
+
         .time2 {
             width: 140px;
         }
+
         .return2 {
             margin-top: 13%;
-            margin-left: 82%;
+            margin-left: 67%;
             height: 50px;
             width: 50px;
             position: absolute;
@@ -357,14 +389,15 @@
 
         .image {
             margin-top: 13%;
-            margin-left: 15%;
-            height: 800px;
-            width: 1340px;
+            margin-left: 28%;
+            height: 600px;
+            width: 800px;
             background-repeat: no-repeat;
             background-position: center;
             position: absolute;
             background-size: 100% 100%;
         }
+
         .box-visual {
             position: absolute;
             width: 1451px;
@@ -395,49 +428,59 @@
         <button class="home">首页</button>
         <div class="box box-visual"></div>
         <div class="div1">
-     <label class="label1">文件名:</label>
-        <input type="text" value="纪念币1" class="input" maxlength="8" />
-        <button class="go button1">
-            <p class="button_p0">质检部<br>获取数据</p>
-            <p class="button_p1">（首次）</p>
-        </button>
-             <div class="completeicon"></div>
+            <label class="label1">文件名:</label>
+            <input type="text" value="纪念币1" class="input" maxlength="8" />
+            <button class="go button1">
+                <p class="button_p0">质检部<br>
+                    获取数据</p>
+                <p class="button_p1">（首次）</p>
+            </button>
+            <div class="completeicon"></div>
             <label class="label2">数据传输中……</label>
-            <label class="label3">质检部已接收，
+            <label class="label3">
+                质检部已接收，
                 <a href="#" class="label3_a">显示数据</a>
             </label>
             <div class="jieduan2">
-            <div class="department department2 button2">
-                <p class="button_p0">市场部<br>获取数据</p>
-                <p class="button_p1">（再次）</p>
-            </div>
-            <div class="department department3 button3">
-                <p class="button_p0">运营部<br>获取数据</p>
-                <p class="button_p1">（再次）</p>
-            </div>
+                <div class="department department2 button2">
+                    <p class="button_p0">市场部<br>
+                        获取数据</p>
+                    <p class="button_p1">（再次）</p>
+                </div>
+                <div class="department department3 button3">
+                    <p class="button_p0">运营部<br>
+                        获取数据</p>
+                    <p class="button_p1">（再次）</p>
+                </div>
 
-            <div class="department department4 button4">
-                <p class="button_p0">产品部<br>获取数据</p>
-                <p class="button_p1">（再次）</p>
-            </div>
+                <div class="department department4 button4">
+                    <p class="button_p0">产品部<br>
+                        获取数据</p>
+                    <p class="button_p1">（再次）</p>
+                </div>
 
-            <div class="department department5 button5">
-                <p class="button_p0">监控部<br>获取数据</p>
-                <p class="button_p1">（再次）</p>
-            </div>
-            <label class="gongyibu">市场部已接收，
+                <div class="department department5 button5">
+                    <p class="button_p0">监控部<br>
+                        获取数据</p>
+                    <p class="button_p1">（再次）</p>
+                </div>
+                <label class="gongyibu">
+                    市场部已接收，
                 <a href="#" class="gongyibu_a">显示数据</a></label>
-            <label class="shebeibu">运营部已接收，
+                <label class="shebeibu">
+                    运营部已接收，
                 <a href="#" class="shebeibu_a">显示数据</a>
-            </label>
-            <label class="shengchanbu">产品部已接收，
+                </label>
+                <label class="shengchanbu">
+                    产品部已接收，
                 <a href="#" class="shengchanbu_a">显示数据</a>
-            </label>
-            <label class="chanpinkaifabu">监控部已接收，
+                </label>
+                <label class="chanpinkaifabu">
+                    监控部已接收，
                 <a href="#" class="chanpinkaifabu_a">显示数据</a>
-            </label>
-<!--                <button class="button6">性能对比</button>-->
-            <div class="xndb button6"></div>
+                </label>
+                <!--                <button class="button6">性能对比</button>-->
+                <div class="xndb button6"></div>
 
             </div>
         </div>
@@ -445,9 +488,12 @@
             <label class="label4">性能对比</label>
             <table class="compare-table">
                 <tr>
-                    <th><label class="label5">部门</label></th>
-                    <th><label class="label6">传输路径</label></th>
-                    <th><label class="label7">用户响应时间</label></th>
+                    <th>
+                        <label class="label5">部门</label></th>
+                    <th>
+                        <label class="label6">传输路径</label></th>
+                    <th>
+                        <label class="label7">用户响应时间</label></th>
                 </tr>
                 <tr class="quality_inspection">
                     <td>
@@ -461,7 +507,7 @@
                             <div class="chuanshu chuanshu1">多模态网元</div>
                             <div class="jiantou jiantou-right-top jiantou3"></div>
                             <div class="jiantou jiantou-right-bottom jiantou4"></div>
-                            <div class="fuwuqi fuwuqi1">企业云平台</div>
+                            <div class="fuwuqi fuwuqi1">大数据中心</div>
                         </div>
                     </td>
                     <td>
@@ -480,7 +526,7 @@
                             <div class="chuanshu chuanshu2">多模态网元</div>
                             <div class="jiantou-gray jiantou-right-top jiantou7"></div>
                             <div class="jiantou-gray jiantou-right-bottom jiantou8"></div>
-                            <div class="fuwuqi fuwuqi2">企业云平台</div>
+                            <div class="fuwuqi fuwuqi2">大数据中心</div>
                         </div>
                     </td>
                     <td>
@@ -500,7 +546,7 @@
                             <div class="chuanshu chuanshu3">多模态网元</div>
                             <div class="jiantou-gray jiantou-right-top jiantou11"></div>
                             <div class="jiantou-gray jiantou-right-bottom jiantou12"></div>
-                            <div class="fuwuqi fuwuqi3">企业云平台</div>
+                            <div class="fuwuqi fuwuqi3">大数据中心</div>
                         </div>
                     </td>
                     <td>
@@ -520,7 +566,7 @@
                             <div class="chuanshu chuanshu4">多模态网元</div>
                             <div class="jiantou-gray jiantou-right-top jiantou15"></div>
                             <div class="jiantou-gray jiantou-right-bottom jiantou16"></div>
-                            <div class="fuwuqi fuwuqi4">企业云平台</div>
+                            <div class="fuwuqi fuwuqi4">大数据中心</div>
                         </div>
                     </td>
                     <td>
@@ -540,7 +586,7 @@
                             <div class="chuanshu chuanshu5">多模态网元</div>
                             <div class="jiantou-gray jiantou-right-top jiantou19"></div>
                             <div class="jiantou-gray jiantou-right-bottom jiantou20"></div>
-                            <div class="fuwuqi fuwuqi5">企业云平台</div>
+                            <div class="fuwuqi fuwuqi5">大数据中心</div>
                         </div>
                     </td>
                     <td>
@@ -569,22 +615,22 @@
             });
             $(".gongyibu_a").click(function (e) {
                 $(".image").show(); $(".return").hide(); $(".return2").show();
-                var src = '机器视觉质检/2.jpg';
+                var src = 'http://localhost:8088/picture/抓拍.jpg';
                 $(".image").css('background-image', 'url(' + src + ')');
             });
             $(".shebeibu_a").click(function (e) {
                 $(".image").show(); $(".return").hide(); $(".return2").show();
-                var src = '机器视觉质检/3.jpg';
+                var src = 'http://localhost:8088/picture/抓拍.jpg';
                 $(".image").css('background-image', 'url(' + src + ')');
             });
             $(".shengchanbu_a").click(function (e) {
                 $(".image").show(); $(".return").hide(); $(".return2").show();
-                var src = '机器视觉质检/4.jpg';
+                var src = 'http://localhost:8088/picture/抓拍.jpg';
                 $(".image").css('background-image', 'url(' + src + ')');
             });
             $(".chanpinkaifabu_a").click(function (e) {
                 $(".image").show(); $(".return").hide(); $(".return2").show();
-                var src = '机器视觉质检/5.jpg';
+                var src = 'http://localhost:8088/picture/抓拍.jpg';
                 $(".image").css('background-image', 'url(' + src + ')');
             });
             $(".return2").click(function (e) {
@@ -834,6 +880,19 @@
                     $(".div1").show();
                     $(".div2").hide();
                     btype = false;
+                    $.ajax({
+                        type: "post",
+                        contentType: "application/json; charset=utf-8",//传值的方式
+                        dataType: "json",
+                        url: "机器视觉质检场景.aspx/Return",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
+                        data: "{type:" + 1 + "}",//username 为想问后台传的参数（这里的参数可有可无）
+                        success: function (result) {
+                            //alert(result.d);//result.d为后台返回的参数
+                        }
+                    })
+                    //$(location).attr("href", "Main.aspx")
+                    $(".bdy").innerHTML = ''
+                    $(".bdy").load("Main.aspx")
                 } else {
                     $.ajax({
                         type: "post",
@@ -845,9 +904,9 @@
                             //alert(result.d);//result.d为后台返回的参数
                         }
                     })
-                  //                 $(location).attr("href", "Main.aspx")
-                                    $(".bdy").innerHTML=''
-                                                  $(".bdy").load("Main.aspx")
+                    //$(location).attr("href", "Main.aspx")
+                    $(".bdy").innerHTML = ''
+                    $(".bdy").load("Main.aspx")
 
                 }
 

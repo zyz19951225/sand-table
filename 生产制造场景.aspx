@@ -16,25 +16,27 @@
             background-position: center;
             position: absolute;
         }
+
         .title {
             background-image: url(image/newimg/生产制造场景.png);
         }
+
         .control-bar {
             border-bottom: 1px solid rgba(255,255,255,.5);
             padding-bottom: 24px;
-
         }
+
         .lable4 {
             margin-right: 36px;
         }
 
         .chanxian {
-               /* background: url(image/产线生产控制.png) no-repeat center center; */
-               position: absolute;
-               top: 424px;
-               left: 814px;
-               color: white;
-               font-size: 52px;
+            /* background: url(image/产线生产控制.png) no-repeat center center; */
+            position: absolute;
+            top: 424px;
+            left: 814px;
+            color: white;
+            font-size: 52px;
         }
 
         .image {
@@ -55,13 +57,16 @@
             margin-left: 51%;
             border-radius: 40px;
         }
+
         .label1, .label2 {
             color: white;
             font-size: 28px;
             position: absolute;
             left: 742px;
-            line-height: 48px;;
+            line-height: 48px;
+            ;
         }
+
         .label1 {
             top: 566px;
         }
@@ -69,6 +74,7 @@
         .label2 {
             top: 660px;
         }
+
         .input, .input2 {
             height: 50px;
             padding: 0 12px;
@@ -104,6 +110,7 @@
             border: none;
             text-align: center;
         }
+
         .but2 {
             left: 920px;
         }
@@ -125,14 +132,14 @@
             border: 0;
             font-weight: 600;
         }
-    .image1 {
-          position: absolute;
-          top: 326px;
-          left: 375px;
-          width: 1170px;
-          height: 668px;
-    }
 
+        .image1 {
+            position: absolute;
+            top: 326px;
+            left: 375px;
+            width: 1170px;
+            height: 668px;
+        }
     </style>
 </head>
 <body class="bdy">
@@ -157,15 +164,14 @@
         </div>
         <div class="box image1"></div>
         <div class="chanxian">产线生产控制</div>
-<!--        <div class="image"></div>-->
+        <!--        <div class="image"></div>-->
 
-<!--        <label class="state" id="type" runat="server">待启动</label>-->
+        <!--        <label class="state" id="type" runat="server">待启动</label>-->
         <label class="label1">纪念币文字:</label>
         <label class="label2">纪念币数量:</label>
         <input type="text" value="之江实验室" class="input" maxlength="8" />
         <input type="number" v-model="counter" class="input2" max="5"
-            oninput="console.log(1111);if(counter>5){counter=5};if(counter<0)counter=0;"
-            />
+            oninput="console.log(1111);if(counter>5){counter=5};if(counter<0)counter=0;" />
         <button class="but1" v-on:click="counter++;if(counter>5)counter=5">+</button>
         <button class="but2" v-on:click="counter--;if(counter<0)counter=0">-</button>
         <button class="go"></button>
@@ -191,6 +197,7 @@
                     success: function (result) {
                         if (result.d) {
                             $(".state").text("待启动");
+                            $(".go").css("opacity", "1");
                         } else {
                             $(".state").text("已启动");
                         }
@@ -200,15 +207,16 @@
 
             $(".go").click(function (e) {
                 var v = $(".input2").val();
+                var v2 = $(".input").val();
                 if (v > 0) {
                     $(".state").text("已启动");
-                    $(".go").css("opacity","0.2");
+                    $(".go").css("opacity", "0.2");
                     $.ajax({
                         type: "post",
                         contentType: "application/json; charset=utf-8",//传值的方式
                         dataType: "json",
                         url: "生产制造场景.aspx/Fasong",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
-                        data: "{count:" + v + "}",//username 为想问后台传的参数（这里的参数可有可无）
+                        data: "{count:" + v + ",content:'" + v2 + "'}",//username 为想问后台传的参数（这里的参数可有可无）
                         success: function (result) {
                             //alert(result.d);//result.d为后台返回的参数
 
@@ -230,8 +238,8 @@
                     }
                 })
                 //                 $(location).attr("href", "Main.aspx")
-                                  $(".bdy").innerHTML=''
-                                $(".bdy").load("Main.aspx")
+                $(".bdy").innerHTML = ''
+                $(".bdy").load("Main.aspx")
             });
             $.ajax({
                 type: "post",
