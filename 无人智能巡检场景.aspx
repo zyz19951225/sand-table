@@ -42,7 +42,8 @@
         .inspection {
                 background: url(image/newimg/智能巡检.png) no-repeat center center;
                 position: absolute;
-                left: 358px;
+                left: 2px; right: 0;
+                margin: 0 auto;
                 top: 258px;
                 height: 116px;
                 width: 472px;
@@ -55,17 +56,20 @@
             pointer-events: none;
         }
 
-        .switch {
-                 background: url(image/newimg/切换至IP模式.png) no-repeat center center;
-                 font-size: 18px;
-                 position: absolute;
-                 top: 500px;
-                 left: 472px;
-                 height: 50px;
-                 width: 250px;
-                 text-align: center;
-                 border-radius: 10px;
-                 border: 0;
+        .switch {   
+            font-size: 26px;
+            position: absolute;
+            top: 520px;
+            left: 50%;
+            height: 54px;
+            transform: translate(-50%, 0);
+            line-height: 54px;
+            padding: 0 36px;
+            text-align: center;
+            border-radius: 12px;
+            color: #fff;
+            background:#2097FF;
+            font-weight: lighter;
         }
         .switch.disabled {
             opacity: .5;
@@ -73,10 +77,10 @@
         }
 
         .load {
-            background: url(image/加载2.png) no-repeat center center;
-            background-size: 100% 100%;
-            height: 48px;
-            width: 48px;
+            background: url(image/加载2.png) no-repeat left center;
+            background-size: 100% auto;
+            height: 44px;
+            width: 44px;
             position: absolute;
         }
 
@@ -99,74 +103,65 @@
             -o-animation: rotation 1s linear infinite;
         }
 
-        .load1 {
-         position: absolute;
-         top: 177px;
-         left: 431px;
-        }
-           .load12 {
-                position: absolute;
-                top: 89px;
-                left: 431px;
-        }
-
-        .load2 {
-            margin-top: 18.4%;
-            margin-left: 41%;
-        }
 
         .loadLabel1 {
-     color: white;
-     font-size: 30px;
-     position: absolute;
-     top: 94px;
-     left: 517px;
-     font-weight: 600;
-
-     font-weight: 100;
-
-        }
-    .loadLabel2 {
-       color: white;
-       font-size: 30px;
-       position: absolute;
-       top: 182px;
-       left: 517px;
-
-      }
-
-        /* .loadLabel2 {
-            color: white;
-            font-size: 18px;
             position: absolute;
-            margin-top: 18.3%;
-            margin-left: 43%;
-            font-weight: 600;
-            width: 250px;
-            text-align: center;
-        } */
-
+            top: 88px;
+            left: 0; right: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .loadLabel1-in {
+            position: relative;
+            padding-left: 64px;
+            color: white;
+            font-size: 36px;
+        }
+        .loadLabel1 .load {
+            left: 0;
+            top: 2px;
+        }
+        .loadLabel2 {
+            position: absolute;
+            top: 182px;
+            left: 0; right: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .loadLabel2-in {
+            position: relative;
+            padding-left: 56px;
+            color: white;
+            font-size: 30px;
+            line-height: 36px;
+        }
+        .loadLabel2 .load {
+            width: 36px;
+            height: 36px;
+            left: 0;
+            top: 2px;
+        }
+        .loadLabel2.success .load, .loadLabel2.failed .load {
+            display: none;
+        }
+        .loadLabel2.success .loadLabel2-in {
+            padding-right: 36px;
+            background: url(image/newimg/成功.png) no-repeat left center/auto 100%;
+        }
+        .loadLabel2.failed .loadLabel2-in {
+            padding-right: 36px;
+            background: url(image/newimg/wrong.png) no-repeat left center/auto 100%;
+        }
         .loadLabel3 {
               color: white;
                font-size: 30px;
                position: absolute;
-               font-weight: 100;
-               top: 387px;
-               left: 368px;
+               top: 456px;
+               left: 0;
+               width: 100%;
                /* font-weight: 600; */
                /* width: 300px; */
                text-align: center;
-        }
-
-        .loadLabel4 {
-                   color: #ffffff;
-                   font-size: 27px;
-                   position: absolute;
-                   top: 563px;
-                   left: 448px;
-                   font-weight: 100;
-                   width: 300px;
-                   text-align: center;
         }
 
     </style>
@@ -196,15 +191,20 @@
 <!--        <button class="inspection">智能巡检</button>-->
       <div class="image1 box">
           <div class="inspection"></div>
-          <div class="load load1"></div>
-          <div class="load load2"></div>
-          <div class="load load12"></div>
-          <label class="loadLabel1">巡检中......</label>
-          <!-- <label class="loadLabel12">正在数据采集......</label> -->
-          <label class="loadLabel2"></label>
+          <div class="loadLabel1">
+            <div class="loadLabel1-in">
+                <div class="load"></div>
+                <label>巡检中......</label>
+            </div>
+          </div>
+          <div class="loadLabel2">
+            <div class="loadLabel2-in">
+                <div class="load"></div>
+                <label class="loadLabel2-text"></label>
+            </div>
+          </div>
           <label class="loadLabel3">当前巡检数据上传模式为身份模态</label>
-          <div class="switch"></div>
-          <label class="loadLabel4">请在数据采集状态下切换</label>
+          <div class="switch">切换至IP模式(采集时可用)</div>
        </div>
 
         <button class="home">首页</button>
@@ -214,6 +214,8 @@
     <script>
         $(document).ready(function () {
             var start = false;
+            var types = 0; //巡检状态
+            var mode = 'mf' //上传模式
             $.ajax({
                 type: "post",
                 contentType: "application/json; charset=utf-8",//传值的方式
@@ -240,63 +242,58 @@
                 $(".bdy").innerHTML=''
                 $(".bdy").load("Main.aspx")
             });
-            var types = 0;
+            
             setInterval(function () {
+                if (!start) return
                 $.ajax({
                     type: "post",
                     contentType: "application/json; charset=utf-8",//传值的方式
                     dataType: "json",
                     url: "无人智能巡检场景.aspx/GetTypes",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
                     success: function (result) {
-                        types = result.d;
-                        if (start) {
-                            $(".loadLabel2").show();
-                        }
                         if (result.d == 1) {
-                            $(".loadLabel2").text("正在数据采集……");
-                            $(".switch").removeClass("disabled");
-                            $(".load1").show();
-
+                            $(".loadLabel2").show();
+                            $(".loadLabel2-text").text("巡检小车正在采集数据……");
+                            $(".loadLabel2").attr('class', 'loadLabel2')
+                            if (result.d !== types) {
+                                mode = 'mf'
+                                $(".loadLabel3").text("当前巡检数据上传模式为身份模态");
+                            }
+                            if (mode === 'mf') {
+                                $(".switch").removeClass("disabled");
+                            }
                         } else if (result.d == 2) {
-                            $(".loadLabel2").text("采集完成，正在上传数据……");
+                            $(".loadLabel2").show();
+                            $(".loadLabel2-text").text("采集完成，巡检小车正在上传数据……");
+                            $(".loadLabel2").attr('class', 'loadLabel2')
                             $(".switch").addClass("disabled");
-                            $(".load1").show();
-
                         } else if (result.d == 3) {
-                            $(".loadLabel2").text("上传失败。");
-                            $(".loadLabel3").text("当前巡检数据上传模式为身份模态");
+                            $(".loadLabel2").show();
+                            $(".loadLabel2-text").text("上传失败");
+                            $(".loadLabel2").attr('class', 'loadLabel2 failed')
                             $(".switch").addClass("disabled");
-                            $(".load1").show();
-
                         } else if (result.d == 4) {
-                            $(".loadLabel2").text("上传成功。");
-                            $(".loadLabel3").text("当前巡检数据上传模式为身份模态");
+                            $(".loadLabel2").show();
+                            $(".loadLabel2-text").text("上传成功");
+                            $(".loadLabel2").attr('class', 'loadLabel2 success')
                             $(".switch").addClass("disabled");
-                            $(".load1").show();
-
                         }
+                        types = result.d;
                     }
                 })
             }, 500);
-            $(".load1").hide();
-            $(".load2").hide();
             $(".loadLabel1").hide();
-            $(".load12").hide();
+
             //$(".loadLabel12").hide();
             $(".loadLabel2").hide();
             $(".loadLabel3").hide();
-            $(".loadLabel4").hide();
             $(".switch").hide();
 
             $(".inspection").click(function (e) {
                 start = true;
-                $(".load1").hide();
                 $(".inspection").addClass('disabled');
                 $(".loadLabel1").show();
-                $(".load12").show();
-                $(".loadLabel12").show();
                $(".loadLabel3").show();
-                $(".loadLabel4").show();
                 $(".switch").show();
                 $(".switch").addClass("disabled");
                 $.ajax({
@@ -339,6 +336,7 @@
             $(".switch").click(function (e) {
                 if (types == 1) {
                     $(".loadLabel3").text("当前巡检数据上传模式为IP模态");
+                    mode = 'ip'
                     $.ajax({
                         type: "post",
                         contentType: "application/json; charset=utf-8",//传值的方式

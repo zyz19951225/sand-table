@@ -82,8 +82,8 @@
         }
 
         .completeicon {
-            background: url(image/newimg/接受数据图标.png) no-repeat center center;
-            background-size: 100% 100%;
+            background: url(image/newimg/接受数据图标.png) no-repeat right center;
+            background-size: 96px auto;
             height: 113px;
             width: 112px;
             position: absolute;
@@ -268,10 +268,6 @@
             }
 
         .compare-th-label {
-            display: block;
-            width: 286px;
-            margin: 0 auto;
-            text-align: left;
             white-space: nowrap;
         }
 
@@ -372,11 +368,12 @@
         }
         .image-wrap {
             position: absolute;
-            width: 800px;
-            left: 50%;
-            top: 650px;
-            transform: translate(-50%, -50%);
-            background: #080D1A;
+            width: 1451px;
+            height: 726px;
+            top: 296px;
+            left: 235px;
+            background: rgba(0,0,0,.6);
+            border-radius: 20px;
         }
         .return2 {
             height: 50px;
@@ -389,8 +386,13 @@
             border: 0;
         }
         .image {
-            width: 100%;
-            display: block;
+            position: absolute;
+            width: 960px;
+            height: 540px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 8px;
         }
 
         .box-visual {
@@ -492,7 +494,7 @@
                 </tr>
                 <tr class="quality_inspection">
                     <td>
-                        <label class="compare-th-label quality_inspection_label">质检部获取数据（首次）</label>
+                        <label class="compare-th-label quality_inspection_label">质检部（首次）</label>
                     </td>
                     <td>
                         <div class="compare-path">
@@ -511,7 +513,7 @@
                 </tr>
                 <tr class="process">
                     <td>
-                        <label class="compare-th-label process_label">市场部获取数据</label>
+                        <label class="compare-th-label process_label">市场部（再次）</label>
                     </td>
                     <td>
                         <div class="compare-path">
@@ -531,7 +533,7 @@
 
                 <tr class="equipment">
                     <td>
-                        <label class="compare-th-label equipment_label">运营部获取数据</label>
+                        <label class="compare-th-label equipment_label">运营部（再次）</label>
                     </td>
                     <td>
                         <div class="compare-path">
@@ -551,7 +553,7 @@
 
                 <tr class="production">
                     <td>
-                        <label class="compare-th-label production_label">产品部获取数据</label>
+                        <label class="compare-th-label production_label">产品部（再次）</label>
                     </td>
                     <td>
                         <div class="compare-path">
@@ -571,7 +573,7 @@
 
                 <tr class="monitor">
                     <td>
-                        <label class="compare-th-label monitor_label">监控部获取数据</label>
+                        <label class="compare-th-label monitor_label">监控部（再次）</label>
                     </td>
                     <td>
                         <div class="compare-path">
@@ -603,36 +605,36 @@
 
         $(document).ready(function () {
 
-            $(".image").hide(); $(".return2").hide();
+            $(".image-wrap").hide(); 
             $(".label3_a").click(function (e) {
 
                 var src = 'http://localhost:8088/picture/抓拍.jpg';
                 $(".image").attr('src', src);
-                $(".image").show(); $(".return").hide(); $(".return2").show();
+                $(".image-wrap").show(); 
 
             });
             $(".gongyibu_a").click(function (e) {
-                $(".image").show(); $(".return").hide(); $(".return2").show();
+                $(".image-wrap").show(); 
                 var src = 'http://localhost:8088/picture/抓拍.jpg';
                 $(".image").css('background-image', 'url(' + src + ')');
             });
             $(".shebeibu_a").click(function (e) {
-                $(".image").show(); $(".return").hide(); $(".return2").show();
+                $(".image-wrap").show(); 
                 var src = 'http://localhost:8088/picture/抓拍.jpg';
                 $(".image").css('background-image', 'url(' + src + ')');
             });
             $(".shengchanbu_a").click(function (e) {
-                $(".image").show(); $(".return").hide(); $(".return2").show();
+                $(".image-wrap").show(); 
                 var src = 'http://localhost:8088/picture/抓拍.jpg';
                 $(".image").css('background-image', 'url(' + src + ')');
             });
             $(".chanpinkaifabu_a").click(function (e) {
-                $(".image").show(); $(".return").hide(); $(".return2").show();
+                $(".image-wrap").show(); 
                 var src = 'http://localhost:8088/picture/抓拍.jpg';
                 $(".image").css('background-image', 'url(' + src + ')');
             });
             $(".return2").click(function (e) {
-                $(".image").hide(); $(".return").show(); $(".return2").hide();
+                $(".image-wrap").hide(); 
 
             });
             $(".div1").show();
@@ -677,84 +679,84 @@
                 if (state2) {
                     state2 = false;
                     $(".process").show();
-                    $(".process_label").text("市场部获取数据");
+                    $(".process_label").text("市场部（再次）");
                 } else if (state3) {
                     state3 = false;
                     $(".process").show();
-                    $(".process_label").text("运营部获取数据");
+                    $(".process_label").text("运营部（再次）");
 
                 } else if (state4) {
                     state4 = false;
                     $(".process").show();
-                    $(".process_label").text("产品部获取数据");
+                    $(".process_label").text("产品部（再次）");
 
                 } else if (state5) {
                     state5 = false;
                     $(".process").show();
-                    $(".process_label").text("监控部获取数据");
+                    $(".process_label").text("监控部（再次）");
 
                 }
 
                 if (state2) {
                     state2 = false;
                     $(".equipment").show();
-                    $(".equipment_label").text("市场部获取数据");
+                    $(".equipment_label").text("市场部（再次）");
                 } else if (state3) {
                     state3 = false;
                     $(".equipment").show();
-                    $(".equipment_label").text("运营部获取数据");
+                    $(".equipment_label").text("运营部（再次）");
 
                 } else if (state4) {
                     state4 = false;
                     $(".equipment").show();
-                    $(".equipment_label").text("产品部获取数据");
+                    $(".equipment_label").text("产品部（再次）");
 
                 } else if (state5) {
                     state5 = false;
                     $(".equipment").show();
-                    $(".equipment_label").text("监控部获取数据");
+                    $(".equipment_label").text("监控部（再次）");
 
                 }
 
                 if (state2) {
                     state2 = false;
                     $(".production").show();
-                    $(".production_label").text("市场部获取数据");
+                    $(".production_label").text("市场部（再次）");
                 } else if (state3) {
                     state3 = false;
                     $(".production").show();
-                    $(".production_label").text("运营部获取数据");
+                    $(".production_label").text("运营部（再次）");
 
                 } else if (state4) {
                     state4 = false;
                     $(".production").show();
-                    $(".production_label").text("产品部获取数据");
+                    $(".production_label").text("产品部（再次）");
 
                 } else if (state5) {
                     state5 = false;
                     $(".production").show();
-                    $(".production_label").text("监控部获取数据");
+                    $(".production_label").text("监控部（再次）");
 
                 }
 
                 if (state2) {
                     state2 = false;
                     $(".monitor").show();
-                    $(".monitor_label").text("市场部获取数据");
+                    $(".monitor_label").text("市场部（再次）");
                 } else if (state3) {
                     state3 = false;
                     $(".monitor").show();
-                    $(".monitor_label").text("运营部获取数据");
+                    $(".monitor_label").text("运营部（再次）");
 
                 } else if (state4) {
                     state4 = false;
                     $(".monitor").show();
-                    $(".monitor_label").text("产品部获取数据");
+                    $(".monitor_label").text("产品部（再次）");
 
                 } else if (state5) {
                     state5 = false;
                     $(".monitor").show();
-                    $(".monitorn_label").text("监控部获取数据");
+                    $(".monitorn_label").text("监控部（再次）");
 
                 }
             });
