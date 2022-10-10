@@ -376,6 +376,7 @@
             left: 50%;
             top: 650px;
             transform: translate(-50%, -50%);
+            background: #080D1A;
         }
         .return2 {
             height: 50px;
@@ -389,6 +390,7 @@
         }
         .image {
             width: 100%;
+            display: block;
         }
 
         .box-visual {

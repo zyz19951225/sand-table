@@ -32,11 +32,25 @@
 
         .myCanvas {
             position: absolute;
-            background-color: white;
             margin-top: 47px;
-            margin-left: 720px;
+            margin-left: 736px;
+        }
+        .canvas-bg {
+            position: absolute;
+            width: 960px; height: 466px;
+            top: 47px;
+            left: 736px;
             background: url(image/newimg/地图3.png) no-repeat center center;
             background-size: 100%;
+        }
+        .canvas-bg.disabled::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 36px;
+            background: #fff;
+            opacity: .12;
         }
 
         .menu {
@@ -52,17 +66,17 @@
         .square {
             background: url(image/newimg/矩形区域.png) no-repeat center center;
             background-size: 100% 100%;
-            width: 40px;
-            height: 40px;
+            width: 38px;
+            height: 38px;
             position: absolute;
-            top: 29px;
+            top: 25px;
             left: 158px;
         }
 
         .choosexz {
             color: white;
             position: absolute;
-            top: 32px;
+            top: 28px;
             left: 28px;
             font-size: 24px;
         }
@@ -73,8 +87,8 @@
             width: 40px;
             height: 40px;
             position: absolute;
-            top: 27px;
-            left: 250px;
+            top: 22px;
+            left: 244px;
         }
 
         .triangle {
@@ -83,12 +97,12 @@
             width: 40px;
             height: 40px;
             position: absolute;
-            top: 29px;
-            left: 330px;
+            top: 24px;
+            left: 328px;
         }
 
         .width {
-            top: 86px;
+            top: 92px;
             left: 75px;
             height: 32px;
             color: black;
@@ -104,7 +118,7 @@
         }
 
         .bianchang {
-            top: 86px;
+            top: 92px;
             left: 94px;
             height: 32px;
             color: black;
@@ -120,7 +134,7 @@
         }
 
         .banjing {
-            top: 86px;
+            top: 92px;
             left: 94px;
             height: 32px;
             color: black;
@@ -136,16 +150,12 @@
         }
 
         .height {
-            color: black;
             font-size: 20px;
             position: absolute;
-            /* margin-top: 492PX; */
             height: 32px;
             width: 100px;
-            /* margin-left: 422px; */
-            font-weight: 400;
             text-align: center;
-            top: 139px;
+            top: 140px;
             left: 75px;
             background-color: transparent;
             border-radius: 10px;
@@ -155,58 +165,47 @@
 
         .mm_label1 {
             color: #ffffff;
-            font-size: 19px;
-            font-family: 'Source Han Sans CN';
+            font-size: 20px;
             position: absolute;
-            /* margin-top: 492PX; */
-            /* margin-left: 330PX; */
-            border-radius: 40px;
-            top: 89px;
+            top: 92px;
             left: 196px;
+            line-height: 32px;
         }
 
         .mm_label2 {
             color: #ffffff;
-            font-size: 19px;
-            font-family: 'Source Han Sans CN';
+            font-size: 20px;
             position: absolute;
-            /* margin-top: 492PX; */
-            /* margin-left: 330PX; */
-            border-radius: 40px;
             top: 140px;
             left: 196px;
+            line-height: 32px;
         }
 
         .mm_label3 {
             color: #ffffff;
-            font-size: 19px;
-            font-family: 'Source Han Sans CN';
+            font-size: 20px;
             position: absolute;
             /* margin-top: 492PX; */
             /* margin-left: 330PX; */
-            border-radius: 40px;
-            top: 110px;
-            left: 272px;
+            top: 92px;
+            left: 216px;
+            line-height: 32px;
         }
 
         .width_label {
             color: #ffffff;
             font-size: 24px;
-            font-family: 'Source Han Sans CN';
             position: absolute;
-            top: 84px;
+            top: 92px;
             left: 28px;
-            border-radius: 40px;
         }
 
         .height_label {
             color: #ffffff;
             font-size: 24px;
-            font-family: 'Source Han Sans CN';
             position: absolute;
-            top: 138px;
+            top: 140px;
             left: 28px;
-            border-radius: 40px;
         }
 
         .clearCanvas {
@@ -219,12 +218,40 @@
         }
 
         .warning {
-            background: url(image/newimg/发出警告.png) no-repeat center center;
-            margin-top: 952px;
-            margin-left: 863px;
-            height: 51px;
-            width: 195px;
             position: absolute;
+            height: 57px;
+            width: 219px;
+            top: 952px;
+            left: 0; right: 0;
+            margin: 0 auto;
+            background: url(image/newimg/发出警告.png) no-repeat center center;
+            background-size: contain;
+        }
+        .warning.disabled {
+            opacity: .5;
+            pointer-events: none;
+        }
+        .warning-tip {
+            position: absolute;
+            left: 0; right: 0;
+            bottom: 32px;
+            margin: 0 auto;
+            font-size: 18px;
+            color: #fff;
+            opacity: .5;
+            text-align: center;
+        }
+        .warning-tip2 {
+            position: absolute;
+            left: 0; right: 0;
+            bottom: 140px;
+            width: 120px;
+            margin: 0 auto;
+            padding-left: 36px;
+            background: url(image/newimg/成功.png) no-repeat left center/contain;
+            text-align: center;
+            font-size: 22px;
+            color: #fff;
         }
 
         .image1 {
@@ -293,8 +320,8 @@
             color: white;
             font-size: 24px;
             position: absolute;
-            width: 17px;
-            height: 17px;
+            width: 24px;
+            height: 24px;
             top: 7px;
         }
 
@@ -302,7 +329,7 @@
             color: white;
             font-size: 26px;
             position: absolute;
-            left: 24px;
+            left: 32px;
             border-radius: 40px;
         }
 
@@ -322,7 +349,7 @@
             font-size: 22px;
             position: absolute;
             top: 42px;
-            left: 24px;
+            left: 32px;
             border-radius: 40px;
         }
 
@@ -361,7 +388,7 @@
             font-size: 22px;
             position: absolute;
             top: 72px;
-            left: 24px;
+            left: 32px;
         }
 
         .coordinate17 {
@@ -412,8 +439,8 @@
             color: white;
             font-size: 24px;
             position: absolute;
-            width: 17px;
-            height: 17px;
+            width: 24px;
+            height: 24px;
             top: 7px;
         }
 
@@ -432,7 +459,7 @@
             font-size: 22px;
             position: absolute;
             top: 42px;
-            left: 24px;
+            left: 32px;
             border-radius: 40px;
         }
 
@@ -452,8 +479,8 @@
             color: white;
             font-size: 24px;
             position: absolute;
-            width: 17px;
-            height: 17px;
+            width: 24px;
+            height: 24px;
             top: 7px;
         }
 
@@ -472,7 +499,7 @@
             font-size: 22px;
             position: absolute;
             top: 42px;
-            left: 24px;
+            left: 32px;
             border-radius: 40px;
         }
 
@@ -497,12 +524,22 @@
 
 
         .xzxz {
-            border: 1px dashed white;
+            position: absolute;
             height: 195px;
             width: 393px;
             left: 60px;
             top: 20px;
-            position: absolute;
+            border: 1px dashed white;
+            border-radius: 8px;
+        }
+        .choseMenu.disabled {
+            opacity: .6;
+        }
+        .xzxz input:disabled {
+            opacity: .5;
+        }
+        .xzxz.disabled .square, .xzxz.disabled .circular, .xzxz.disabled .triangle {
+            opacity: .6;
         }
     </style>
 </head>
@@ -535,7 +572,10 @@
     <!--            <div class="d">发出警告</div>-->
     <!--        </button>-->
     <div class="warning d"></div>
+    <div class="warning-tip">请先制定一个目标区域后，再点击“发出警告”</div>
+    <div class="warning-tip2">警告已发出</div>
     <div class=" box image1">
+        <div class="canvas-bg"></div>
         <canvas class="myCanvas" width="960" height="466" id="myCanvas"></canvas>
         <!--        <canvas class="menu"></canvas>-->
         <div class="zdyhz">
@@ -557,22 +597,24 @@
                 <div class="d2">
                     <input type="number" value="1000" class="bianchang" maxlength="3" />
                     <label class="width_label">边长:</label>
+                    <label class="mm_label3">mm</label>
                 </div>
                 <div class="d3">
                     <input type="number" value="500" class="banjing" maxlength="3" />
                     <label class="width_label">半径:</label>
+                    <label class="mm_label3">mm</label>
                 </div>
             </div>
 
             <div class="information2">
 
 
-                <label class="mm_label3">mm</label>
+                
 
                 <!--                                     <label class="coordinate14">自定义寻址区域</label> -->
-                <label class="coordinate15">中心经度：0</label>
-                <label class="coordinate16">中心纬度：0</label>
-                <label class="coordinate17">水平边长：0</label>
+                <label class="coordinate15"></label>
+                <label class="coordinate16"></label>
+                <label class="coordinate17"></label>
                 <label class="coordinate18"></label>
                 <label class="coordinate19"></label>
                 <label class="coordinate20"></label>
@@ -613,8 +655,23 @@
 
     <script>
         $(document).ready(function () {
-            var biaoshi = false;
+            const perLon = 0.00000009083
+            const perLat = 0.00000008026  //y轴一个像素点是0.00000008026经纬度
+            const trangleData = { x: 674, y: 240, lengthPx: 145};
+            const circleData = { x: 672, y: 236, dPx: 161}
+            const rectData = { x: 446, y: 219, widthPx: 97, heightPx: 161}
+            const canvasHeight = 466
+            var biaoshi = false; //值为false说明区域可更改
             var zidingyi = false;
+            var b1 = false; //方形
+            var b2 = false; //三角形
+            var b3 = false; //圆形
+            var zanshimouseX = 0;
+            var zanshimouseY = 0;
+            var zanshiW = 0;
+            var zanshiH = 0;
+            var zanshiB = 0;
+            var zanshiBJ = 0;
             $(".d2").hide();
             $(".d3").hide();
             $(".mm_label3").hide();
@@ -623,20 +680,44 @@
             // trigger an artificial keydown event with keyCode 64
             //0.00000001
             jQuery("body").trigger(vare);
+            trangleData.lat = (30.2609691 + (Math.abs(trangleData.y - canvasHeight) * perLat));
+            trangleData.lon = (119.8929680 + (Math.abs(trangleData.x) * perLon));
+            trangleData.length = (trangleData.lengthPx * 8.3)
 
-            //0.00000009083
-            $(".coordinate2").text("中心点经纬度：" + (119.8929680 + (915 * 0.00000009083)) + "°E，" + (30.2609691 + (286 * 0.00000008026)) + '°N');
-            //             $(".coordinate3").text("中心纬度：" + (30.2609691 + (286 * 0.00000008026)));
-            $(".coordinate4").text("边长：" + (145 * 8.3) + "  mm");
-            $(".coordinate6").text("中心点经纬度：" + (119.8929680 + (914 * 0.00000009083)) + "°E，" + (30.2609691 + (306 * 0.00000008026)) + '°N');
-            //             $(".coordinate6").text("中心经度：" + (119.8929680 + (914 * 0.00000009083)));
-            //             $(".coordinate7").text("中心纬度：" + (30.2609691 + (306 * 0.00000008026)));
-            $(".coordinate8").text("半径：" + ((161 * 8.3) / 2) + "  mm");
-            $(".coordinate10").text("中心点经纬度：" + (119.8929680 + (600 * 0.00000009083)).toFixed(11) + "°E，" + (30.2609691 + (286 * 0.00000008026)) + '°N');
-            //             $(".coordinate10").text("中心经度：" + (119.8929680 + (600 * 0.00000009083)));
-            //             $(".coordinate11").text("中心纬度：" + (30.2609691 + (286 * 0.00000008026)));
-            $(".coordinate12").text("水平直径：" + (97 * 8.3) + "  mm");
-            $(".coordinate13").text("垂直直径：" + (161 * 8.3) + "  mm");
+            circleData.lat = (30.2609691 + (Math.abs(circleData.y - canvasHeight) * perLat));
+            circleData.lon = (119.8929680 + (Math.abs(circleData.x) * perLon));
+            circleData.r = ((circleData.dPx * 8.3)/2)
+
+            rectData.lat = (30.2609691 + (Math.abs(rectData.y - canvasHeight) * perLat));
+            rectData.lon = (119.8929680 + (Math.abs(rectData.x) * perLon));
+            rectData.width = rectData.widthPx * 8.3
+            rectData.height = rectData.heightPx * 8.3
+
+            $(".coordinate2").text("中心点经纬度：" + trangleData.lon.toFixed(11) + "°E，" + trangleData.lat.toFixed(11) + '°N');
+            $(".coordinate4").text("边长：" + trangleData.length.toFixed(1) + "  mm");
+
+            $(".coordinate6").text("中心点经纬度：" + circleData.lon.toFixed(11) + "°E，" + circleData.lat.toFixed(11) + '°N');
+            $(".coordinate8").text("半径：" + circleData.r.toFixed(1) + "  mm");
+
+            $(".coordinate10").text("中心点经纬度：" + rectData.lon.toFixed(11) + "°E，" + rectData.lat.toFixed(11) + '°N');
+            $(".coordinate12").text("宽：" + rectData.width.toFixed(1) + "  mm");
+            $(".coordinate13").text("高：" + rectData.height.toFixed(1) + "  mm");
+            $('.warning').addClass('disabled');
+            $(".warning-tip2").hide()
+            $('.canvas-bg').addClass('disabled')
+            function clearCanvas () {
+                $(".radio1").attr("checked", false);
+                $(".radio2").attr("checked", false);
+                $(".radio3").attr("checked", false);
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.clearRect(0, 0, $("#myCanvas").width(), $("#myCanvas").height());
+                $('.warning').addClass('disabled');
+                $(".coordinate15").text("");
+                $(".coordinate16").text("" );
+                $(".coordinate17").text("");
+                $(".coordinate18").text("");
+            }
             $(".radio1").click(function (e) {
                 if (biaoshi) {
                     return;
@@ -651,25 +732,12 @@
                 ctx1.clearRect(0, 0, $("#myCanvas").width(), $("#myCanvas").height());
                 var c2 = document.getElementById("myCanvas");
                 var ctx = c2.getContext("2d");
-                /*
-                ctx2.beginPath();
-                ctx2.moveTo(674, 217 - (118.5 * 0.5));
-                ctx2.lineTo(674 + (145 * 0.5), 217 + (118.5 * 0.5));
-                ctx2.lineTo(674 - (145 * 0.5), 217 + (118.5 * 0.5));
-                ctx2.lineTo(674, 217 - (118.5 * 0.5)); // 只用三个点的坐标就可以了，不用闭环 //如果要涉及到边框则需要闭环
-                ctx2.fillStyle = "rgba(255,0,0,0.7)";
-                ctx2.fill(); //开始填充，空心/实心取决于这个
-                ctx2.closePath();
-                */
-                zanshimouseX = 674;
-                zanshimouseY = 240;
-                //var ldm = 1660;
-                //var sdm = 1660;
-                zanshiB = 145 * 8.3;
-                zanshiBJ = 145 * 8.3;
+                zanshimouseX = trangleData.x;
+                zanshimouseY = trangleData.y;
+                zanshiB = trangleData.length;
+                zanshiBJ = trangleData.length;
 
-
-                var kuan = 145;
+                var kuan = trangleData.lengthPx;
                 var gao = (kuan / (2 * Math.sqrt(3))) + (kuan / Math.sqrt(3));
                 ctx.beginPath();
                 ctx.moveTo(zanshimouseX, zanshimouseY - (kuan / Math.sqrt(3)));
@@ -681,6 +749,7 @@
                 ctx.closePath();
                 //$(".coordinate17").text("边长：" + (kuan * 8.3) + "  mm");
                 //$(".coordinate18").text("");
+                $('.warning').removeClass('disabled');
             });
 
             $(".radio2").click(function (e) {
@@ -700,17 +769,18 @@
                 var c3 = document.getElementById("myCanvas");
                 var ctx3 = c3.getContext("2d");
                 ctx3.beginPath();
-                ctx3.ellipse(672, 236, (161 * 0.5), (161 * 0.5), 0, 0, 2 * Math.PI);
+                ctx3.ellipse(circleData.x, circleData.y, (circleData.dPx * 0.5), (circleData.dPx * 0.5), 0, 0, 2 * Math.PI);
                 ctx3.fillStyle = "rgba(255,0,0,0.7)";
                 ctx3.fill(); //开始填充，空心/实心取决于这个
                 ctx3.closePath();
 
-                zanshimouseX = 672;
-                zanshimouseY = 236;
+                zanshimouseX = circleData.x;
+                zanshimouseY = circleData.y;
                 //var ldm = 913;
                 //var sdm = 913;
-                zanshiBJ = (161 * 8.3) / 2;
-                zanshiB = (161 * 8.3) / 2;
+                zanshiBJ = circleData.r;
+                zanshiB = circleData.r;
+                $('.warning').removeClass('disabled');
             });
             $(".radio3").click(function (e) {
                 if (biaoshi) {
@@ -730,16 +800,16 @@
                 ctx4.beginPath();
                 ctx4.beginPath();
                 ctx4.fillStyle = "rgba(255,0,0,0.7)";
-                ctx4.fillRect(446 - (97 * 0.5), 219 - (161 * 0.5), 97, 161);
+                ctx4.fillRect(rectData.x - (rectData.widthPx * 0.5), rectData.y - (rectData.heightPx * 0.5), rectData.widthPx, rectData.heightPx);
 
                 ctx4.closePath();
-                zanshimouseX = 446;
-                zanshimouseY = 219;
+                zanshimouseX = rectData.x;
+                zanshimouseY = rectData.y;
                 //var ldm = 519;
                 //var sdm = 913;
-                zanshiH = 161 * 8.3;
-                zanshiW = 97 * 8.3;
-
+                zanshiH = rectData.width;
+                zanshiW = rectData.height;
+                $('.warning').removeClass('disabled');
             });
 
             $(".option1").addClass("active");
@@ -748,22 +818,16 @@
             $(".square,.circular,.triangle,.width,.height,.width_label,.height_label,.zdyhz").hide();
             $(".information1").show();
             $(".information2").hide();
-            var b1 = false;
-            var b2 = false;
-            var b3 = false;
             $(".option1").click(function (e) {
+                $('.canvas-bg').addClass('disabled')
                 $(".option1").addClass("active");
                 $(".option2").removeClass("active");
                 zidingyi = false;
                 $(".square,.circular,.triangle,.width,.height,.width_label,.height_label,.zdyhz").hide();
                 $(".information1").show(); $(".information2").hide();
-                $(".radio1").attr("checked", false);
-                $(".radio2").attr("checked", false);
-                $(".radio3").attr("checked", false);
-                var c = document.getElementById("myCanvas");
-                var ctx = c.getContext("2d");
-                ctx.clearRect(0, 0, $("#myCanvas").width(), $("#myCanvas").height());
-
+                if (!biaoshi) {
+                    clearCanvas()
+                }
             });
             $(".option2").click(function (e) {
                 $(".option2").addClass("active");
@@ -771,13 +835,10 @@
                 zidingyi = true;
                 $(".square,.circular,.triangle,.width,.height,.width_label,.height_label,.zdyhz").show();
                 $(".information1").hide(); $(".information2").show();
-                $(".radio1").attr("checked", false);
-                $(".radio2").attr("checked", false);
-                $(".radio3").attr("checked", false);
-                var c = document.getElementById("myCanvas");
-                var ctx = c.getContext("2d");
-                ctx.clearRect(0, 0, $("#myCanvas").width(), $("#myCanvas").height());
-
+                if (!biaoshi) {
+                    clearCanvas()
+                    $('.canvas-bg').removeClass('disabled')
+                }
                 $(".d1").show();
                 $(".mm_label1").show();
                 $(".mm_label2").show();
@@ -810,12 +871,7 @@
                 }
             });
             $(".clearCanvas").click(function (e) {
-                $(".radio1").attr("checked", false);
-                $(".radio2").attr("checked", false);
-                $(".radio3").attr("checked", false);
-                var c = document.getElementById("myCanvas");
-                var ctx = c.getContext("2d");
-                ctx.clearRect(0, 0, $("#myCanvas").width(), $("#myCanvas").height());
+                clearCanvas()
             });
             
             $("#myCanvas").click(function (e) {
@@ -823,7 +879,6 @@
                     return;
                 }
 
-                //$(".coordinate16").text("中心纬度：" + (Math.abs(mouseY - 466)));
                 if (zidingyi) {
                     var c = document.getElementById("myCanvas");
                     var ctx = c.getContext("2d");
@@ -846,13 +901,10 @@
                     zanshimouseY = mouseY;
                     var kuan = $(".width").val() / 8.3;
                     var gao = $(".height").val() / 8.3;
-                    //alert((mouseX) + "-" + Math.abs(mouseY - 466));
                     //一个像素点是8.3mm
                     //y轴一个像素点是0.00000008026经纬度
-                    $(".coordinate15").text("中心经度：" + (119.8929680 + (Math.abs(mouseX) * 0.00000009083)));
-                    $(".coordinate16").text("中心纬度：" + (30.2609691 + (Math.abs(mouseY - 466) * 0.00000008026)));
-                    $(".coordinate17").text("水平边长：" + (kuan * 8.3) + "  mm");
-                    $(".coordinate18").text("垂直边长：" + (gao * 8.3) + "  mm");
+                    $(".coordinate15").text("中心经度：" + (119.8929680 + (Math.abs(mouseX) * perLon)).toFixed(11));
+                    $(".coordinate16").text("中心纬度：" + (30.2609691 + (Math.abs(mouseY - canvasHeight) * perLat)).toFixed(11));
                     //                     $(".coordinate19").text("水平半径：" + ((kuan * 8.3) / 2) + "  mm");
                     //                     $(".coordinate20").text("垂直半径：" + ((gao * 8.3) / 2) + "  mm");
 
@@ -869,7 +921,7 @@
                         ctx.fillRect(mouseX - (kuan * 0.5), mouseY - (gao * 0.5), kuan, gao);
                         ctx.closePath();
                         $(".coordinate17").text("宽：" + (kuan * 8.3) + "  mm");
-                        $(".coordinate18").text("长：" + (gao * 8.3) + "  mm");
+                        $(".coordinate18").text("高：" + (gao * 8.3) + "  mm");
                     } else if (b2) {
 
                         /*
@@ -909,26 +961,27 @@
                         $(".coordinate17").text("半径：" + ((kuan * 8.3) / 2) + "  mm");
                         $(".coordinate18").text("");
                     }
+                    $('.warning').removeClass('disabled');
                 }
 
 
             });
-            var zanshimouseX = 0;
-            var zanshimouseY = 0;
-            var zanshiW = 0;
-            var zanshiH = 0;
-            var zanshiB = 0;
-            var zanshiBJ = 0;
+            
             $(".warning").click(function (e) {
 
                 if (biaoshi) {
                     biaoshi = false;
-                    $(".radio1").show();
-                    $(".radio2").show();
-                    $(".radio3").show();
+                    $(".radio1").removeAttr('disabled').parent().removeClass('disabled');
+                    $(".radio2").removeAttr('disabled').parent().removeClass('disabled');
+                    $(".radio3").removeAttr('disabled').parent().removeClass('disabled');
+                    if (zidingyi) $('.canvas-bg').removeClass('disabled')
                     // $(".warning").text("发出警告");、
-                    $(".warning").css({ "background": "url(image/newimg/发出警告.png) no-repeat center center" });
-                    $(".warning").css("background-color", "");
+                    $(".warning").css({ "background-image": "url(image/newimg/发出警告.png)" });
+                    $(".warning-tip").show();
+                    $(".warning-tip2").hide();
+                    clearCanvas()
+                    $('.xzxz').removeClass('disabled')
+                    $('.xzxz input').removeAttr('disabled')
                     $.ajax({
                         type: "post",
                         contentType: "application/json; charset=utf-8",//传值的方式
@@ -941,11 +994,16 @@
                     })
                 } else {
                     biaoshi = true;
-                    $(".radio1").hide();
-                    $(".radio2").hide();
-                    $(".radio3").hide();
+                    if (zidingyi) $('.canvas-bg').addClass('disabled')
+                    $(".radio1:not(:checked)").attr('disabled', true).parent().addClass('disabled');
+                    $(".radio2:not(:checked)").attr('disabled', true).parent().addClass('disabled');
+                    $(".radio3:not(:checked)").attr('disabled', true).parent().addClass('disabled');
                     // $(".warning").text("异常处理完毕");
-                    $(".warning").css({ "background": "url(image/newimg/异常处理完毕.png) no-repeat center center" });
+                    $(".warning").css({ "background-image": "url(image/newimg/异常处理完毕.png)" });
+                    $(".warning-tip").hide();
+                    $(".warning-tip2").show();
+                    $('.xzxz').addClass('disabled')
+                    $('.xzxz input').attr('disabled', true)
                     var c = document.getElementById("myCanvas");
                     var a = document.createElement("a");
                     a.href = c.toDataURL();
@@ -955,8 +1013,8 @@
                     let id = date + '' + rund;
                     a.download = id;
                     a.click();
-                    var lat = (30.2609691 + (Math.abs(zanshimouseY - 466) * 0.00000008026));
-                    var lon = (119.8929680 + (Math.abs(zanshimouseX) * 0.00000009083));
+                    var lat = (30.2609691 + (Math.abs(zanshimouseY - canvasHeight) * perLat));
+                    var lon = (119.8929680 + (Math.abs(zanshimouseX) * perLon));
                     if (b1) {
                         var ldm = zanshiH / 2;
                         var sdm = $(".width").val() / 2;
@@ -1002,6 +1060,7 @@
 
             });
             $(".square").click(function (e) {
+                if (biaoshi) return
                 $(".d1").show();
                 $(".mm_label1").show();
                 $(".mm_label2").show();
@@ -1037,6 +1096,7 @@
             });
 
             $(".circular").click(function (e) {
+                if (biaoshi) return
                 $(".d2").show();
                 $(".mm_label1").hide();
                 $(".mm_label2").hide();
@@ -1071,6 +1131,7 @@
             });
 
             $(".triangle").click(function (e) {
+                if (biaoshi) return
                 $(".d3").show();
                 $(".mm_label1").hide();
                 $(".mm_label2").hide();

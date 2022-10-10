@@ -52,6 +52,7 @@
         }
         .inspection.disabled {
             opacity: .5;
+            pointer-events: none;
         }
 
         .switch {
@@ -68,6 +69,7 @@
         }
         .switch.disabled {
             opacity: .5;
+            pointer-events: none;
         }
 
         .load {
