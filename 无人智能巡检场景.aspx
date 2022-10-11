@@ -119,7 +119,7 @@
         }
         .loadLabel1 .load {
             left: 0;
-            top: 2px;
+            top: 1px;
         }
         .loadLabel2 {
             position: absolute;
@@ -139,7 +139,7 @@
             width: 36px;
             height: 36px;
             left: 0;
-            top: 2px;
+            top: 0;
         }
         .loadLabel2.success .load, .loadLabel2.failed .load {
             display: none;
@@ -194,7 +194,7 @@
           <div class="loadLabel1">
             <div class="loadLabel1-in">
                 <div class="load"></div>
-                <label>巡检中......</label>
+                <label>正在巡检......</label>
             </div>
           </div>
           <div class="loadLabel2">
@@ -241,9 +241,10 @@
 //                 $(location).attr("href", "Main.aspx")
                 $(".bdy").innerHTML=''
                 $(".bdy").load("Main.aspx")
+                interval && clearInterval(interval)
             });
             
-            setInterval(function () {
+            var interval = setInterval(function () {
                 if (!start) return
                 $.ajax({
                     type: "post",
@@ -251,32 +252,46 @@
                     dataType: "json",
                     url: "无人智能巡检场景.aspx/GetTypes",//WebAjaxForMe.aspx为目标文件，GetValueAjax为目标文件中的方法
                     success: function (result) {
-                        if (result.d == 1) {
+                        if (result.d === 1) {
                             $(".loadLabel2").show();
-                            $(".loadLabel2-text").text("巡检小车正在采集数据……");
+                            $(".loadLabel2-text").text("巡检小车正在数据采集……");
                             $(".loadLabel2").attr('class', 'loadLabel2')
-                            if (result.d !== types) {
-                                mode = 'mf'
-                                $(".loadLabel3").text("当前巡检数据上传模式为身份模态");
-                            }
                             if (mode === 'mf') {
                                 $(".switch").removeClass("disabled");
                             }
-                        } else if (result.d == 2) {
+                        } else if (result.d === 2) {
                             $(".loadLabel2").show();
-                            $(".loadLabel2-text").text("采集完成，巡检小车正在上传数据……");
+                            if (mode === 'ip') {
+                                $(".loadLabel2-text").text("数据采集完成，巡检小车正在上传数据(IP模态)……");
+                            } else {
+                                $(".loadLabel2-text").text("数据采集完成，巡检小车正在上传数据(身份模态)……");
+                            }
                             $(".loadLabel2").attr('class', 'loadLabel2')
                             $(".switch").addClass("disabled");
-                        } else if (result.d == 3) {
-                            $(".loadLabel2").show();
-                            $(".loadLabel2-text").text("上传失败");
-                            $(".loadLabel2").attr('class', 'loadLabel2 failed')
+                        } else if (result.d === 3) {
                             $(".switch").addClass("disabled");
-                        } else if (result.d == 4) {
-                            $(".loadLabel2").show();
-                            $(".loadLabel2-text").text("上传成功");
-                            $(".loadLabel2").attr('class', 'loadLabel2 success')
+                            if (types !== 3) {
+                                $(".loadLabel2").show();
+                                $(".loadLabel2-text").text("上传失败");
+                                $(".loadLabel2").attr('class', 'loadLabel2 failed')
+                                setTimeout(() => {
+                                    $(".loadLabel2").hide();
+                                    $(".loadLabel3").text("当前巡检数据上传模式为身份模态");
+                                    mode = 'mf'
+                                }, 3500)
+                            }
+                        } else if (result.d === 4) {
                             $(".switch").addClass("disabled");
+                            if (types !== 4) {
+                                $(".loadLabel2").show();
+                                $(".loadLabel2-text").text("上传成功");
+                                $(".loadLabel2").attr('class', 'loadLabel2 success')
+                                setTimeout(() => {
+                                    $(".loadLabel2").hide();
+                                    $(".loadLabel3").text("当前巡检数据上传模式为身份模态");
+                                    mode = 'mf'
+                                }, 3500)
+                            }
                         }
                         types = result.d;
                     }
@@ -335,8 +350,6 @@
             });
             $(".switch").click(function (e) {
                 if (types == 1) {
-                    $(".loadLabel3").text("当前巡检数据上传模式为IP模态");
-                    mode = 'ip'
                     $.ajax({
                         type: "post",
                         contentType: "application/json; charset=utf-8",//传值的方式
@@ -345,6 +358,9 @@
                         data: "{t:2}",//username 为想问后台传的参数（这里的参数可有可无）
                         success: function (result) {
                             //alert(result.d);//result.d为后台返回的参数
+                            $(".loadLabel3").text("当前巡检数据上传模式为IP模态");
+                            mode = 'ip'
+                            $(".switch").addClass("disabled");
                         }
                     })
                 }

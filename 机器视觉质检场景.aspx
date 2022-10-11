@@ -370,8 +370,8 @@
             position: absolute;
             width: 1451px;
             height: 726px;
-            top: 296px;
-            left: 235px;
+            top: 298px;
+            left: 237px;
             background: rgba(0,0,0,.6);
             border-radius: 20px;
         }
@@ -595,7 +595,7 @@
         </div>
         <!-- <button class="full"></button> -->
         <div class="image-wrap">
-            <image class="image"/>
+            <div class="image"></div>
             <button class="return2"></button>
         </div>
         
@@ -609,7 +609,7 @@
             $(".label3_a").click(function (e) {
 
                 var src = 'http://localhost:8088/picture/抓拍.jpg';
-                $(".image").attr('src', src);
+                $(".image").css('background-image', 'url(' + src + ')');
                 $(".image-wrap").show(); 
 
             });
