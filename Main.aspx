@@ -50,14 +50,12 @@
             width: 45px;
             margin-left: 8px;
         }
-        .stop {
+        .stop, .stop2 {
             background: url(image/newimg/xxxxx.png) no-repeat center center;
             background-size: 100% 100%;
             height: 20px;
             width: 45px;
-            position: absolute;
-            margin-top: 9.3%;
-            margin-left: 53%;
+            margin-left: 8px;
         }
         .control-bar {
             width: 100%;
