@@ -1016,8 +1016,8 @@
                     var lat = (30.2609691 + (Math.abs(zanshimouseY - canvasHeight) * perLat));
                     var lon = (119.8929680 + (Math.abs(zanshimouseX) * perLon));
                     if (b1) {
-                        var ldm = zanshiH / 2;
-                        var sdm = $(".width").val() / 2;
+                        var ldm = (zanshiH / 2).toFixed(2);
+                        var sdm = (zanshiW / 2).toFixed(2);
                         $.ajax({
                             type: "post",
                             contentType: "application/json; charset=utf-8",//传值的方式
