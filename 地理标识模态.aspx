@@ -659,7 +659,7 @@
             const perLat = 0.00000008026  //y轴一个像素点是0.00000008026经纬度
             const trangleData = { x: 674, y: 240, lengthPx: 145};
             const circleData = { x: 672, y: 236, dPx: 161}
-            const rectData = { x: 446, y: 219, widthPx: 97, heightPx: 161}
+            const rectData = { x: 449, y: 209, widthPx: 97, heightPx: 161}
             const canvasHeight = 466
             var biaoshi = false; //值为false说明区域可更改
             var zidingyi = false;
@@ -693,13 +693,13 @@
             rectData.width = rectData.widthPx * 8.3
             rectData.height = rectData.heightPx * 8.3
 
-            $(".coordinate2").text("中心点经纬度：" + trangleData.lon.toFixed(11) + "°E，" + trangleData.lat.toFixed(11) + '°N');
+            $(".coordinate2").text("中心点经纬度：" + trangleData.lon.toFixed(7) + "°E，" + trangleData.lat.toFixed(7) + '°N');
             $(".coordinate4").text("边长：" + trangleData.length.toFixed(1) + "  mm");
 
-            $(".coordinate6").text("中心点经纬度：" + circleData.lon.toFixed(11) + "°E，" + circleData.lat.toFixed(11) + '°N');
+            $(".coordinate6").text("中心点经纬度：" + circleData.lon.toFixed(7) + "°E，" + circleData.lat.toFixed(7) + '°N');
             $(".coordinate8").text("半径：" + circleData.r.toFixed(1) + "  mm");
 
-            $(".coordinate10").text("中心点经纬度：" + rectData.lon.toFixed(11) + "°E，" + rectData.lat.toFixed(11) + '°N');
+            $(".coordinate10").text("中心点经纬度：" + rectData.lon.toFixed(7) + "°E，" + rectData.lat.toFixed(7) + '°N');
             $(".coordinate12").text("宽：" + rectData.width.toFixed(1) + "  mm");
             $(".coordinate13").text("高：" + rectData.height.toFixed(1) + "  mm");
             $('.warning').addClass('disabled');
@@ -903,8 +903,8 @@
                     var gao = $(".height").val() / 8.3;
                     //一个像素点是8.3mm
                     //y轴一个像素点是0.00000008026经纬度
-                    $(".coordinate15").text("中心经度：" + (119.8929680 + (Math.abs(mouseX) * perLon)).toFixed(11));
-                    $(".coordinate16").text("中心纬度：" + (30.2609691 + (Math.abs(mouseY - canvasHeight) * perLat)).toFixed(11));
+                    $(".coordinate15").text("中心经度：" + (119.8929680 + (Math.abs(mouseX) * perLon)).toFixed(7));
+                    $(".coordinate16").text("中心纬度：" + (30.2609691 + (Math.abs(mouseY - canvasHeight) * perLat)).toFixed(7));
                     //                     $(".coordinate19").text("水平半径：" + ((kuan * 8.3) / 2) + "  mm");
                     //                     $(".coordinate20").text("垂直半径：" + ((gao * 8.3) / 2) + "  mm");
 
