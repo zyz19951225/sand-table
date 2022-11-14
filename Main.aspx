@@ -36,7 +36,6 @@
             background: url(image/newimg/多模态网络智慧工厂解决方案.png) no-repeat center center;
             background-size: auto 100%;
             height: 77px;
-            width: 760px;
             position: absolute;
             top: 20px;
             left: 0;
@@ -257,7 +256,7 @@
             <div class="home-option-bg"></div>
             <div class="home-option_words home-option_words1">
                 <span class="home-option-word-title1">协同研发设计场景</span>
-                <span class="home-option-word-title2">(IP模态)</span>
+                <span class="home-option-word-title2">(IP 网络模态)</span>
             </div>
             <div class="home-option_icon home-option_icon1"></div>
         </div>
@@ -265,7 +264,7 @@
             <div class="home-option-bg"></div>
             <div class="home-option_words home-option_words2">
                 <span class="home-option-word-title1">生产制造场景</span>
-                <span class="home-option-word-title2">(工控模态)</span>
+                <span class="home-option-word-title2">(工控网络模态)</span>
             </div>
             <div class="home-option_icon home-option_icon2"></div>
         </div>
@@ -273,7 +272,7 @@
             <div class="home-option-bg"></div>
             <div class="home-option_words home-option_words3">
                 <span class="home-option-word-title1">机器视觉质检场景</span>
-                <span class="home-option-word-title2">(内容标识模态)</span>
+                <span class="home-option-word-title2">(内容标识网络模态)</span>
             </div>
             <div class="home-option_icon home-option_icon3"></div>
         </div>
@@ -282,7 +281,7 @@
             <div class="home-option-bg"></div>
             <div class="home-option_words home-option_words4">
                 <span class="home-option-word-title1">无人智能巡检场景</span>
-                <span class="home-option-word-title2">(身份标识模态)</span>
+                <span class="home-option-word-title2">(身份标识网络模态)</span>
             </div>
             <div class="home-option_icon home-option_icon4"></div>    
         </div>
@@ -291,7 +290,7 @@
             <div class="home-option-bg"></div>
             <div class="home-option_words home-option_words5">
                 <span class="home-option-word-title1">设备故障诊断场景</span>
-                <span class="home-option-word-title2">(地理标识模态)</span>
+                <span class="home-option-word-title2">(地理标识网络模态)</span>
             </div>
             <div class="home-option_icon home-option_icon5"></div>
         </div>
