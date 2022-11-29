@@ -280,7 +280,7 @@
         <div class="home-option home-option4">
             <div class="home-option-bg"></div>
             <div class="home-option_words home-option_words4">
-                <span class="home-option-word-title1">无人智能巡检场景</span>
+                <span class="home-option-word-title1">移动智能巡检场景</span>
                 <span class="home-option-word-title2">(身份标识网络模态)</span>
             </div>
             <div class="home-option_icon home-option_icon4"></div>    
@@ -289,7 +289,7 @@
         <div class="home-option home-option5">
             <div class="home-option-bg"></div>
             <div class="home-option_words home-option_words5">
-                <span class="home-option-word-title1">设备故障诊断场景</span>
+                <span class="home-option-word-title1">事故应急响应场景</span>
                 <span class="home-option-word-title2">(地理标识网络模态)</span>
             </div>
             <div class="home-option_icon home-option_icon5"></div>
