@@ -255,7 +255,7 @@
         <div class="home-option home-option1">
             <div class="home-option-bg"></div>
             <div class="home-option_words home-option_words1">
-                <span class="home-option-word-title1">协同研发设计场景</span>
+                <span class="home-option-word-title1">远程协同办公场景</span>
                 <span class="home-option-word-title2">(IP 网络模态)</span>
             </div>
             <div class="home-option_icon home-option_icon1"></div>
@@ -263,7 +263,7 @@
         <div class="home-option home-option2">
             <div class="home-option-bg"></div>
             <div class="home-option_words home-option_words2">
-                <span class="home-option-word-title1">生产制造场景</span>
+                <span class="home-option-word-title1">产线生产控制场景</span>
                 <span class="home-option-word-title2">(工控网络模态)</span>
             </div>
             <div class="home-option_icon home-option_icon2"></div>

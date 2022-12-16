@@ -272,7 +272,7 @@
                             $(".switch").addClass("disabled");
                             if (types !== 3) {
                                 $(".loadLabel2").show();
-                                $(".loadLabel2-text").text("上传失败");
+                                $(".loadLabel2-text").text("传输效果不佳");
                                 $(".loadLabel2").attr('class', 'loadLabel2 failed')
                                 setTimeout(() => {
                                     $(".loadLabel2").hide();
